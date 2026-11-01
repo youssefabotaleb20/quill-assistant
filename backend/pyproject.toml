@@ -1,0 +1,17 @@
+[project]
+name = "ai-document-assistant"
+version = "1.0.0"
+description = "Ask questions about a PDF or CSV and get cited answers and charts, powered by Claude."
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+# File(...) in a FastAPI signature is the framework's idiom, not a bug.
+ignore = ["B008", "E501"]  # long lines are prompt text; the formatter wraps code

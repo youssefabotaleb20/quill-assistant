@@ -1,0 +1,23 @@
+# Render Blueprint: New > Blueprint, pick this repo, then paste the API key when asked.
+services:
+  - type: web
+    name: ai-document-assistant
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.1
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CLAUDE_MODEL
+        value: claude-opus-5-5
+      - key: CLAUDE_EFFORT
+        value: medium
+      - key: CORS_ORIGINS
+        value: https://youssefabotaleb20.github.io
+      - key: QUESTIONS_PER_HOUR
+        value: "30"

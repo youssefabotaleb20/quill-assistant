@@ -1,0 +1,2401 @@
+order_id,order_date,region,channel,product,category,units,unit_price,revenue,rating
+BL-11207,2025-01-01,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-10037,2025-01-02,Alexandria,Online,Decaf 500g,Beans,5,13.5,67.5,4.0
+BL-10614,2025-01-02,Cairo,Online,Espresso Beans 1kg,Beans,1,18.9,18.9,3.0
+BL-11520,2025-01-02,Giza,Online,Travel Mug,Merch,7,16.0,112.0,
+BL-11585,2025-01-02,Cairo,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,5.0
+BL-12049,2025-01-02,Alexandria,Store,Burr Grinder,Equipment,3,80.1,240.3,
+BL-10006,2025-01-03,Giza,Wholesale,House Blend 500g,Beans,18,10.25,184.5,5.0
+BL-10114,2025-01-03,Mansoura,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10680,2025-01-03,Alexandria,Wholesale,Travel Mug,Merch,24,13.12,314.88,
+BL-10865,2025-01-03,Mansoura,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,3.0
+BL-11096,2025-01-03,Alexandria,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11592,2025-01-03,Cairo,Online,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-11879,2025-01-03,Alexandria,Online,Espresso Beans 1kg,Beans,6,18.9,113.4,5.0
+BL-11793,2025-01-04,Alexandria,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10877,2025-01-05,Alexandria,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-10923,2025-01-05,Cairo,Online,Travel Mug,Merch,5,16.0,80.0,
+BL-11235,2025-01-05,Cairo,Store,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-11759,2025-01-05,Alexandria,Store,House Blend 500g,Beans,5,11.25,56.25,
+BL-12236,2025-01-05,Giza,Online,Pour-over Kit,Equipment,5,34.0,170.0,4.0
+BL-12281,2025-01-05,Alexandria,Online,Decaf 500g,Beans,3,13.5,40.5,4.0
+BL-10032,2025-01-06,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,
+BL-11470,2025-01-06,Giza,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,4.0
+BL-10747,2025-01-07,Mansoura,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-11012,2025-01-07,Giza,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,4.0
+BL-11135,2025-01-07,Mansoura,Store,House Blend 500g,Beans,4,11.25,45.0,
+BL-11667,2025-01-07,Giza,Online,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-11762,2025-01-07,Giza,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-12032,2025-01-07,Cairo,Store,House Blend 500g,Beans,3,11.25,33.75,3.0
+BL-12341,2025-01-07,Giza,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,
+BL-10120,2025-01-08,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10424,2025-01-08,Giza,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-10561,2025-01-08,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-10906,2025-01-08,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10953,2025-01-08,Giza,Online,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-11039,2025-01-08,Giza,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11265,2025-01-09,Alexandria,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11344,2025-01-09,Alexandria,Wholesale,Decaf 500g,Beans,48,11.07,531.36,4.0
+BL-11683,2025-01-09,Mansoura,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-11835,2025-01-09,Giza,Online,Travel Mug,Merch,3,14.4,43.2,5.0
+BL-10596,2025-01-10,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10964,2025-01-10,Giza,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-11631,2025-01-10,Alexandria,Wholesale,Cold Brew Bottle,Drinks,66,3.12,205.92,5.0
+BL-11985,2025-01-10,Mansoura,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-12052,2025-01-10,Alexandria,Online,Oat Latte Can,Drinks,6,2.9,17.4,3.0
+BL-12376,2025-01-10,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-12396,2025-01-10,Mansoura,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10187,2025-01-11,Giza,Online,Oat Latte Can,Drinks,1,2.9,2.9,5.0
+BL-10196,2025-01-11,Alexandria,Online,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-11548,2025-01-11,Cairo,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-12206,2025-01-11,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-12323,2025-01-11,Cairo,Online,House Blend 500g,Beans,5,11.25,56.25,4.0
+BL-11387,2025-01-12,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11690,2025-01-12,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-11990,2025-01-12,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-12096,2025-01-12,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-12271,2025-01-12,Giza,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10096,2025-01-13,Alexandria,Wholesale,Pour-over Kit,Equipment,36,27.88,1003.68,5.0
+BL-10557,2025-01-13,Cairo,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,
+BL-10886,2025-01-13,Giza,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11559,2025-01-13,Cairo,Online,House Blend 500g,Beans,1,11.25,11.25,
+BL-12124,2025-01-13,Mansoura,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,
+BL-12358,2025-01-13,Giza,Store,Decaf 500g,Beans,5,12.15,60.75,3.0
+BL-10235,2025-01-14,Cairo,Store,Burr Grinder,Equipment,7,80.1,560.7,
+BL-10648,2025-01-14,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,
+BL-10884,2025-01-14,Alexandria,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-11036,2025-01-15,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-11081,2025-01-15,Cairo,Store,Espresso Beans 1kg,Beans,4,18.9,75.6,5.0
+BL-10098,2025-01-16,Giza,Online,Oat Latte Can,Drinks,1,2.9,2.9,
+BL-10186,2025-01-16,Mansoura,Online,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-10872,2025-01-16,Giza,Online,House Blend 500g,Beans,6,12.5,75.0,3.0
+BL-11755,2025-01-16,Alexandria,Online,Travel Mug,Merch,4,14.4,57.6,
+BL-10308,2025-01-17,Cairo,Online,House Blend 500g,Beans,5,11.25,56.25,
+BL-10339,2025-01-17,Alexandria,Store,Pour-over Kit,Equipment,2,30.6,61.2,4.0
+BL-10352,2025-01-17,Giza,Store,Cold Brew Bottle,Drinks,4,3.42,13.68,
+BL-10584,2025-01-17,Cairo,Wholesale,House Blend 500g,Beans,48,10.25,492.0,4.0
+BL-10763,2025-01-17,Mansoura,Store,Cold Brew Bottle,Drinks,6,3.42,20.52,5.0
+BL-10791,2025-01-17,Mansoura,Store,Pour-over Kit,Equipment,5,34.0,170.0,
+BL-10840,2025-01-17,Giza,Wholesale,Travel Mug,Merch,24,13.12,314.88,3.0
+BL-11509,2025-01-17,Mansoura,Online,Pour-over Kit,Equipment,6,30.6,183.6,4.0
+BL-10024,2025-01-18,Alexandria,Online,Oat Latte Can,Drinks,3,2.61,7.83,5.0
+BL-10470,2025-01-18,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-10629,2025-01-18,Alexandria,Online,Pour-over Kit,Equipment,2,34.0,68.0,5.0
+BL-10866,2025-01-18,Mansoura,Online,Travel Mug,Merch,4,14.4,57.6,4.0
+BL-10915,2025-01-18,Alexandria,Online,Travel Mug,Merch,4,14.4,57.6,4.0
+BL-11638,2025-01-18,Cairo,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-11925,2025-01-18,Alexandria,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-10090,2025-01-19,Alexandria,Online,Decaf 500g,Beans,3,12.15,36.45,
+BL-11860,2025-01-19,Cairo,Online,Travel Mug,Merch,5,14.4,72.0,
+BL-10192,2025-01-20,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,3.0
+BL-10205,2025-01-20,Giza,Store,House Blend 500g,Beans,3,12.5,37.5,
+BL-10435,2025-01-20,Cairo,Store,Burr Grinder,Equipment,4,89.0,356.0,
+BL-11463,2025-01-20,Cairo,Online,House Blend 500g,Beans,7,12.5,87.5,
+BL-11664,2025-01-20,Alexandria,Online,Travel Mug,Merch,3,16.0,48.0,3.0
+BL-12040,2025-01-20,Cairo,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,5.0
+BL-10380,2025-01-21,Mansoura,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-10691,2025-01-21,Giza,Store,Espresso Beans 1kg,Beans,1,21.0,21.0,
+BL-10859,2025-01-21,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-12084,2025-01-21,Cairo,Wholesale,House Blend 500g,Beans,30,10.25,307.5,5.0
+BL-10023,2025-01-22,Alexandria,Online,Pour-over Kit,Equipment,5,34.0,170.0,4.0
+BL-10728,2025-01-22,Mansoura,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-11240,2025-01-22,Cairo,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,5.0
+BL-11787,2025-01-22,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-12352,2025-01-22,Mansoura,Online,House Blend 500g,Beans,1,11.25,11.25,5.0
+BL-10935,2025-01-23,Alexandria,Online,House Blend 500g,Beans,5,12.5,62.5,3.0
+BL-11248,2025-01-23,Cairo,Store,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-12014,2025-01-23,Cairo,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,5.0
+BL-12099,2025-01-23,Mansoura,Online,Travel Mug,Merch,2,14.4,28.8,3.0
+BL-12306,2025-01-23,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-10185,2025-01-24,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,3.0
+BL-11695,2025-01-24,Cairo,Online,Espresso Beans 1kg,Beans,6,18.9,113.4,
+BL-10575,2025-01-25,Alexandria,Online,Decaf 500g,Beans,3,13.5,40.5,5.0
+BL-11086,2025-01-25,Alexandria,Online,Cold Brew Bottle,Drinks,8,3.8,30.4,4.0
+BL-11243,2025-01-25,Cairo,Online,Pour-over Kit,Equipment,3,30.6,91.8,3.0
+BL-11253,2025-01-25,Cairo,Online,Oat Latte Can,Drinks,1,2.9,2.9,
+BL-11869,2025-01-25,Alexandria,Online,Pour-over Kit,Equipment,6,30.6,183.6,4.0
+BL-12209,2025-01-25,Giza,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-12233,2025-01-25,Mansoura,Online,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-10159,2025-01-26,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-10209,2025-01-26,Alexandria,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-10756,2025-01-26,Alexandria,Store,Travel Mug,Merch,2,14.4,28.8,5.0
+BL-10938,2025-01-27,Cairo,Online,Decaf 500g,Beans,5,13.5,67.5,4.0
+BL-10983,2025-01-27,Alexandria,Store,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-11148,2025-01-27,Cairo,Online,House Blend 500g,Beans,3,11.25,33.75,3.0
+BL-11672,2025-01-27,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,3.0
+BL-10344,2025-01-28,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-10512,2025-01-28,Cairo,Online,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-10962,2025-01-28,Mansoura,Online,Burr Grinder,Equipment,5,89.0,445.0,5.0
+BL-10959,2025-01-29,Giza,Wholesale,Burr Grinder,Equipment,36,72.98,2627.28,5.0
+BL-11127,2025-01-29,Alexandria,Online,Burr Grinder,Equipment,3,89.0,267.0,5.0
+BL-11327,2025-01-29,Mansoura,Online,Pour-over Kit,Equipment,5,30.6,153.0,4.0
+BL-10052,2025-01-30,Alexandria,Online,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-11116,2025-01-30,Mansoura,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,
+BL-11211,2025-01-30,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-10174,2025-01-31,Mansoura,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10516,2025-01-31,Alexandria,Online,Travel Mug,Merch,5,16.0,80.0,5.0
+BL-10663,2025-01-31,Cairo,Wholesale,Travel Mug,Merch,36,13.12,472.32,
+BL-10821,2025-01-31,Cairo,Online,House Blend 500g,Beans,3,11.25,33.75,
+BL-11306,2025-01-31,Cairo,Store,House Blend 500g,Beans,2,12.5,25.0,3.0
+BL-11541,2025-01-31,Mansoura,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-11606,2025-01-31,Cairo,Store,Oat Latte Can,Drinks,7,2.9,20.3,4.0
+BL-12301,2025-01-31,Cairo,Online,Travel Mug,Merch,5,16.0,80.0,4.0
+BL-10282,2025-02-01,Giza,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,3.0
+BL-11757,2025-02-01,Mansoura,Online,Oat Latte Can,Drinks,1,2.61,2.61,4.0
+BL-11967,2025-02-01,Cairo,Store,Espresso Beans 1kg,Beans,5,18.9,94.5,
+BL-11999,2025-02-01,Giza,Wholesale,House Blend 500g,Beans,24,10.25,246.0,
+BL-12222,2025-02-01,Cairo,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,5.0
+BL-10383,2025-02-02,Cairo,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,3.0
+BL-10422,2025-02-02,Alexandria,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-10676,2025-02-02,Cairo,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-10794,2025-02-02,Alexandria,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-10908,2025-02-02,Mansoura,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-11172,2025-02-02,Alexandria,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-11529,2025-02-02,Alexandria,Store,Cold Brew Bottle,Drinks,6,3.42,20.52,4.0
+BL-11918,2025-02-02,Mansoura,Store,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-12110,2025-02-02,Alexandria,Store,House Blend 500g,Beans,6,12.5,75.0,4.0
+BL-12261,2025-02-02,Giza,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-12340,2025-02-02,Cairo,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,
+BL-10146,2025-02-03,Giza,Wholesale,Travel Mug,Merch,12,13.12,157.44,
+BL-10337,2025-02-03,Alexandria,Online,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-10531,2025-02-03,Alexandria,Store,Decaf 500g,Beans,6,13.5,81.0,5.0
+BL-11480,2025-02-03,Cairo,Store,House Blend 500g,Beans,3,11.25,33.75,3.0
+BL-11652,2025-02-03,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-11738,2025-02-03,Giza,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-10733,2025-02-04,Cairo,Wholesale,Pour-over Kit,Equipment,42,27.88,1170.96,5.0
+BL-10871,2025-02-04,Giza,Online,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-10988,2025-02-04,Cairo,Online,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-11525,2025-02-04,Alexandria,Online,Pour-over Kit,Equipment,3,30.6,91.8,3.0
+BL-12053,2025-02-04,Alexandria,Wholesale,Pour-over Kit,Equipment,18,27.88,501.84,5.0
+BL-12370,2025-02-04,Mansoura,Wholesale,Travel Mug,Merch,24,13.12,314.88,4.0
+BL-10495,2025-02-05,Mansoura,Online,Pour-over Kit,Equipment,6,30.6,183.6,4.0
+BL-10684,2025-02-05,Alexandria,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,4.0
+BL-12276,2025-02-05,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-10439,2025-02-06,Alexandria,Store,House Blend 500g,Beans,1,12.5,12.5,
+BL-10671,2025-02-06,Mansoura,Wholesale,Decaf 500g,Beans,18,11.07,199.26,4.0
+BL-11084,2025-02-06,Giza,Store,Oat Latte Can,Drinks,8,2.9,23.2,4.0
+BL-11262,2025-02-06,Mansoura,Online,Cold Brew Bottle,Drinks,4,3.42,13.68,
+BL-11348,2025-02-06,Giza,Store,Decaf 500g,Beans,5,13.5,67.5,5.0
+BL-11496,2025-02-06,Cairo,Online,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-12026,2025-02-06,Cairo,Online,Burr Grinder,Equipment,9,89.0,801.0,4.0
+BL-10260,2025-02-07,Cairo,Wholesale,Travel Mug,Merch,6,13.12,78.72,5.0
+BL-10603,2025-02-07,Mansoura,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10659,2025-02-07,Giza,Wholesale,Burr Grinder,Equipment,18,72.98,1313.64,5.0
+BL-10868,2025-02-07,Giza,Online,Decaf 500g,Beans,6,13.5,81.0,
+BL-11764,2025-02-07,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-11588,2025-02-08,Cairo,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,5.0
+BL-12320,2025-02-08,Mansoura,Online,Pour-over Kit,Equipment,5,34.0,170.0,
+BL-10256,2025-02-09,Cairo,Online,House Blend 500g,Beans,3,12.5,37.5,
+BL-10265,2025-02-09,Cairo,Store,Travel Mug,Merch,11,16.0,176.0,4.0
+BL-10694,2025-02-09,Giza,Store,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-10849,2025-02-09,Cairo,Store,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-11539,2025-02-09,Cairo,Online,House Blend 500g,Beans,7,12.5,87.5,4.0
+BL-11106,2025-02-10,Mansoura,Online,House Blend 500g,Beans,3,11.25,33.75,
+BL-11200,2025-02-10,Alexandria,Wholesale,House Blend 500g,Beans,24,10.25,246.0,5.0
+BL-11312,2025-02-10,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11831,2025-02-10,Mansoura,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-12265,2025-02-10,Giza,Online,Oat Latte Can,Drinks,3,2.61,7.83,3.0
+BL-12277,2025-02-10,Alexandria,Wholesale,Pour-over Kit,Equipment,18,27.88,501.84,5.0
+BL-10431,2025-02-11,Cairo,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10632,2025-02-11,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-11198,2025-02-11,Alexandria,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11431,2025-02-11,Cairo,Store,Espresso Beans 1kg,Beans,5,18.9,94.5,3.0
+BL-11778,2025-02-11,Cairo,Online,House Blend 500g,Beans,5,11.25,56.25,5.0
+BL-10894,2025-02-12,Cairo,Online,Decaf 500g,Beans,6,13.5,81.0,5.0
+BL-11042,2025-02-12,Mansoura,Store,Oat Latte Can,Drinks,6,2.61,15.66,3.0
+BL-11144,2025-02-12,Giza,Store,Oat Latte Can,Drinks,1,2.9,2.9,5.0
+BL-11170,2025-02-12,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-11190,2025-02-12,Cairo,Store,Cold Brew Bottle,Drinks,6,3.42,20.52,
+BL-11322,2025-02-12,Cairo,Online,Burr Grinder,Equipment,2,80.1,160.2,4.0
+BL-11897,2025-02-12,Alexandria,Online,Travel Mug,Merch,1,14.4,14.4,5.0
+BL-12062,2025-02-12,Cairo,Store,House Blend 500g,Beans,7,12.5,87.5,
+BL-12176,2025-02-12,Giza,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,5.0
+BL-11399,2025-02-13,Giza,Store,Pour-over Kit,Equipment,1,34.0,34.0,5.0
+BL-11905,2025-02-13,Giza,Store,Decaf 500g,Beans,1,12.15,12.15,5.0
+BL-12125,2025-02-13,Cairo,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-12283,2025-02-13,Cairo,Store,Travel Mug,Merch,2,16.0,32.0,4.0
+BL-10046,2025-02-14,Alexandria,Online,House Blend 500g,Beans,6,12.5,75.0,
+BL-10326,2025-02-14,Mansoura,Store,House Blend 500g,Beans,4,12.5,50.0,3.0
+BL-10404,2025-02-14,Cairo,Wholesale,Espresso Beans 1kg,Beans,36,17.22,619.92,4.0
+BL-10788,2025-02-14,Alexandria,Wholesale,Burr Grinder,Equipment,12,72.98,875.76,
+BL-11241,2025-02-14,Giza,Store,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-11428,2025-02-14,Alexandria,Wholesale,Travel Mug,Merch,30,13.12,393.6,5.0
+BL-11746,2025-02-14,Giza,Online,Travel Mug,Merch,4,16.0,64.0,3.0
+BL-10882,2025-02-15,Mansoura,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-11033,2025-02-15,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-11708,2025-02-15,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-12009,2025-02-15,Cairo,Online,Pour-over Kit,Equipment,4,30.6,122.4,5.0
+BL-10067,2025-02-16,Cairo,Online,Oat Latte Can,Drinks,2,2.9,5.8,4.0
+BL-10225,2025-02-16,Alexandria,Online,Burr Grinder,Equipment,4,80.1,320.4,4.0
+BL-10276,2025-02-16,Mansoura,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-10934,2025-02-16,Mansoura,Wholesale,Espresso Beans 1kg,Beans,36,17.22,619.92,4.0
+BL-11796,2025-02-16,Mansoura,Wholesale,House Blend 500g,Beans,42,10.25,430.5,4.0
+BL-12175,2025-02-16,Alexandria,Store,Cold Brew Bottle,Drinks,6,3.42,20.52,4.0
+BL-12287,2025-02-16,Cairo,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,5.0
+BL-10991,2025-02-17,Giza,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-11121,2025-02-17,Cairo,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,3.0
+BL-11219,2025-02-17,Cairo,Online,Travel Mug,Merch,6,14.4,86.4,4.0
+BL-12203,2025-02-17,Mansoura,Online,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-10244,2025-02-18,Cairo,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-10889,2025-02-18,Giza,Wholesale,Travel Mug,Merch,18,13.12,236.16,4.0
+BL-10899,2025-02-18,Cairo,Online,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-12289,2025-02-18,Mansoura,Store,Travel Mug,Merch,5,16.0,80.0,4.0
+BL-10723,2025-02-19,Giza,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10787,2025-02-19,Mansoura,Store,House Blend 500g,Beans,3,11.25,33.75,5.0
+BL-11467,2025-02-19,Cairo,Online,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-11483,2025-02-19,Mansoura,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-11549,2025-02-19,Cairo,Store,Cold Brew Bottle,Drinks,5,3.42,17.1,5.0
+BL-11748,2025-02-19,Giza,Wholesale,Cold Brew Bottle,Drinks,6,3.12,18.72,
+BL-12131,2025-02-19,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-11352,2025-02-20,Cairo,Store,Travel Mug,Merch,2,16.0,32.0,4.0
+BL-11453,2025-02-20,Mansoura,Online,Travel Mug,Merch,2,14.4,28.8,3.0
+BL-11502,2025-02-20,Giza,Online,Oat Latte Can,Drinks,2,2.9,5.8,4.0
+BL-12256,2025-02-20,Mansoura,Store,House Blend 500g,Beans,6,12.5,75.0,3.0
+BL-12308,2025-02-20,Alexandria,Online,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-10720,2025-02-21,Alexandria,Store,House Blend 500g,Beans,3,12.5,37.5,
+BL-10835,2025-02-21,Giza,Wholesale,Cold Brew Bottle,Drinks,12,3.12,37.44,5.0
+BL-11452,2025-02-21,Alexandria,Online,Travel Mug,Merch,7,16.0,112.0,4.0
+BL-12075,2025-02-21,Alexandria,Wholesale,Travel Mug,Merch,6,13.12,78.72,5.0
+BL-12094,2025-02-21,Cairo,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-11046,2025-02-22,Cairo,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-11882,2025-02-22,Mansoura,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-11857,2025-02-23,Mansoura,Store,Travel Mug,Merch,3,14.4,43.2,5.0
+BL-12258,2025-02-23,Alexandria,Online,Oat Latte Can,Drinks,3,2.61,7.83,4.0
+BL-10163,2025-02-24,Cairo,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-10179,2025-02-24,Alexandria,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-10212,2025-02-24,Mansoura,Store,Cold Brew Bottle,Drinks,1,3.42,3.42,4.0
+BL-10371,2025-02-24,Alexandria,Store,House Blend 500g,Beans,8,12.5,100.0,4.0
+BL-11057,2025-02-24,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-11723,2025-02-24,Alexandria,Online,Oat Latte Can,Drinks,2,2.61,5.22,4.0
+BL-11821,2025-02-24,Cairo,Wholesale,Travel Mug,Merch,24,13.12,314.88,4.0
+BL-10582,2025-02-25,Cairo,Online,Decaf 500g,Beans,3,13.5,40.5,
+BL-10743,2025-02-25,Alexandria,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,4.0
+BL-12060,2025-02-25,Cairo,Store,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-12071,2025-02-25,Cairo,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-12074,2025-02-25,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-10328,2025-02-26,Alexandria,Wholesale,House Blend 500g,Beans,30,10.25,307.5,
+BL-10627,2025-02-26,Alexandria,Online,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-11359,2025-02-26,Mansoura,Online,Oat Latte Can,Drinks,7,2.61,18.27,
+BL-11099,2025-02-27,Cairo,Store,Oat Latte Can,Drinks,8,2.9,23.2,4.0
+BL-11107,2025-02-27,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-11629,2025-02-27,Cairo,Wholesale,Decaf 500g,Beans,30,11.07,332.1,
+BL-10099,2025-02-28,Giza,Store,Espresso Beans 1kg,Beans,8,21.0,168.0,4.0
+BL-11356,2025-02-28,Giza,Online,House Blend 500g,Beans,2,11.25,22.5,
+BL-11998,2025-02-28,Cairo,Store,Travel Mug,Merch,5,14.4,72.0,5.0
+BL-12031,2025-02-28,Giza,Online,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-12111,2025-02-28,Cairo,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,5.0
+BL-10325,2025-03-01,Giza,Online,Espresso Beans 1kg,Beans,4,18.9,75.6,4.0
+BL-10351,2025-03-01,Cairo,Wholesale,Decaf 500g,Beans,30,11.07,332.1,
+BL-10354,2025-03-01,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-10672,2025-03-01,Giza,Store,Burr Grinder,Equipment,2,89.0,178.0,5.0
+BL-10944,2025-03-01,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-11179,2025-03-01,Cairo,Wholesale,House Blend 500g,Beans,36,10.25,369.0,
+BL-11251,2025-03-01,Alexandria,Wholesale,Travel Mug,Merch,48,13.12,629.76,5.0
+BL-12161,2025-03-01,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-10290,2025-03-02,Cairo,Store,Espresso Beans 1kg,Beans,7,18.9,132.3,
+BL-10887,2025-03-02,Cairo,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,3.0
+BL-11007,2025-03-02,Mansoura,Store,Pour-over Kit,Equipment,6,34.0,204.0,3.0
+BL-11232,2025-03-02,Mansoura,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,5.0
+BL-11354,2025-03-02,Giza,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,
+BL-11863,2025-03-02,Alexandria,Store,Pour-over Kit,Equipment,2,34.0,68.0,4.0
+BL-12102,2025-03-02,Giza,Online,Espresso Beans 1kg,Beans,8,21.0,168.0,4.0
+BL-10218,2025-03-03,Mansoura,Store,House Blend 500g,Beans,2,12.5,25.0,3.0
+BL-10785,2025-03-03,Cairo,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-10909,2025-03-03,Alexandria,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-11008,2025-03-03,Mansoura,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,5.0
+BL-11164,2025-03-03,Giza,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-11176,2025-03-03,Giza,Online,House Blend 500g,Beans,2,11.25,22.5,5.0
+BL-11635,2025-03-03,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-11945,2025-03-03,Cairo,Store,Oat Latte Can,Drinks,8,2.61,20.88,
+BL-10074,2025-03-04,Alexandria,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10262,2025-03-04,Cairo,Online,Decaf 500g,Beans,7,13.5,94.5,3.0
+BL-10264,2025-03-04,Cairo,Online,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-10625,2025-03-04,Alexandria,Online,Oat Latte Can,Drinks,9,2.9,26.1,3.0
+BL-10758,2025-03-04,Cairo,Online,Espresso Beans 1kg,Beans,9,21.0,189.0,5.0
+BL-12375,2025-03-04,Alexandria,Store,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-10246,2025-03-05,Alexandria,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,3.0
+BL-10263,2025-03-05,Mansoura,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,3.0
+BL-10604,2025-03-05,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10782,2025-03-05,Cairo,Online,Decaf 500g,Beans,5,13.5,67.5,5.0
+BL-12027,2025-03-05,Cairo,Online,Pour-over Kit,Equipment,5,30.6,153.0,4.0
+BL-10552,2025-03-06,Giza,Online,House Blend 500g,Beans,6,11.25,67.5,5.0
+BL-10711,2025-03-06,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-11014,2025-03-06,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-11372,2025-03-06,Alexandria,Online,Cold Brew Bottle,Drinks,6,3.42,20.52,4.0
+BL-10117,2025-03-07,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-10318,2025-03-07,Alexandria,Online,Decaf 500g,Beans,3,13.5,40.5,4.0
+BL-10370,2025-03-07,Giza,Online,Pour-over Kit,Equipment,6,34.0,204.0,
+BL-10536,2025-03-07,Cairo,Online,Oat Latte Can,Drinks,2,2.9,5.8,
+BL-10553,2025-03-07,Alexandria,Store,Travel Mug,Merch,8,14.4,115.2,
+BL-11034,2025-03-07,Giza,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-11050,2025-03-07,Giza,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-11221,2025-03-07,Alexandria,Store,Decaf 500g,Beans,4,13.5,54.0,4.0
+BL-11521,2025-03-07,Cairo,Store,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-12327,2025-03-07,Cairo,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,5.0
+BL-12366,2025-03-07,Mansoura,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-10754,2025-03-08,Mansoura,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,
+BL-10775,2025-03-08,Cairo,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,
+BL-10820,2025-03-08,Giza,Online,Pour-over Kit,Equipment,2,30.6,61.2,3.0
+BL-11294,2025-03-08,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,
+BL-11366,2025-03-08,Alexandria,Online,Oat Latte Can,Drinks,5,2.61,13.05,5.0
+BL-11446,2025-03-08,Cairo,Online,Travel Mug,Merch,5,16.0,80.0,
+BL-10549,2025-03-09,Mansoura,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,
+BL-10617,2025-03-09,Mansoura,Wholesale,Travel Mug,Merch,24,13.12,314.88,5.0
+BL-10739,2025-03-09,Alexandria,Store,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-11011,2025-03-09,Giza,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-11574,2025-03-09,Giza,Online,Oat Latte Can,Drinks,1,2.61,2.61,4.0
+BL-12164,2025-03-09,Alexandria,Online,Travel Mug,Merch,7,16.0,112.0,4.0
+BL-11799,2025-03-10,Alexandria,Store,House Blend 500g,Beans,4,11.25,45.0,
+BL-10079,2025-03-11,Giza,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-10779,2025-03-11,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,3.0
+BL-11460,2025-03-11,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-11951,2025-03-11,Cairo,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-11954,2025-03-11,Cairo,Online,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-10321,2025-03-12,Mansoura,Store,Decaf 500g,Beans,7,13.5,94.5,5.0
+BL-11110,2025-03-12,Giza,Online,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-11281,2025-03-12,Alexandria,Store,Pour-over Kit,Equipment,1,34.0,34.0,
+BL-12168,2025-03-12,Mansoura,Store,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-10055,2025-03-13,Alexandria,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10063,2025-03-13,Mansoura,Online,Espresso Beans 1kg,Beans,6,18.9,113.4,4.0
+BL-10112,2025-03-13,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-12137,2025-03-13,Cairo,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,3.0
+BL-12338,2025-03-13,Giza,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,4.0
+BL-10693,2025-03-14,Cairo,Store,House Blend 500g,Beans,4,11.25,45.0,
+BL-10945,2025-03-14,Alexandria,Store,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-11698,2025-03-14,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10039,2025-03-15,Mansoura,Online,Pour-over Kit,Equipment,3,34.0,102.0,
+BL-10402,2025-03-15,Giza,Store,Burr Grinder,Equipment,4,89.0,356.0,
+BL-10847,2025-03-15,Giza,Store,Decaf 500g,Beans,2,12.15,24.3,4.0
+BL-10890,2025-03-15,Cairo,Online,Pour-over Kit,Equipment,3,30.6,91.8,4.0
+BL-11418,2025-03-15,Alexandria,Store,Pour-over Kit,Equipment,6,34.0,204.0,4.0
+BL-12185,2025-03-15,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10801,2025-03-16,Giza,Store,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-11625,2025-03-16,Giza,Wholesale,House Blend 500g,Beans,42,10.25,430.5,5.0
+BL-12023,2025-03-16,Alexandria,Online,Espresso Beans 1kg,Beans,8,18.9,151.2,4.0
+BL-10021,2025-03-17,Mansoura,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-11462,2025-03-17,Cairo,Store,Oat Latte Can,Drinks,4,2.61,10.44,4.0
+BL-12195,2025-03-17,Mansoura,Online,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-10234,2025-03-18,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10571,2025-03-18,Mansoura,Online,Travel Mug,Merch,1,16.0,16.0,4.0
+BL-10749,2025-03-18,Giza,Online,House Blend 500g,Beans,4,11.25,45.0,5.0
+BL-11040,2025-03-18,Alexandria,Wholesale,Espresso Beans 1kg,Beans,42,17.22,723.24,5.0
+BL-11186,2025-03-18,Cairo,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-11602,2025-03-18,Alexandria,Wholesale,Pour-over Kit,Equipment,18,27.88,501.84,
+BL-11702,2025-03-18,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-11718,2025-03-18,Cairo,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,3.0
+BL-11965,2025-03-18,Mansoura,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-10563,2025-03-19,Mansoura,Online,House Blend 500g,Beans,2,11.25,22.5,5.0
+BL-11575,2025-03-19,Alexandria,Store,House Blend 500g,Beans,7,11.25,78.75,5.0
+BL-10194,2025-03-20,Alexandria,Wholesale,Decaf 500g,Beans,12,11.07,132.84,5.0
+BL-10397,2025-03-20,Alexandria,Online,Decaf 500g,Beans,5,13.5,67.5,5.0
+BL-10559,2025-03-20,Alexandria,Online,House Blend 500g,Beans,6,12.5,75.0,
+BL-10708,2025-03-20,Giza,Store,Oat Latte Can,Drinks,2,2.9,5.8,4.0
+BL-10753,2025-03-20,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-11678,2025-03-20,Giza,Store,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-11946,2025-03-20,Alexandria,Online,Pour-over Kit,Equipment,3,34.0,102.0,4.0
+BL-10395,2025-03-21,Cairo,Store,House Blend 500g,Beans,7,12.5,87.5,
+BL-10734,2025-03-22,Alexandria,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-11255,2025-03-22,Cairo,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-12214,2025-03-22,Cairo,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-12217,2025-03-22,Giza,Store,Decaf 500g,Beans,5,13.5,67.5,4.0
+BL-12322,2025-03-22,Alexandria,Online,Oat Latte Can,Drinks,4,2.61,10.44,5.0
+BL-10554,2025-03-23,Giza,Store,Travel Mug,Merch,2,16.0,32.0,4.0
+BL-10662,2025-03-23,Alexandria,Online,Pour-over Kit,Equipment,5,34.0,170.0,
+BL-10725,2025-03-23,Mansoura,Store,Oat Latte Can,Drinks,1,2.61,2.61,5.0
+BL-10970,2025-03-23,Alexandria,Online,Espresso Beans 1kg,Beans,1,21.0,21.0,
+BL-11642,2025-03-23,Cairo,Online,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-10355,2025-03-24,Cairo,Store,Oat Latte Can,Drinks,3,2.61,7.83,5.0
+BL-11067,2025-03-24,Mansoura,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-11267,2025-03-24,Alexandria,Store,Oat Latte Can,Drinks,6,2.61,15.66,3.0
+BL-11807,2025-03-24,Alexandria,Store,House Blend 500g,Beans,2,12.5,25.0,
+BL-12330,2025-03-24,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10329,2025-03-25,Giza,Online,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-10914,2025-03-25,Mansoura,Wholesale,Oat Latte Can,Drinks,30,2.38,71.4,5.0
+BL-10997,2025-03-25,Cairo,Store,Espresso Beans 1kg,Beans,8,18.9,151.2,
+BL-11962,2025-03-25,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-11987,2025-03-25,Cairo,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-12356,2025-03-25,Cairo,Store,Travel Mug,Merch,4,14.4,57.6,4.0
+BL-10083,2025-03-26,Mansoura,Wholesale,House Blend 500g,Beans,18,10.25,184.5,
+BL-10128,2025-03-26,Cairo,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,5.0
+BL-10369,2025-03-26,Mansoura,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-11503,2025-03-26,Alexandria,Online,Pour-over Kit,Equipment,3,30.6,91.8,4.0
+BL-12063,2025-03-26,Cairo,Online,House Blend 500g,Beans,4,12.5,50.0,3.0
+BL-12126,2025-03-26,Cairo,Store,Burr Grinder,Equipment,6,80.1,480.6,
+BL-12046,2025-03-27,Cairo,Online,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-12359,2025-03-27,Giza,Online,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-10173,2025-03-28,Giza,Store,Travel Mug,Merch,6,16.0,96.0,4.0
+BL-10291,2025-03-28,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10301,2025-03-28,Giza,Store,Burr Grinder,Equipment,2,89.0,178.0,
+BL-10358,2025-03-28,Mansoura,Store,House Blend 500g,Beans,2,11.25,22.5,4.0
+BL-10479,2025-03-28,Mansoura,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,5.0
+BL-10558,2025-03-28,Mansoura,Store,Pour-over Kit,Equipment,7,34.0,238.0,
+BL-10566,2025-03-28,Giza,Store,Decaf 500g,Beans,5,13.5,67.5,
+BL-10605,2025-03-28,Cairo,Store,Decaf 500g,Beans,9,13.5,121.5,5.0
+BL-12198,2025-03-28,Alexandria,Wholesale,House Blend 500g,Beans,18,10.25,184.5,4.0
+BL-10190,2025-03-29,Alexandria,Store,Espresso Beans 1kg,Beans,1,18.9,18.9,5.0
+BL-10271,2025-03-29,Cairo,Store,Burr Grinder,Equipment,2,89.0,178.0,
+BL-10834,2025-03-29,Cairo,Online,House Blend 500g,Beans,6,12.5,75.0,4.0
+BL-11088,2025-03-29,Cairo,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-11234,2025-03-29,Alexandria,Online,Oat Latte Can,Drinks,6,2.61,15.66,4.0
+BL-11407,2025-03-29,Alexandria,Store,Espresso Beans 1kg,Beans,4,18.9,75.6,
+BL-11675,2025-03-29,Cairo,Online,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-11015,2025-03-30,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-11395,2025-03-30,Cairo,Store,Decaf 500g,Beans,6,13.5,81.0,4.0
+BL-11398,2025-03-30,Alexandria,Wholesale,House Blend 500g,Beans,12,10.25,123.0,
+BL-11466,2025-03-30,Cairo,Store,House Blend 500g,Beans,4,11.25,45.0,5.0
+BL-11534,2025-03-30,Giza,Store,Espresso Beans 1kg,Beans,1,21.0,21.0,4.0
+BL-12259,2025-03-30,Cairo,Online,Travel Mug,Merch,4,14.4,57.6,3.0
+BL-10203,2025-03-31,Mansoura,Online,House Blend 500g,Beans,6,12.5,75.0,
+BL-10285,2025-03-31,Mansoura,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10333,2025-03-31,Mansoura,Online,House Blend 500g,Beans,7,12.5,87.5,
+BL-11519,2025-03-31,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.42,13.68,5.0
+BL-11542,2025-03-31,Cairo,Store,House Blend 500g,Beans,6,12.5,75.0,4.0
+BL-12263,2025-03-31,Alexandria,Store,House Blend 500g,Beans,5,11.25,56.25,
+BL-10033,2025-04-01,Alexandria,Online,Travel Mug,Merch,3,14.4,43.2,3.0
+BL-10080,2025-04-01,Giza,Store,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-10730,2025-04-01,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-10955,2025-04-01,Giza,Wholesale,House Blend 500g,Beans,36,10.25,369.0,3.0
+BL-11136,2025-04-01,Cairo,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,
+BL-11639,2025-04-01,Mansoura,Online,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-10442,2025-04-02,Alexandria,Online,Decaf 500g,Beans,3,13.5,40.5,3.0
+BL-10535,2025-04-02,Giza,Store,Travel Mug,Merch,7,16.0,112.0,4.0
+BL-11439,2025-04-02,Giza,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,4.0
+BL-11484,2025-04-02,Cairo,Wholesale,Travel Mug,Merch,30,13.12,393.6,3.0
+BL-11700,2025-04-02,Cairo,Store,Cold Brew Bottle,Drinks,4,3.42,13.68,4.0
+BL-11786,2025-04-02,Cairo,Online,Pour-over Kit,Equipment,6,34.0,204.0,3.0
+BL-12382,2025-04-02,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10126,2025-04-03,Giza,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-10221,2025-04-03,Alexandria,Online,Pour-over Kit,Equipment,4,30.6,122.4,4.0
+BL-10444,2025-04-03,Giza,Online,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-10499,2025-04-03,Alexandria,Online,House Blend 500g,Beans,1,12.5,12.5,3.0
+BL-10705,2025-04-03,Giza,Store,Cold Brew Bottle,Drinks,4,3.42,13.68,
+BL-11129,2025-04-03,Alexandria,Online,House Blend 500g,Beans,5,11.25,56.25,4.0
+BL-11451,2025-04-03,Cairo,Online,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-11615,2025-04-03,Mansoura,Store,Oat Latte Can,Drinks,2,2.61,5.22,
+BL-12069,2025-04-03,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-12199,2025-04-03,Alexandria,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,5.0
+BL-10035,2025-04-04,Cairo,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,5.0
+BL-10508,2025-04-04,Giza,Store,House Blend 500g,Beans,7,12.5,87.5,
+BL-10853,2025-04-04,Alexandria,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,5.0
+BL-10925,2025-04-04,Cairo,Online,Travel Mug,Merch,3,16.0,48.0,3.0
+BL-11004,2025-04-04,Alexandria,Online,Oat Latte Can,Drinks,1,2.9,2.9,3.0
+BL-11305,2025-04-04,Giza,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-11543,2025-04-04,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-11666,2025-04-04,Cairo,Online,Burr Grinder,Equipment,3,89.0,267.0,3.0
+BL-11704,2025-04-04,Alexandria,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-12010,2025-04-04,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10158,2025-04-05,Mansoura,Store,Decaf 500g,Beans,7,13.5,94.5,4.0
+BL-10526,2025-04-05,Giza,Store,House Blend 500g,Beans,1,11.25,11.25,
+BL-10851,2025-04-05,Giza,Store,Espresso Beans 1kg,Beans,2,18.9,37.8,
+BL-10869,2025-04-05,Giza,Store,Pour-over Kit,Equipment,3,34.0,102.0,4.0
+BL-10999,2025-04-05,Alexandria,Online,Oat Latte Can,Drinks,6,2.9,17.4,3.0
+BL-11761,2025-04-05,Cairo,Store,Cold Brew Bottle,Drinks,4,3.42,13.68,5.0
+BL-10651,2025-04-06,Giza,Store,Pour-over Kit,Equipment,2,34.0,68.0,
+BL-10875,2025-04-06,Cairo,Online,House Blend 500g,Beans,1,11.25,11.25,
+BL-11019,2025-04-06,Cairo,Store,Travel Mug,Merch,6,16.0,96.0,3.0
+BL-11724,2025-04-06,Alexandria,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-11739,2025-04-06,Mansoura,Online,Cold Brew Bottle,Drinks,4,3.42,13.68,4.0
+BL-10376,2025-04-07,Cairo,Store,Travel Mug,Merch,2,16.0,32.0,
+BL-11199,2025-04-07,Mansoura,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-12080,2025-04-07,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10419,2025-04-08,Mansoura,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,
+BL-10951,2025-04-08,Mansoura,Wholesale,House Blend 500g,Beans,30,10.25,307.5,4.0
+BL-12036,2025-04-08,Alexandria,Online,Travel Mug,Merch,5,16.0,80.0,4.0
+BL-12037,2025-04-08,Alexandria,Online,Decaf 500g,Beans,4,13.5,54.0,5.0
+BL-12058,2025-04-08,Mansoura,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-10160,2025-04-09,Giza,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,4.0
+BL-10620,2025-04-09,Cairo,Online,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-10020,2025-04-10,Alexandria,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10069,2025-04-10,Alexandria,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,4.0
+BL-10237,2025-04-10,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-10252,2025-04-10,Cairo,Online,Oat Latte Can,Drinks,2,2.9,5.8,
+BL-10579,2025-04-10,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-10665,2025-04-10,Alexandria,Online,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-11041,2025-04-10,Cairo,Store,Oat Latte Can,Drinks,1,2.61,2.61,3.0
+BL-11830,2025-04-10,Giza,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10335,2025-04-11,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-10757,2025-04-11,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-11603,2025-04-11,Giza,Store,Travel Mug,Merch,4,16.0,64.0,3.0
+BL-12123,2025-04-11,Alexandria,Online,House Blend 500g,Beans,6,11.25,67.5,4.0
+BL-10660,2025-04-12,Cairo,Wholesale,Pour-over Kit,Equipment,72,27.88,2007.36,4.0
+BL-10885,2025-04-12,Cairo,Wholesale,House Blend 500g,Beans,12,10.25,123.0,
+BL-11346,2025-04-12,Giza,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-11426,2025-04-12,Cairo,Online,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-11790,2025-04-12,Mansoura,Online,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-10441,2025-04-13,Giza,Online,Travel Mug,Merch,2,16.0,32.0,
+BL-11381,2025-04-13,Giza,Store,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-11555,2025-04-13,Alexandria,Store,Burr Grinder,Equipment,6,89.0,534.0,4.0
+BL-11996,2025-04-13,Mansoura,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-12241,2025-04-13,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-12310,2025-04-13,Cairo,Store,Espresso Beans 1kg,Beans,1,21.0,21.0,5.0
+BL-11598,2025-04-14,Alexandria,Online,House Blend 500g,Beans,6,11.25,67.5,4.0
+BL-12307,2025-04-14,Giza,Online,Decaf 500g,Beans,3,12.15,36.45,5.0
+BL-12361,2025-04-14,Giza,Online,Cold Brew Bottle,Drinks,6,3.42,20.52,5.0
+BL-10003,2025-04-15,Mansoura,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-10125,2025-04-15,Giza,Online,Oat Latte Can,Drinks,4,2.61,10.44,4.0
+BL-11317,2025-04-15,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-12226,2025-04-15,Cairo,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-10350,2025-04-16,Mansoura,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-11444,2025-04-16,Cairo,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,5.0
+BL-11694,2025-04-16,Alexandria,Store,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-10374,2025-04-17,Alexandria,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10826,2025-04-17,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-11593,2025-04-17,Alexandria,Online,House Blend 500g,Beans,4,11.25,45.0,4.0
+BL-11684,2025-04-17,Cairo,Store,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-11880,2025-04-17,Alexandria,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-11964,2025-04-17,Mansoura,Online,Pour-over Kit,Equipment,4,34.0,136.0,
+BL-12000,2025-04-17,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10827,2025-04-18,Cairo,Store,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-11391,2025-04-18,Cairo,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,5.0
+BL-11754,2025-04-18,Cairo,Store,Travel Mug,Merch,4,14.4,57.6,4.0
+BL-11781,2025-04-18,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-12045,2025-04-18,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11401,2025-04-19,Mansoura,Store,Espresso Beans 1kg,Beans,4,18.9,75.6,
+BL-11482,2025-04-19,Cairo,Wholesale,Pour-over Kit,Equipment,6,27.88,167.28,5.0
+BL-12292,2025-04-19,Alexandria,Online,Cold Brew Bottle,Drinks,6,3.42,20.52,4.0
+BL-12313,2025-04-19,Giza,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10384,2025-04-20,Giza,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-11249,2025-04-20,Giza,Online,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-11540,2025-04-20,Cairo,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-11986,2025-04-20,Cairo,Online,Travel Mug,Merch,5,14.4,72.0,
+BL-10065,2025-04-21,Giza,Store,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-10089,2025-04-21,Alexandria,Store,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-11727,2025-04-21,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-11736,2025-04-21,Giza,Online,Pour-over Kit,Equipment,5,34.0,170.0,4.0
+BL-11805,2025-04-21,Cairo,Wholesale,House Blend 500g,Beans,18,10.25,184.5,
+BL-11280,2025-04-22,Giza,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-12165,2025-04-22,Mansoura,Store,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-12202,2025-04-22,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10616,2025-04-23,Alexandria,Online,Travel Mug,Merch,2,16.0,32.0,
+BL-10878,2025-04-23,Cairo,Online,Pour-over Kit,Equipment,1,34.0,34.0,4.0
+BL-10918,2025-04-23,Alexandria,Store,Oat Latte Can,Drinks,1,2.9,2.9,5.0
+BL-11900,2025-04-23,Alexandria,Store,House Blend 500g,Beans,3,11.25,33.75,5.0
+BL-11931,2025-04-23,Cairo,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,5.0
+BL-10031,2025-04-24,Giza,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-10253,2025-04-24,Giza,Online,Burr Grinder,Equipment,2,80.1,160.2,
+BL-10348,2025-04-24,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,3.0
+BL-10518,2025-04-24,Cairo,Online,Travel Mug,Merch,5,16.0,80.0,
+BL-11025,2025-04-24,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-11181,2025-04-24,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-11485,2025-04-24,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11648,2025-04-24,Alexandria,Store,Travel Mug,Merch,1,16.0,16.0,5.0
+BL-11659,2025-04-24,Cairo,Online,Cold Brew Bottle,Drinks,7,3.8,26.6,
+BL-11721,2025-04-24,Mansoura,Wholesale,House Blend 500g,Beans,36,10.25,369.0,5.0
+BL-11837,2025-04-24,Mansoura,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-12231,2025-04-24,Mansoura,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-10189,2025-04-25,Mansoura,Wholesale,Oat Latte Can,Drinks,36,2.38,85.68,5.0
+BL-10724,2025-04-25,Cairo,Online,House Blend 500g,Beans,3,11.25,33.75,5.0
+BL-11937,2025-04-25,Mansoura,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-10150,2025-04-26,Alexandria,Wholesale,Pour-over Kit,Equipment,12,27.88,334.56,4.0
+BL-10188,2025-04-26,Alexandria,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,3.0
+BL-10241,2025-04-26,Cairo,Wholesale,Espresso Beans 1kg,Beans,36,17.22,619.92,5.0
+BL-10963,2025-04-26,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-12355,2025-04-26,Cairo,Online,Pour-over Kit,Equipment,4,30.6,122.4,3.0
+BL-10012,2025-04-27,Mansoura,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-10774,2025-04-27,Giza,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,5.0
+BL-10843,2025-04-27,Mansoura,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-10852,2025-04-27,Mansoura,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,3.0
+BL-11627,2025-04-27,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-11707,2025-04-27,Cairo,Wholesale,Pour-over Kit,Equipment,12,27.88,334.56,4.0
+BL-12234,2025-04-27,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-10530,2025-04-28,Cairo,Online,Decaf 500g,Beans,7,13.5,94.5,5.0
+BL-10546,2025-04-28,Alexandria,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10766,2025-04-28,Mansoura,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,3.0
+BL-11061,2025-04-28,Alexandria,Online,House Blend 500g,Beans,5,12.5,62.5,
+BL-11206,2025-04-28,Cairo,Online,Travel Mug,Merch,3,14.4,43.2,5.0
+BL-11472,2025-04-28,Alexandria,Online,House Blend 500g,Beans,7,11.25,78.75,5.0
+BL-11988,2025-04-28,Cairo,Online,Oat Latte Can,Drinks,7,2.9,20.3,
+BL-10522,2025-04-29,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-10989,2025-04-29,Cairo,Wholesale,Oat Latte Can,Drinks,36,2.38,85.68,5.0
+BL-11628,2025-04-29,Mansoura,Store,House Blend 500g,Beans,5,12.5,62.5,3.0
+BL-11955,2025-04-29,Mansoura,Online,Oat Latte Can,Drinks,2,2.61,5.22,5.0
+BL-12141,2025-04-29,Alexandria,Online,Cold Brew Bottle,Drinks,7,3.42,23.94,5.0
+BL-12145,2025-04-29,Mansoura,Store,Espresso Beans 1kg,Beans,6,18.9,113.4,5.0
+BL-12362,2025-04-29,Alexandria,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,4.0
+BL-10900,2025-04-30,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,
+BL-11194,2025-04-30,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,
+BL-11329,2025-04-30,Mansoura,Online,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-11013,2025-05-01,Mansoura,Online,Cold Brew Bottle,Drinks,2,3.42,6.84,
+BL-11302,2025-05-01,Alexandria,Store,Decaf 500g,Beans,3,13.5,40.5,
+BL-11569,2025-05-01,Mansoura,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,4.0
+BL-12029,2025-05-01,Cairo,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,
+BL-12280,2025-05-01,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-12319,2025-05-01,Cairo,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-10286,2025-05-02,Alexandria,Online,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-10360,2025-05-02,Cairo,Store,Espresso Beans 1kg,Beans,7,18.9,132.3,
+BL-10491,2025-05-02,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10685,2025-05-02,Mansoura,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10807,2025-05-02,Giza,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,
+BL-11130,2025-05-02,Cairo,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11660,2025-05-02,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11720,2025-05-02,Cairo,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-10040,2025-05-03,Giza,Store,House Blend 500g,Beans,5,11.25,56.25,3.0
+BL-10267,2025-05-03,Mansoura,Online,Burr Grinder,Equipment,4,89.0,356.0,5.0
+BL-10564,2025-05-03,Alexandria,Wholesale,House Blend 500g,Beans,36,10.25,369.0,3.0
+BL-10621,2025-05-03,Cairo,Store,Pour-over Kit,Equipment,3,30.6,91.8,4.0
+BL-10623,2025-05-03,Cairo,Store,House Blend 500g,Beans,7,12.5,87.5,5.0
+BL-11553,2025-05-03,Cairo,Online,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-11640,2025-05-03,Giza,Wholesale,Oat Latte Can,Drinks,30,2.38,71.4,
+BL-11691,2025-05-03,Giza,Online,Espresso Beans 1kg,Beans,1,21.0,21.0,5.0
+BL-11894,2025-05-03,Alexandria,Online,Pour-over Kit,Equipment,1,34.0,34.0,
+BL-12353,2025-05-03,Cairo,Store,House Blend 500g,Beans,3,11.25,33.75,4.0
+BL-12367,2025-05-03,Alexandria,Store,Travel Mug,Merch,5,14.4,72.0,5.0
+BL-10133,2025-05-04,Cairo,Store,Pour-over Kit,Equipment,4,30.6,122.4,
+BL-10661,2025-05-04,Mansoura,Wholesale,House Blend 500g,Beans,6,10.25,61.5,
+BL-10715,2025-05-04,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-11583,2025-05-04,Cairo,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-11873,2025-05-04,Giza,Store,Pour-over Kit,Equipment,1,34.0,34.0,
+BL-11929,2025-05-04,Cairo,Online,Pour-over Kit,Equipment,3,30.6,91.8,5.0
+BL-12072,2025-05-04,Mansoura,Store,Oat Latte Can,Drinks,2,2.61,5.22,5.0
+BL-10633,2025-05-05,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10668,2025-05-05,Giza,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-11655,2025-05-05,Cairo,Store,Pour-over Kit,Equipment,3,34.0,102.0,4.0
+BL-11361,2025-05-06,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-11497,2025-05-06,Giza,Wholesale,House Blend 500g,Beans,30,10.25,307.5,4.0
+BL-11587,2025-05-06,Alexandria,Online,House Blend 500g,Beans,4,11.25,45.0,
+BL-12197,2025-05-06,Alexandria,Store,Pour-over Kit,Equipment,2,34.0,68.0,5.0
+BL-12250,2025-05-06,Cairo,Online,Pour-over Kit,Equipment,4,30.6,122.4,5.0
+BL-10011,2025-05-07,Cairo,Online,Pour-over Kit,Equipment,3,34.0,102.0,4.0
+BL-10609,2025-05-07,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-10653,2025-05-07,Mansoura,Store,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-10828,2025-05-07,Alexandria,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-11742,2025-05-07,Cairo,Online,Pour-over Kit,Equipment,9,34.0,306.0,4.0
+BL-11828,2025-05-07,Alexandria,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,
+BL-12395,2025-05-07,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10762,2025-05-08,Cairo,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-10931,2025-05-08,Giza,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-11279,2025-05-08,Giza,Online,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-11505,2025-05-08,Alexandria,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,4.0
+BL-11813,2025-05-08,Cairo,Store,Burr Grinder,Equipment,2,89.0,178.0,
+BL-12201,2025-05-08,Alexandria,Online,House Blend 500g,Beans,6,11.25,67.5,3.0
+BL-10362,2025-05-09,Giza,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-10408,2025-05-09,Alexandria,Online,House Blend 500g,Beans,6,12.5,75.0,4.0
+BL-10555,2025-05-09,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-11163,2025-05-09,Cairo,Online,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-11227,2025-05-09,Alexandria,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,4.0
+BL-10755,2025-05-10,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,
+BL-11074,2025-05-10,Cairo,Online,Burr Grinder,Equipment,2,80.1,160.2,
+BL-11886,2025-05-10,Alexandria,Wholesale,Espresso Beans 1kg,Beans,36,17.22,619.92,
+BL-11977,2025-05-10,Alexandria,Store,Pour-over Kit,Equipment,3,30.6,91.8,5.0
+BL-10657,2025-05-11,Giza,Store,Travel Mug,Merch,6,16.0,96.0,4.0
+BL-10855,2025-05-11,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10978,2025-05-11,Giza,Store,Burr Grinder,Equipment,2,89.0,178.0,5.0
+BL-11369,2025-05-11,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11609,2025-05-11,Alexandria,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-12091,2025-05-11,Giza,Wholesale,Espresso Beans 1kg,Beans,42,17.22,723.24,5.0
+BL-12254,2025-05-11,Cairo,Store,Travel Mug,Merch,3,16.0,48.0,
+BL-10528,2025-05-12,Alexandria,Online,Travel Mug,Merch,5,14.4,72.0,5.0
+BL-10976,2025-05-12,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-11006,2025-05-12,Cairo,Wholesale,House Blend 500g,Beans,36,10.25,369.0,4.0
+BL-11021,2025-05-12,Alexandria,Store,Oat Latte Can,Drinks,2,2.61,5.22,
+BL-11104,2025-05-12,Alexandria,Online,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-11143,2025-05-12,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-11692,2025-05-12,Giza,Wholesale,Travel Mug,Merch,30,13.12,393.6,5.0
+BL-11926,2025-05-12,Mansoura,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-12303,2025-05-12,Giza,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-10480,2025-05-13,Cairo,Store,Oat Latte Can,Drinks,2,2.9,5.8,4.0
+BL-10481,2025-05-13,Alexandria,Wholesale,Travel Mug,Merch,36,13.12,472.32,5.0
+BL-10640,2025-05-13,Alexandria,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-11202,2025-05-13,Giza,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,3.0
+BL-11283,2025-05-13,Cairo,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,
+BL-11373,2025-05-13,Cairo,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,
+BL-11493,2025-05-13,Giza,Store,Decaf 500g,Beans,4,13.5,54.0,
+BL-11669,2025-05-13,Alexandria,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-11806,2025-05-13,Alexandria,Store,Decaf 500g,Beans,4,13.5,54.0,4.0
+BL-11838,2025-05-13,Mansoura,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-10968,2025-05-14,Mansoura,Online,Espresso Beans 1kg,Beans,1,21.0,21.0,4.0
+BL-11102,2025-05-14,Mansoura,Online,Espresso Beans 1kg,Beans,4,18.9,75.6,3.0
+BL-11719,2025-05-14,Giza,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,5.0
+BL-11794,2025-05-14,Cairo,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-11922,2025-05-14,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-12210,2025-05-14,Mansoura,Online,Oat Latte Can,Drinks,5,2.61,13.05,5.0
+BL-12374,2025-05-14,Giza,Store,Travel Mug,Merch,5,14.4,72.0,3.0
+BL-12377,2025-05-14,Cairo,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,
+BL-12390,2025-05-14,Giza,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,4.0
+BL-10838,2025-05-15,Giza,Online,House Blend 500g,Beans,3,12.5,37.5,
+BL-11112,2025-05-15,Cairo,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-11166,2025-05-15,Cairo,Store,Travel Mug,Merch,2,16.0,32.0,3.0
+BL-11413,2025-05-15,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.42,17.1,
+BL-11510,2025-05-15,Cairo,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-11561,2025-05-15,Mansoura,Online,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-11819,2025-05-15,Cairo,Store,Travel Mug,Merch,4,16.0,64.0,
+BL-11991,2025-05-15,Giza,Wholesale,Oat Latte Can,Drinks,30,2.38,71.4,
+BL-12182,2025-05-15,Alexandria,Online,Espresso Beans 1kg,Beans,1,18.9,18.9,
+BL-12232,2025-05-15,Giza,Online,Travel Mug,Merch,10,16.0,160.0,5.0
+BL-12299,2025-05-15,Cairo,Online,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-10004,2025-05-16,Alexandria,Online,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10071,2025-05-16,Cairo,Store,Oat Latte Can,Drinks,7,2.9,20.3,4.0
+BL-10259,2025-05-16,Mansoura,Online,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-11037,2025-05-16,Giza,Online,House Blend 500g,Beans,3,12.5,37.5,3.0
+BL-12336,2025-05-16,Cairo,Online,Oat Latte Can,Drinks,2,2.9,5.8,
+BL-10010,2025-05-17,Alexandria,Online,Decaf 500g,Beans,5,13.5,67.5,
+BL-10394,2025-05-17,Cairo,Store,Cold Brew Bottle,Drinks,5,3.42,17.1,3.0
+BL-11175,2025-05-17,Mansoura,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,3.0
+BL-11385,2025-05-17,Giza,Online,Travel Mug,Merch,3,14.4,43.2,
+BL-11932,2025-05-17,Giza,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,3.0
+BL-10529,2025-05-18,Cairo,Wholesale,Travel Mug,Merch,18,13.12,236.16,4.0
+BL-10606,2025-05-18,Mansoura,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-10658,2025-05-18,Mansoura,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10829,2025-05-18,Alexandria,Wholesale,Pour-over Kit,Equipment,18,27.88,501.84,4.0
+BL-11090,2025-05-18,Cairo,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-11441,2025-05-18,Giza,Wholesale,Travel Mug,Merch,30,13.12,393.6,
+BL-11948,2025-05-18,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10168,2025-05-19,Giza,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,4.0
+BL-10268,2025-05-19,Giza,Wholesale,Espresso Beans 1kg,Beans,12,17.22,206.64,5.0
+BL-11440,2025-05-19,Cairo,Store,Decaf 500g,Beans,8,13.5,108.0,3.0
+BL-11783,2025-05-19,Alexandria,Wholesale,Cold Brew Bottle,Drinks,6,3.12,18.72,
+BL-11803,2025-05-19,Alexandria,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,5.0
+BL-10197,2025-05-20,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-10745,2025-05-20,Mansoura,Store,Travel Mug,Merch,2,16.0,32.0,
+BL-10772,2025-05-20,Cairo,Online,House Blend 500g,Beans,2,11.25,22.5,5.0
+BL-11027,2025-05-20,Mansoura,Store,Decaf 500g,Beans,3,13.5,40.5,4.0
+BL-11504,2025-05-20,Cairo,Store,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-10341,2025-05-21,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10497,2025-05-21,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10636,2025-05-21,Alexandria,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10921,2025-05-21,Giza,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11726,2025-05-21,Giza,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,
+BL-11983,2025-05-21,Giza,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,5.0
+BL-12034,2025-05-21,Mansoura,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,3.0
+BL-10215,2025-05-22,Mansoura,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-10340,2025-05-22,Alexandria,Online,Pour-over Kit,Equipment,4,30.6,122.4,5.0
+BL-10381,2025-05-22,Mansoura,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,
+BL-10583,2025-05-22,Mansoura,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11490,2025-05-22,Cairo,Store,Decaf 500g,Beans,5,13.5,67.5,5.0
+BL-11589,2025-05-22,Alexandria,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-12056,2025-05-22,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10211,2025-05-23,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-10509,2025-05-23,Alexandria,Store,Espresso Beans 1kg,Beans,6,18.9,113.4,4.0
+BL-10883,2025-05-23,Mansoura,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,5.0
+BL-10930,2025-05-23,Giza,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,5.0
+BL-11045,2025-05-23,Cairo,Online,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-11076,2025-05-23,Cairo,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,4.0
+BL-12143,2025-05-23,Mansoura,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10690,2025-05-24,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,3.0
+BL-11196,2025-05-24,Alexandria,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-11360,2025-05-24,Cairo,Wholesale,House Blend 500g,Beans,18,10.25,184.5,5.0
+BL-10054,2025-05-25,Mansoura,Store,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-10094,2025-05-25,Alexandria,Online,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-10537,2025-05-25,Mansoura,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-10832,2025-05-25,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-11310,2025-05-25,Mansoura,Store,Burr Grinder,Equipment,2,89.0,178.0,4.0
+BL-11332,2025-05-25,Cairo,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,3.0
+BL-11545,2025-05-25,Giza,Online,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-11558,2025-05-25,Mansoura,Online,Travel Mug,Merch,3,14.4,43.2,4.0
+BL-11590,2025-05-25,Mansoura,Online,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-12047,2025-05-25,Mansoura,Store,House Blend 500g,Beans,4,11.25,45.0,
+BL-10699,2025-05-26,Mansoura,Online,Burr Grinder,Equipment,4,89.0,356.0,3.0
+BL-11131,2025-05-26,Giza,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,
+BL-11760,2025-05-26,Cairo,Wholesale,Burr Grinder,Equipment,30,72.98,2189.4,3.0
+BL-12204,2025-05-26,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-10230,2025-05-27,Giza,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,5.0
+BL-10864,2025-05-27,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11231,2025-05-27,Giza,Store,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-11300,2025-05-27,Alexandria,Online,Travel Mug,Merch,2,14.4,28.8,5.0
+BL-11417,2025-05-27,Cairo,Online,Decaf 500g,Beans,5,13.5,67.5,
+BL-11770,2025-05-27,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-10254,2025-05-28,Alexandria,Store,House Blend 500g,Beans,4,11.25,45.0,
+BL-10400,2025-05-28,Mansoura,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-11094,2025-05-28,Alexandria,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,5.0
+BL-12119,2025-05-28,Mansoura,Store,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-12312,2025-05-28,Cairo,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,5.0
+BL-10156,2025-05-29,Alexandria,Store,Travel Mug,Merch,5,16.0,80.0,3.0
+BL-10729,2025-05-29,Cairo,Store,Espresso Beans 1kg,Beans,2,18.9,37.8,
+BL-10764,2025-05-29,Cairo,Online,House Blend 500g,Beans,7,12.5,87.5,
+BL-10789,2025-05-29,Cairo,Store,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-10870,2025-05-29,Alexandria,Store,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-10893,2025-05-29,Alexandria,Store,Decaf 500g,Beans,3,13.5,40.5,4.0
+BL-11605,2025-05-29,Mansoura,Store,Travel Mug,Merch,2,14.4,28.8,4.0
+BL-11611,2025-05-29,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-11842,2025-05-29,Alexandria,Store,Burr Grinder,Equipment,3,80.1,240.3,5.0
+BL-11853,2025-05-29,Mansoura,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-11881,2025-05-29,Giza,Store,Travel Mug,Merch,5,16.0,80.0,5.0
+BL-10417,2025-05-30,Giza,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,3.0
+BL-10594,2025-05-30,Cairo,Store,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-10892,2025-05-30,Giza,Store,Decaf 500g,Beans,4,13.5,54.0,
+BL-10980,2025-05-30,Giza,Store,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-11443,2025-05-30,Alexandria,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,4.0
+BL-11571,2025-05-30,Cairo,Online,House Blend 500g,Beans,3,12.5,37.5,3.0
+BL-11878,2025-05-30,Cairo,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,
+BL-12105,2025-05-30,Giza,Online,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-10463,2025-05-31,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-10602,2025-05-31,Giza,Wholesale,Oat Latte Can,Drinks,36,2.38,85.68,5.0
+BL-10863,2025-05-31,Mansoura,Store,Travel Mug,Merch,2,16.0,32.0,3.0
+BL-11154,2025-05-31,Giza,Online,Travel Mug,Merch,3,16.0,48.0,3.0
+BL-11416,2025-05-31,Cairo,Wholesale,Espresso Beans 1kg,Beans,6,17.22,103.32,4.0
+BL-11465,2025-05-31,Cairo,Online,House Blend 500g,Beans,4,11.25,45.0,
+BL-12008,2025-05-31,Giza,Store,Pour-over Kit,Equipment,6,34.0,204.0,5.0
+BL-12266,2025-05-31,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-12295,2025-05-31,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-10132,2025-06-01,Mansoura,Online,Travel Mug,Merch,3,14.4,43.2,4.0
+BL-10210,2025-06-01,Mansoura,Store,Oat Latte Can,Drinks,2,2.61,5.22,4.0
+BL-12152,2025-06-01,Alexandria,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,
+BL-12285,2025-06-01,Giza,Wholesale,House Blend 500g,Beans,12,10.25,123.0,5.0
+BL-11518,2025-06-02,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-11785,2025-06-02,Giza,Store,Travel Mug,Merch,2,16.0,32.0,3.0
+BL-11788,2025-06-02,Cairo,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,3.0
+BL-11816,2025-06-02,Alexandria,Store,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-12343,2025-06-02,Cairo,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,
+BL-10105,2025-06-03,Mansoura,Online,Oat Latte Can,Drinks,5,2.61,13.05,4.0
+BL-10545,2025-06-03,Cairo,Store,Pour-over Kit,Equipment,3,34.0,102.0,3.0
+BL-11286,2025-06-03,Alexandria,Online,House Blend 500g,Beans,3,12.5,37.5,
+BL-11340,2025-06-03,Alexandria,Online,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-11644,2025-06-03,Mansoura,Store,Decaf 500g,Beans,4,13.5,54.0,
+BL-12140,2025-06-03,Mansoura,Store,Pour-over Kit,Equipment,6,34.0,204.0,4.0
+BL-10129,2025-06-04,Giza,Store,Cold Brew Bottle,Drinks,9,3.8,34.2,
+BL-10844,2025-06-04,Cairo,Store,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-11261,2025-06-04,Cairo,Online,Burr Grinder,Equipment,4,89.0,356.0,
+BL-11777,2025-06-04,Cairo,Online,House Blend 500g,Beans,6,12.5,75.0,4.0
+BL-12087,2025-06-04,Cairo,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-12170,2025-06-04,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10987,2025-06-05,Giza,Wholesale,Espresso Beans 1kg,Beans,42,17.22,723.24,5.0
+BL-11454,2025-06-05,Cairo,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-11514,2025-06-05,Cairo,Online,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-11814,2025-06-05,Alexandria,Store,House Blend 500g,Beans,1,11.25,11.25,4.0
+BL-10484,2025-06-06,Giza,Online,Travel Mug,Merch,2,14.4,28.8,
+BL-11774,2025-06-06,Cairo,Online,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-12230,2025-06-06,Giza,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-10108,2025-06-07,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-10740,2025-06-07,Cairo,Online,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-11351,2025-06-07,Cairo,Store,Travel Mug,Merch,6,16.0,96.0,
+BL-11437,2025-06-07,Alexandria,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,5.0
+BL-11515,2025-06-07,Cairo,Online,Cold Brew Bottle,Drinks,1,3.8,3.8,5.0
+BL-11876,2025-06-07,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,
+BL-12383,2025-06-07,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10760,2025-06-08,Mansoura,Online,House Blend 500g,Beans,5,11.25,56.25,4.0
+BL-11218,2025-06-08,Alexandria,Online,Decaf 500g,Beans,6,13.5,81.0,
+BL-11671,2025-06-08,Mansoura,Online,Cold Brew Bottle,Drinks,1,3.42,3.42,3.0
+BL-11845,2025-06-08,Alexandria,Wholesale,Travel Mug,Merch,18,13.12,236.16,5.0
+BL-12025,2025-06-08,Cairo,Store,Travel Mug,Merch,2,16.0,32.0,4.0
+BL-11289,2025-06-09,Mansoura,Wholesale,Oat Latte Can,Drinks,54,2.38,128.52,5.0
+BL-11810,2025-06-09,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,
+BL-11887,2025-06-09,Cairo,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,3.0
+BL-12044,2025-06-09,Mansoura,Store,Espresso Beans 1kg,Beans,6,18.9,113.4,5.0
+BL-10050,2025-06-10,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10127,2025-06-10,Cairo,Online,Decaf 500g,Beans,3,13.5,40.5,4.0
+BL-11137,2025-06-10,Cairo,Wholesale,Decaf 500g,Beans,42,11.07,464.94,4.0
+BL-11357,2025-06-10,Mansoura,Online,House Blend 500g,Beans,3,11.25,33.75,4.0
+BL-11364,2025-06-10,Alexandria,Wholesale,House Blend 500g,Beans,18,10.25,184.5,5.0
+BL-11546,2025-06-10,Mansoura,Online,Oat Latte Can,Drinks,2,2.61,5.22,5.0
+BL-12174,2025-06-10,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-11230,2025-06-11,Giza,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,3.0
+BL-11277,2025-06-11,Alexandria,Online,House Blend 500g,Beans,3,11.25,33.75,3.0
+BL-11321,2025-06-11,Alexandria,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-11661,2025-06-11,Cairo,Store,Decaf 500g,Beans,3,12.15,36.45,5.0
+BL-12180,2025-06-11,Giza,Store,House Blend 500g,Beans,4,11.25,45.0,4.0
+BL-11089,2025-06-12,Alexandria,Store,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-11526,2025-06-12,Alexandria,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-11960,2025-06-12,Cairo,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,
+BL-12192,2025-06-12,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,
+BL-10036,2025-06-13,Alexandria,Store,Pour-over Kit,Equipment,5,34.0,170.0,
+BL-10281,2025-06-13,Alexandria,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,
+BL-10682,2025-06-13,Mansoura,Store,Cold Brew Bottle,Drinks,5,3.42,17.1,
+BL-11382,2025-06-13,Cairo,Online,Travel Mug,Merch,4,14.4,57.6,5.0
+BL-11420,2025-06-13,Cairo,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11767,2025-06-13,Mansoura,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,3.0
+BL-12078,2025-06-13,Giza,Wholesale,House Blend 500g,Beans,12,10.25,123.0,
+BL-10097,2025-06-14,Cairo,Store,House Blend 500g,Beans,1,11.25,11.25,
+BL-10250,2025-06-14,Cairo,Online,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-10486,2025-06-14,Mansoura,Online,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-10506,2025-06-14,Cairo,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,
+BL-10716,2025-06-14,Mansoura,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10811,2025-06-14,Alexandria,Online,House Blend 500g,Beans,6,11.25,67.5,4.0
+BL-11097,2025-06-14,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-11584,2025-06-14,Cairo,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,3.0
+BL-11728,2025-06-14,Alexandria,Online,Oat Latte Can,Drinks,2,2.61,5.22,3.0
+BL-10274,2025-06-15,Alexandria,Store,Pour-over Kit,Equipment,6,34.0,204.0,5.0
+BL-10814,2025-06-15,Giza,Online,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-10831,2025-06-15,Cairo,Wholesale,House Blend 500g,Beans,42,10.25,430.5,5.0
+BL-11677,2025-06-15,Alexandria,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,3.0
+BL-12136,2025-06-15,Giza,Store,Oat Latte Can,Drinks,6,2.61,15.66,
+BL-12147,2025-06-15,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-12372,2025-06-15,Giza,Store,House Blend 500g,Beans,5,11.25,56.25,5.0
+BL-10087,2025-06-16,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10249,2025-06-16,Cairo,Online,Travel Mug,Merch,6,16.0,96.0,4.0
+BL-10306,2025-06-16,Cairo,Store,Pour-over Kit,Equipment,4,34.0,136.0,4.0
+BL-10490,2025-06-16,Cairo,Store,Pour-over Kit,Equipment,4,34.0,136.0,
+BL-10520,2025-06-16,Mansoura,Online,Oat Latte Can,Drinks,3,2.61,7.83,5.0
+BL-10644,2025-06-16,Giza,Online,Espresso Beans 1kg,Beans,8,21.0,168.0,
+BL-11612,2025-06-16,Cairo,Store,House Blend 500g,Beans,6,12.5,75.0,4.0
+BL-10057,2025-06-17,Mansoura,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-10240,2025-06-17,Alexandria,Online,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-10245,2025-06-17,Alexandria,Online,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-10459,2025-06-17,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-10465,2025-06-17,Alexandria,Online,House Blend 500g,Beans,5,11.25,56.25,5.0
+BL-10986,2025-06-17,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-11331,2025-06-17,Cairo,Store,House Blend 500g,Beans,2,12.5,25.0,
+BL-11604,2025-06-17,Cairo,Wholesale,House Blend 500g,Beans,18,10.25,184.5,5.0
+BL-11966,2025-06-17,Giza,Store,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-12297,2025-06-17,Cairo,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-10314,2025-06-18,Alexandria,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10966,2025-06-18,Cairo,Online,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-11576,2025-06-18,Mansoura,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11995,2025-06-18,Giza,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-12016,2025-06-18,Alexandria,Online,Oat Latte Can,Drinks,2,2.9,5.8,3.0
+BL-12262,2025-06-18,Alexandria,Wholesale,House Blend 500g,Beans,12,10.25,123.0,5.0
+BL-10818,2025-06-19,Cairo,Online,Decaf 500g,Beans,5,12.15,60.75,
+BL-11150,2025-06-19,Cairo,Store,House Blend 500g,Beans,4,11.25,45.0,
+BL-11222,2025-06-19,Cairo,Wholesale,Decaf 500g,Beans,12,11.07,132.84,
+BL-11338,2025-06-19,Alexandria,Wholesale,House Blend 500g,Beans,42,10.25,430.5,5.0
+BL-11347,2025-06-19,Cairo,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,
+BL-11610,2025-06-19,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-11804,2025-06-19,Giza,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,5.0
+BL-11850,2025-06-19,Mansoura,Store,Travel Mug,Merch,2,14.4,28.8,5.0
+BL-11940,2025-06-19,Mansoura,Store,Decaf 500g,Beans,7,13.5,94.5,4.0
+BL-12154,2025-06-19,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10053,2025-06-20,Giza,Online,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-10311,2025-06-20,Alexandria,Wholesale,Decaf 500g,Beans,12,11.07,132.84,5.0
+BL-10317,2025-06-20,Giza,Online,Pour-over Kit,Equipment,3,34.0,102.0,
+BL-10647,2025-06-20,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11208,2025-06-20,Mansoura,Online,Travel Mug,Merch,3,14.4,43.2,5.0
+BL-11687,2025-06-20,Cairo,Store,Pour-over Kit,Equipment,7,34.0,238.0,4.0
+BL-11911,2025-06-20,Giza,Wholesale,Pour-over Kit,Equipment,6,27.88,167.28,4.0
+BL-12354,2025-06-20,Giza,Store,House Blend 500g,Beans,4,12.5,50.0,
+BL-10471,2025-06-21,Giza,Store,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-11055,2025-06-21,Giza,Online,Cold Brew Bottle,Drinks,1,3.8,3.8,5.0
+BL-11491,2025-06-21,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-12079,2025-06-21,Giza,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-12392,2025-06-21,Giza,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,4.0
+BL-10692,2025-06-22,Alexandria,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,3.0
+BL-11273,2025-06-22,Alexandria,Wholesale,House Blend 500g,Beans,18,10.25,184.5,4.0
+BL-11429,2025-06-22,Alexandria,Online,Pour-over Kit,Equipment,4,30.6,122.4,5.0
+BL-11749,2025-06-22,Alexandria,Online,Travel Mug,Merch,5,16.0,80.0,5.0
+BL-12221,2025-06-22,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10299,2025-06-23,Giza,Online,Oat Latte Can,Drinks,3,2.61,7.83,4.0
+BL-10349,2025-06-23,Cairo,Wholesale,Pour-over Kit,Equipment,42,27.88,1170.96,5.0
+BL-10366,2025-06-23,Alexandria,Online,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-10457,2025-06-23,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-11029,2025-06-23,Alexandria,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11386,2025-06-23,Giza,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-10157,2025-06-24,Cairo,Store,House Blend 500g,Beans,7,11.25,78.75,5.0
+BL-11022,2025-06-24,Giza,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,4.0
+BL-11193,2025-06-24,Cairo,Online,Espresso Beans 1kg,Beans,9,18.9,170.1,
+BL-11630,2025-06-24,Mansoura,Online,Pour-over Kit,Equipment,3,34.0,102.0,
+BL-11530,2025-06-25,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10066,2025-06-26,Giza,Wholesale,Espresso Beans 1kg,Beans,6,17.22,103.32,
+BL-10613,2025-06-26,Giza,Online,Pour-over Kit,Equipment,6,34.0,204.0,4.0
+BL-10714,2025-06-26,Cairo,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,5.0
+BL-10841,2025-06-26,Giza,Wholesale,House Blend 500g,Beans,30,10.25,307.5,5.0
+BL-10920,2025-06-26,Alexandria,Online,Burr Grinder,Equipment,4,89.0,356.0,4.0
+BL-11396,2025-06-26,Cairo,Wholesale,Travel Mug,Merch,30,13.12,393.6,
+BL-12038,2025-06-26,Cairo,Online,Decaf 500g,Beans,2,13.5,27.0,3.0
+BL-10455,2025-06-27,Cairo,Store,House Blend 500g,Beans,3,11.25,33.75,5.0
+BL-10568,2025-06-27,Giza,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,4.0
+BL-10767,2025-06-27,Cairo,Online,Travel Mug,Merch,3,14.4,43.2,4.0
+BL-10769,2025-06-27,Giza,Store,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-10813,2025-06-27,Cairo,Online,Oat Latte Can,Drinks,6,2.9,17.4,3.0
+BL-11607,2025-06-27,Cairo,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-11717,2025-06-27,Cairo,Wholesale,House Blend 500g,Beans,24,10.25,246.0,3.0
+BL-12239,2025-06-27,Giza,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-10427,2025-06-28,Giza,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,
+BL-10946,2025-06-28,Mansoura,Store,Cold Brew Bottle,Drinks,6,3.42,20.52,5.0
+BL-11078,2025-06-28,Giza,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-11155,2025-06-28,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-11182,2025-06-28,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-11455,2025-06-28,Giza,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-11744,2025-06-28,Cairo,Wholesale,Pour-over Kit,Equipment,18,27.88,501.84,4.0
+BL-10088,2025-06-29,Giza,Store,House Blend 500g,Beans,1,12.5,12.5,
+BL-10144,2025-06-29,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10175,2025-06-29,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10803,2025-06-29,Cairo,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-11256,2025-06-29,Giza,Online,Burr Grinder,Equipment,1,89.0,89.0,4.0
+BL-11877,2025-06-29,Cairo,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-11276,2025-06-30,Alexandria,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-12326,2025-06-30,Alexandria,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-10414,2025-07-01,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,
+BL-11065,2025-07-01,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-11544,2025-07-01,Giza,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-11696,2025-07-01,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-11735,2025-07-01,Giza,Online,Travel Mug,Merch,2,16.0,32.0,3.0
+BL-10118,2025-07-02,Cairo,Online,Oat Latte Can,Drinks,4,2.61,10.44,5.0
+BL-10307,2025-07-02,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-10569,2025-07-02,Cairo,Online,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-11676,2025-07-02,Alexandria,Online,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-10478,2025-07-03,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,3.0
+BL-10500,2025-07-03,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10599,2025-07-03,Mansoura,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-11017,2025-07-03,Cairo,Online,Espresso Beans 1kg,Beans,8,21.0,168.0,4.0
+BL-11421,2025-07-03,Giza,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11494,2025-07-03,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-10532,2025-07-04,Giza,Wholesale,Espresso Beans 1kg,Beans,6,17.22,103.32,5.0
+BL-11064,2025-07-04,Giza,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-11891,2025-07-04,Cairo,Online,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-12304,2025-07-04,Cairo,Wholesale,Travel Mug,Merch,12,13.12,157.44,5.0
+BL-10142,2025-07-05,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-11884,2025-07-05,Giza,Online,Pour-over Kit,Equipment,3,30.6,91.8,5.0
+BL-12059,2025-07-05,Cairo,Online,Cold Brew Bottle,Drinks,1,3.8,3.8,
+BL-10102,2025-07-06,Giza,Store,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-10147,2025-07-06,Cairo,Store,Oat Latte Can,Drinks,5,2.61,13.05,5.0
+BL-10960,2025-07-06,Giza,Online,House Blend 500g,Beans,5,11.25,56.25,
+BL-11018,2025-07-06,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,
+BL-11053,2025-07-06,Giza,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,5.0
+BL-11450,2025-07-06,Cairo,Wholesale,House Blend 500g,Beans,6,10.25,61.5,5.0
+BL-11733,2025-07-06,Alexandria,Online,Pour-over Kit,Equipment,4,30.6,122.4,4.0
+BL-10482,2025-07-07,Cairo,Wholesale,Oat Latte Can,Drinks,6,2.38,14.28,4.0
+BL-10819,2025-07-07,Giza,Store,House Blend 500g,Beans,4,11.25,45.0,
+BL-11368,2025-07-07,Mansoura,Online,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-11865,2025-07-07,Mansoura,Online,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-10272,2025-07-08,Cairo,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,3.0
+BL-10413,2025-07-08,Cairo,Online,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-10874,2025-07-08,Mansoura,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-10941,2025-07-08,Cairo,Online,Travel Mug,Merch,1,14.4,14.4,5.0
+BL-11656,2025-07-08,Giza,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10547,2025-07-09,Alexandria,Store,Pour-over Kit,Equipment,3,30.6,91.8,4.0
+BL-10738,2025-07-09,Cairo,Store,House Blend 500g,Beans,6,12.5,75.0,
+BL-10776,2025-07-09,Cairo,Online,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-11663,2025-07-09,Cairo,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,3.0
+BL-10064,2025-07-10,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11149,2025-07-10,Giza,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-11282,2025-07-10,Mansoura,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-11492,2025-07-10,Cairo,Online,Travel Mug,Merch,3,16.0,48.0,4.0
+BL-11552,2025-07-10,Mansoura,Store,Decaf 500g,Beans,2,13.5,27.0,4.0
+BL-11832,2025-07-10,Cairo,Online,Burr Grinder,Equipment,6,89.0,534.0,5.0
+BL-10550,2025-07-11,Giza,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-10924,2025-07-11,Alexandria,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,5.0
+BL-11436,2025-07-11,Alexandria,Online,Travel Mug,Merch,3,14.4,43.2,5.0
+BL-12386,2025-07-11,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-10013,2025-07-12,Giza,Store,House Blend 500g,Beans,4,11.25,45.0,3.0
+BL-10135,2025-07-12,Mansoura,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-10305,2025-07-12,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-10515,2025-07-12,Cairo,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-11291,2025-07-12,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11389,2025-07-12,Mansoura,Store,House Blend 500g,Beans,4,12.5,50.0,
+BL-11961,2025-07-12,Cairo,Wholesale,Cold Brew Bottle,Drinks,12,3.12,37.44,5.0
+BL-11975,2025-07-12,Cairo,Store,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-12130,2025-07-12,Cairo,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,5.0
+BL-10331,2025-07-13,Giza,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,3.0
+BL-10468,2025-07-13,Giza,Wholesale,Oat Latte Can,Drinks,36,2.38,85.68,5.0
+BL-10485,2025-07-13,Cairo,Store,Espresso Beans 1kg,Beans,1,21.0,21.0,5.0
+BL-10607,2025-07-13,Alexandria,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,3.0
+BL-10656,2025-07-13,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-10817,2025-07-13,Mansoura,Online,House Blend 500g,Beans,6,12.5,75.0,
+BL-11316,2025-07-13,Alexandria,Online,Pour-over Kit,Equipment,3,34.0,102.0,3.0
+BL-11608,2025-07-13,Giza,Wholesale,Travel Mug,Merch,12,13.12,157.44,5.0
+BL-12073,2025-07-13,Cairo,Online,Pour-over Kit,Equipment,2,30.6,61.2,5.0
+BL-12365,2025-07-13,Alexandria,Online,House Blend 500g,Beans,3,11.25,33.75,5.0
+BL-11109,2025-07-14,Cairo,Store,Travel Mug,Merch,7,16.0,112.0,3.0
+BL-11688,2025-07-14,Giza,Online,House Blend 500g,Beans,3,12.5,37.5,
+BL-12216,2025-07-14,Cairo,Online,Travel Mug,Merch,1,16.0,16.0,5.0
+BL-10436,2025-07-15,Cairo,Online,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-10688,2025-07-15,Cairo,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10808,2025-07-15,Mansoura,Online,Travel Mug,Merch,4,16.0,64.0,
+BL-10913,2025-07-15,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-11533,2025-07-15,Alexandria,Online,Oat Latte Can,Drinks,2,2.9,5.8,3.0
+BL-11665,2025-07-15,Giza,Store,Espresso Beans 1kg,Beans,4,18.9,75.6,3.0
+BL-11734,2025-07-15,Alexandria,Online,Travel Mug,Merch,5,16.0,80.0,
+BL-11756,2025-07-15,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-10242,2025-07-16,Cairo,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-10343,2025-07-16,Alexandria,Store,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-10445,2025-07-16,Giza,Online,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-10638,2025-07-16,Giza,Wholesale,Decaf 500g,Beans,18,11.07,199.26,
+BL-10750,2025-07-16,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-11716,2025-07-16,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10255,2025-07-17,Giza,Store,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-10505,2025-07-17,Giza,Online,Pour-over Kit,Equipment,5,34.0,170.0,3.0
+BL-10562,2025-07-17,Alexandria,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-10796,2025-07-17,Cairo,Wholesale,House Blend 500g,Beans,30,10.25,307.5,
+BL-11476,2025-07-17,Cairo,Store,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-11618,2025-07-17,Mansoura,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-11791,2025-07-17,Cairo,Wholesale,Oat Latte Can,Drinks,6,2.38,14.28,
+BL-11119,2025-07-18,Cairo,Online,House Blend 500g,Beans,10,12.5,125.0,4.0
+BL-11268,2025-07-18,Alexandria,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-11342,2025-07-18,Cairo,Online,Decaf 500g,Beans,6,13.5,81.0,5.0
+BL-11469,2025-07-18,Alexandria,Online,Oat Latte Can,Drinks,1,2.9,2.9,
+BL-11568,2025-07-18,Cairo,Store,House Blend 500g,Beans,6,11.25,67.5,3.0
+BL-11641,2025-07-18,Alexandria,Store,Travel Mug,Merch,2,14.4,28.8,
+BL-12394,2025-07-18,Alexandria,Wholesale,House Blend 500g,Beans,12,10.25,123.0,5.0
+BL-11023,2025-07-19,Giza,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11145,2025-07-19,Cairo,Store,Espresso Beans 1kg,Beans,7,18.9,132.3,4.0
+BL-11319,2025-07-19,Cairo,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-11394,2025-07-19,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-11400,2025-07-19,Alexandria,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-11577,2025-07-19,Giza,Store,Oat Latte Can,Drinks,6,2.61,15.66,3.0
+BL-11713,2025-07-19,Alexandria,Online,Travel Mug,Merch,2,16.0,32.0,4.0
+BL-11843,2025-07-19,Cairo,Store,Decaf 500g,Beans,6,13.5,81.0,5.0
+BL-11920,2025-07-19,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10026,2025-07-20,Cairo,Wholesale,Decaf 500g,Beans,36,11.07,398.52,
+BL-10170,2025-07-20,Cairo,Online,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-10385,2025-07-20,Giza,Store,Decaf 500g,Beans,4,13.5,54.0,3.0
+BL-10450,2025-07-20,Cairo,Store,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-10460,2025-07-20,Cairo,Wholesale,Pour-over Kit,Equipment,12,27.88,334.56,
+BL-10664,2025-07-20,Alexandria,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-10759,2025-07-20,Alexandria,Store,Oat Latte Can,Drinks,3,2.61,7.83,5.0
+BL-10974,2025-07-20,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,3.0
+BL-11073,2025-07-20,Giza,Wholesale,Oat Latte Can,Drinks,36,2.38,85.68,4.0
+BL-11275,2025-07-20,Giza,Store,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-11536,2025-07-20,Cairo,Wholesale,Pour-over Kit,Equipment,12,27.88,334.56,5.0
+BL-11923,2025-07-20,Alexandria,Online,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-12132,2025-07-20,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-12321,2025-07-20,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-12393,2025-07-20,Alexandria,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-10009,2025-07-21,Mansoura,Store,Travel Mug,Merch,8,16.0,128.0,
+BL-10092,2025-07-21,Cairo,Online,House Blend 500g,Beans,5,12.5,62.5,
+BL-10426,2025-07-21,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-10654,2025-07-21,Alexandria,Online,Cold Brew Bottle,Drinks,1,3.8,3.8,5.0
+BL-10687,2025-07-21,Giza,Online,House Blend 500g,Beans,4,11.25,45.0,4.0
+BL-10731,2025-07-21,Mansoura,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-11072,2025-07-21,Alexandria,Store,Pour-over Kit,Equipment,5,34.0,170.0,
+BL-11848,2025-07-21,Mansoura,Store,House Blend 500g,Beans,6,11.25,67.5,
+BL-11889,2025-07-21,Alexandria,Store,Travel Mug,Merch,5,16.0,80.0,5.0
+BL-12121,2025-07-21,Cairo,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,5.0
+BL-10816,2025-07-22,Mansoura,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10956,2025-07-22,Cairo,Online,Decaf 500g,Beans,5,13.5,67.5,5.0
+BL-11043,2025-07-22,Mansoura,Store,Espresso Beans 1kg,Beans,8,21.0,168.0,
+BL-11159,2025-07-22,Cairo,Store,Cold Brew Bottle,Drinks,2,3.42,6.84,
+BL-11968,2025-07-22,Mansoura,Store,Espresso Beans 1kg,Beans,1,21.0,21.0,4.0
+BL-10338,2025-07-23,Giza,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-10503,2025-07-23,Alexandria,Store,Oat Latte Can,Drinks,3,2.61,7.83,5.0
+BL-10560,2025-07-23,Cairo,Store,Oat Latte Can,Drinks,4,2.61,10.44,4.0
+BL-10674,2025-07-23,Alexandria,Online,Travel Mug,Merch,5,14.4,72.0,5.0
+BL-10523,2025-07-24,Giza,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,4.0
+BL-10781,2025-07-24,Giza,Wholesale,Oat Latte Can,Drinks,42,2.38,99.96,
+BL-11187,2025-07-24,Alexandria,Store,Pour-over Kit,Equipment,4,34.0,136.0,4.0
+BL-10165,2025-07-25,Cairo,Online,Decaf 500g,Beans,5,13.5,67.5,5.0
+BL-11178,2025-07-25,Giza,Wholesale,Espresso Beans 1kg,Beans,48,17.22,826.56,4.0
+BL-11498,2025-07-25,Alexandria,Online,Espresso Beans 1kg,Beans,6,18.9,113.4,5.0
+BL-11711,2025-07-25,Giza,Store,Pour-over Kit,Equipment,2,34.0,68.0,4.0
+BL-11943,2025-07-25,Cairo,Online,Burr Grinder,Equipment,2,80.1,160.2,5.0
+BL-12028,2025-07-25,Giza,Online,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-12095,2025-07-25,Cairo,Online,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-12148,2025-07-25,Cairo,Store,Oat Latte Can,Drinks,3,2.61,7.83,3.0
+BL-11570,2025-07-26,Giza,Wholesale,Travel Mug,Merch,12,13.12,157.44,5.0
+BL-12207,2025-07-26,Alexandria,Store,Oat Latte Can,Drinks,7,2.9,20.3,
+BL-12218,2025-07-26,Giza,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-12229,2025-07-26,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10357,2025-07-27,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-11161,2025-07-27,Mansoura,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-12139,2025-07-27,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-12173,2025-07-27,Mansoura,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10539,2025-07-28,Alexandria,Online,Burr Grinder,Equipment,3,80.1,240.3,
+BL-10735,2025-07-28,Giza,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11333,2025-07-28,Mansoura,Store,Oat Latte Can,Drinks,2,2.9,5.8,
+BL-11474,2025-07-28,Mansoura,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-11715,2025-07-28,Cairo,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,5.0
+BL-11927,2025-07-28,Alexandria,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-10548,2025-07-29,Cairo,Store,Espresso Beans 1kg,Beans,5,18.9,94.5,4.0
+BL-10707,2025-07-29,Alexandria,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11419,2025-07-29,Cairo,Wholesale,House Blend 500g,Beans,30,10.25,307.5,5.0
+BL-11566,2025-07-29,Cairo,Wholesale,House Blend 500g,Beans,24,10.25,246.0,
+BL-11812,2025-07-29,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-10493,2025-07-30,Alexandria,Online,House Blend 500g,Beans,3,11.25,33.75,4.0
+BL-10973,2025-07-30,Alexandria,Store,Pour-over Kit,Equipment,1,34.0,34.0,5.0
+BL-11188,2025-07-30,Alexandria,Store,Decaf 500g,Beans,6,13.5,81.0,
+BL-11278,2025-07-30,Giza,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,3.0
+BL-12001,2025-07-30,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,3.0
+BL-12245,2025-07-30,Cairo,Online,Oat Latte Can,Drinks,3,2.61,7.83,5.0
+BL-12288,2025-07-30,Mansoura,Online,Cold Brew Bottle,Drinks,1,3.8,3.8,5.0
+BL-10030,2025-07-31,Cairo,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10498,2025-07-31,Cairo,Online,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-11358,2025-07-31,Cairo,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-11481,2025-07-31,Alexandria,Online,House Blend 500g,Beans,7,12.5,87.5,
+BL-11963,2025-07-31,Cairo,Store,Oat Latte Can,Drinks,1,2.9,2.9,
+BL-12120,2025-07-31,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10378,2025-08-01,Mansoura,Online,Pour-over Kit,Equipment,4,30.6,122.4,5.0
+BL-11085,2025-08-01,Cairo,Online,Oat Latte Can,Drinks,8,2.9,23.2,
+BL-11180,2025-08-01,Cairo,Wholesale,Decaf 500g,Beans,24,11.07,265.68,4.0
+BL-11345,2025-08-01,Alexandria,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-11614,2025-08-01,Alexandria,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,3.0
+BL-11710,2025-08-01,Cairo,Online,Travel Mug,Merch,3,14.4,43.2,3.0
+BL-11714,2025-08-01,Cairo,Online,Cold Brew Bottle,Drinks,4,3.42,13.68,5.0
+BL-11763,2025-08-01,Cairo,Wholesale,House Blend 500g,Beans,30,10.25,307.5,
+BL-11899,2025-08-01,Cairo,Online,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-11950,2025-08-01,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-12311,2025-08-01,Giza,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-11242,2025-08-02,Giza,Store,Pour-over Kit,Equipment,2,34.0,68.0,3.0
+BL-11729,2025-08-02,Giza,Wholesale,Oat Latte Can,Drinks,42,2.38,99.96,5.0
+BL-11959,2025-08-02,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-12065,2025-08-02,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-12109,2025-08-02,Cairo,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-10014,2025-08-03,Mansoura,Online,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-10353,2025-08-03,Cairo,Online,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-10462,2025-08-03,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-10927,2025-08-03,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-10933,2025-08-03,Giza,Online,Espresso Beans 1kg,Beans,6,18.9,113.4,4.0
+BL-10940,2025-08-03,Giza,Online,Travel Mug,Merch,2,14.4,28.8,5.0
+BL-10967,2025-08-03,Giza,Store,Burr Grinder,Equipment,1,89.0,89.0,4.0
+BL-11244,2025-08-03,Giza,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,3.0
+BL-12106,2025-08-03,Alexandria,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,3.0
+BL-10048,2025-08-04,Giza,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10377,2025-08-04,Cairo,Wholesale,House Blend 500g,Beans,18,10.25,184.5,
+BL-10670,2025-08-04,Cairo,Store,Espresso Beans 1kg,Beans,8,21.0,168.0,3.0
+BL-10922,2025-08-04,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-11030,2025-08-04,Cairo,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-11438,2025-08-04,Giza,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,5.0
+BL-11981,2025-08-04,Cairo,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-12191,2025-08-04,Alexandria,Store,Oat Latte Can,Drinks,5,2.61,13.05,3.0
+BL-12315,2025-08-04,Alexandria,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-10042,2025-08-05,Giza,Online,House Blend 500g,Beans,6,12.5,75.0,
+BL-10752,2025-08-05,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11169,2025-08-05,Mansoura,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-11303,2025-08-05,Giza,Wholesale,Burr Grinder,Equipment,12,72.98,875.76,5.0
+BL-11427,2025-08-05,Alexandria,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,4.0
+BL-11434,2025-08-05,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-12035,2025-08-05,Cairo,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,
+BL-12134,2025-08-05,Cairo,Store,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-10123,2025-08-06,Alexandria,Online,Cold Brew Bottle,Drinks,6,3.42,20.52,4.0
+BL-10595,2025-08-06,Cairo,Online,House Blend 500g,Beans,4,11.25,45.0,5.0
+BL-10939,2025-08-06,Giza,Wholesale,Espresso Beans 1kg,Beans,12,17.22,206.64,5.0
+BL-11056,2025-08-06,Mansoura,Wholesale,Espresso Beans 1kg,Beans,6,17.22,103.32,5.0
+BL-11140,2025-08-06,Alexandria,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,5.0
+BL-11191,2025-08-06,Giza,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,
+BL-11601,2025-08-06,Cairo,Wholesale,Cold Brew Bottle,Drinks,42,3.12,131.04,
+BL-11617,2025-08-06,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,
+BL-12225,2025-08-06,Cairo,Online,Oat Latte Can,Drinks,2,2.61,5.22,
+BL-10025,2025-08-07,Cairo,Store,Pour-over Kit,Equipment,4,34.0,136.0,
+BL-10029,2025-08-07,Alexandria,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-10137,2025-08-07,Alexandria,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-10403,2025-08-07,Cairo,Online,Oat Latte Can,Drinks,5,2.61,13.05,3.0
+BL-11111,2025-08-07,Cairo,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,4.0
+BL-11685,2025-08-07,Cairo,Store,Oat Latte Can,Drinks,5,2.61,13.05,5.0
+BL-10363,2025-08-08,Giza,Online,House Blend 500g,Beans,5,11.25,56.25,5.0
+BL-10628,2025-08-08,Alexandria,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,
+BL-11070,2025-08-08,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11415,2025-08-08,Cairo,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-11657,2025-08-08,Alexandria,Wholesale,Oat Latte Can,Drinks,30,2.38,71.4,5.0
+BL-11658,2025-08-08,Mansoura,Store,Oat Latte Can,Drinks,4,2.61,10.44,5.0
+BL-10109,2025-08-09,Mansoura,Wholesale,Espresso Beans 1kg,Beans,48,17.22,826.56,
+BL-10138,2025-08-09,Giza,Store,Oat Latte Can,Drinks,6,2.61,15.66,5.0
+BL-10148,2025-08-09,Cairo,Store,Decaf 500g,Beans,4,13.5,54.0,3.0
+BL-10283,2025-08-09,Mansoura,Online,House Blend 500g,Beans,5,11.25,56.25,5.0
+BL-10860,2025-08-09,Cairo,Online,Oat Latte Can,Drinks,3,2.61,7.83,4.0
+BL-10905,2025-08-09,Mansoura,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,4.0
+BL-11003,2025-08-09,Cairo,Store,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-11005,2025-08-09,Giza,Store,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-11895,2025-08-09,Giza,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-12005,2025-08-09,Giza,Online,House Blend 500g,Beans,2,11.25,22.5,5.0
+BL-10103,2025-08-10,Cairo,Online,House Blend 500g,Beans,3,12.5,37.5,3.0
+BL-10183,2025-08-10,Giza,Online,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-10429,2025-08-10,Alexandria,Online,House Blend 500g,Beans,8,12.5,100.0,5.0
+BL-10681,2025-08-10,Alexandria,Online,Travel Mug,Merch,3,14.4,43.2,4.0
+BL-10736,2025-08-10,Giza,Online,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-11225,2025-08-10,Mansoura,Store,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-11269,2025-08-10,Giza,Wholesale,Oat Latte Can,Drinks,36,2.38,85.68,5.0
+BL-11829,2025-08-10,Cairo,Online,Espresso Beans 1kg,Beans,7,18.9,132.3,4.0
+BL-12081,2025-08-10,Alexandria,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,4.0
+BL-10361,2025-08-11,Cairo,Store,Pour-over Kit,Equipment,3,34.0,102.0,
+BL-10524,2025-08-11,Giza,Store,Burr Grinder,Equipment,2,89.0,178.0,
+BL-11725,2025-08-11,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-11978,2025-08-11,Mansoura,Store,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-12103,2025-08-11,Alexandria,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-11906,2025-08-12,Mansoura,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11334,2025-08-13,Alexandria,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-11646,2025-08-13,Alexandria,Store,Travel Mug,Merch,4,16.0,64.0,
+BL-11854,2025-08-13,Alexandria,Online,Pour-over Kit,Equipment,1,30.6,30.6,5.0
+BL-11862,2025-08-13,Mansoura,Online,House Blend 500g,Beans,2,12.5,25.0,
+BL-12117,2025-08-13,Giza,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-12257,2025-08-13,Mansoura,Online,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-12335,2025-08-13,Alexandria,Online,House Blend 500g,Beans,3,11.25,33.75,
+BL-11252,2025-08-14,Cairo,Online,House Blend 500g,Beans,3,11.25,33.75,3.0
+BL-11538,2025-08-14,Giza,Online,House Blend 500g,Beans,1,12.5,12.5,5.0
+BL-11551,2025-08-14,Giza,Online,House Blend 500g,Beans,1,12.5,12.5,5.0
+BL-12282,2025-08-14,Alexandria,Store,Espresso Beans 1kg,Beans,7,18.9,132.3,4.0
+BL-12329,2025-08-14,Cairo,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,5.0
+BL-10287,2025-08-15,Giza,Wholesale,Travel Mug,Merch,36,13.12,472.32,4.0
+BL-10365,2025-08-15,Alexandria,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-11457,2025-08-15,Alexandria,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11475,2025-08-15,Giza,Online,Travel Mug,Merch,4,14.4,57.6,5.0
+BL-11670,2025-08-15,Mansoura,Online,House Blend 500g,Beans,8,12.5,100.0,5.0
+BL-11856,2025-08-15,Alexandria,Store,Pour-over Kit,Equipment,4,34.0,136.0,4.0
+BL-12190,2025-08-15,Mansoura,Store,Pour-over Kit,Equipment,6,34.0,204.0,4.0
+BL-10199,2025-08-16,Cairo,Online,Decaf 500g,Beans,5,12.15,60.75,4.0
+BL-10251,2025-08-16,Mansoura,Wholesale,Espresso Beans 1kg,Beans,36,17.22,619.92,
+BL-10958,2025-08-16,Cairo,Online,Espresso Beans 1kg,Beans,1,21.0,21.0,5.0
+BL-10965,2025-08-16,Cairo,Store,Cold Brew Bottle,Drinks,7,3.8,26.6,5.0
+BL-11643,2025-08-16,Alexandria,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-11868,2025-08-16,Alexandria,Store,House Blend 500g,Beans,4,11.25,45.0,3.0
+BL-10047,2025-08-17,Giza,Store,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-10310,2025-08-17,Cairo,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10717,2025-08-17,Alexandria,Store,House Blend 500g,Beans,4,12.5,50.0,3.0
+BL-10985,2025-08-17,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-11051,2025-08-17,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-11323,2025-08-17,Alexandria,Wholesale,Pour-over Kit,Equipment,6,27.88,167.28,
+BL-11554,2025-08-17,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10507,2025-08-18,Giza,Online,House Blend 500g,Beans,2,11.25,22.5,
+BL-10712,2025-08-18,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-12159,2025-08-18,Mansoura,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-12227,2025-08-18,Giza,Online,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-10093,2025-08-19,Alexandria,Store,Burr Grinder,Equipment,7,89.0,623.0,5.0
+BL-10312,2025-08-19,Giza,Wholesale,House Blend 500g,Beans,36,10.25,369.0,4.0
+BL-10897,2025-08-19,Giza,Online,Burr Grinder,Equipment,5,80.1,400.5,
+BL-11087,2025-08-19,Alexandria,Online,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-11257,2025-08-19,Cairo,Wholesale,Travel Mug,Merch,36,13.12,472.32,5.0
+BL-12019,2025-08-19,Mansoura,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-10420,2025-08-20,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-10438,2025-08-20,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-10630,2025-08-20,Alexandria,Wholesale,Travel Mug,Merch,12,13.12,157.44,
+BL-10704,2025-08-20,Alexandria,Wholesale,House Blend 500g,Beans,54,10.25,553.5,3.0
+BL-10867,2025-08-20,Alexandria,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,4.0
+BL-11113,2025-08-20,Cairo,Online,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-11139,2025-08-20,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-10015,2025-08-21,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10082,2025-08-21,Cairo,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,
+BL-10448,2025-08-21,Mansoura,Store,Travel Mug,Merch,3,14.4,43.2,4.0
+BL-11461,2025-08-21,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11933,2025-08-21,Alexandria,Online,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-11195,2025-08-22,Cairo,Wholesale,Espresso Beans 1kg,Beans,36,17.22,619.92,4.0
+BL-11290,2025-08-22,Mansoura,Online,House Blend 500g,Beans,7,12.5,87.5,
+BL-11801,2025-08-22,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-11892,2025-08-22,Giza,Wholesale,House Blend 500g,Beans,12,10.25,123.0,
+BL-11913,2025-08-22,Alexandria,Online,Espresso Beans 1kg,Beans,4,18.9,75.6,4.0
+BL-10433,2025-08-23,Mansoura,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-10456,2025-08-23,Cairo,Wholesale,Pour-over Kit,Equipment,60,27.88,1672.8,5.0
+BL-10474,2025-08-23,Alexandria,Online,Pour-over Kit,Equipment,5,34.0,170.0,4.0
+BL-10719,2025-08-23,Giza,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,3.0
+BL-11224,2025-08-23,Giza,Store,Cold Brew Bottle,Drinks,7,3.42,23.94,5.0
+BL-11597,2025-08-23,Cairo,Wholesale,House Blend 500g,Beans,18,10.25,184.5,5.0
+BL-12043,2025-08-23,Alexandria,Online,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-12291,2025-08-23,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.42,17.1,3.0
+BL-10432,2025-08-24,Giza,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,5.0
+BL-11049,2025-08-24,Cairo,Store,Oat Latte Can,Drinks,2,2.61,5.22,4.0
+BL-11343,2025-08-24,Mansoura,Wholesale,House Blend 500g,Beans,36,10.25,369.0,5.0
+BL-10238,2025-08-25,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,3.0
+BL-10797,2025-08-25,Giza,Online,Travel Mug,Merch,3,14.4,43.2,
+BL-10823,2025-08-25,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.42,13.68,
+BL-11058,2025-08-25,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-12004,2025-08-25,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-10191,2025-08-26,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-10695,2025-08-26,Mansoura,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,
+BL-11782,2025-08-26,Cairo,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-11885,2025-08-26,Cairo,Store,Decaf 500g,Beans,6,13.5,81.0,4.0
+BL-10078,2025-08-27,Giza,Store,House Blend 500g,Beans,4,12.5,50.0,
+BL-10086,2025-08-27,Mansoura,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10591,2025-08-27,Giza,Store,Decaf 500g,Beans,2,13.5,27.0,4.0
+BL-10700,2025-08-27,Cairo,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-10795,2025-08-27,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-11095,2025-08-27,Giza,Wholesale,Oat Latte Can,Drinks,30,2.38,71.4,
+BL-10131,2025-08-28,Giza,Online,Travel Mug,Merch,4,14.4,57.6,
+BL-10222,2025-08-28,Cairo,Online,Travel Mug,Merch,6,16.0,96.0,4.0
+BL-10669,2025-08-28,Mansoura,Store,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-11912,2025-08-28,Giza,Online,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-12200,2025-08-28,Alexandria,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-12248,2025-08-28,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10204,2025-08-29,Giza,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,
+BL-10330,2025-08-29,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10406,2025-08-29,Mansoura,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-10950,2025-08-29,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11314,2025-08-29,Cairo,Wholesale,Cold Brew Bottle,Drinks,12,3.12,37.44,5.0
+BL-11654,2025-08-29,Cairo,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-11992,2025-08-29,Cairo,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-12116,2025-08-29,Alexandria,Online,House Blend 500g,Beans,2,12.5,25.0,3.0
+BL-12144,2025-08-29,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-12166,2025-08-29,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10258,2025-08-30,Alexandria,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10473,2025-08-30,Cairo,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-10697,2025-08-30,Cairo,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,
+BL-10842,2025-08-30,Cairo,Online,Travel Mug,Merch,4,16.0,64.0,3.0
+BL-10937,2025-08-30,Cairo,Store,Burr Grinder,Equipment,1,89.0,89.0,5.0
+BL-11817,2025-08-30,Alexandria,Store,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-12115,2025-08-30,Cairo,Online,Travel Mug,Merch,2,16.0,32.0,
+BL-10141,2025-08-31,Giza,Store,Travel Mug,Merch,4,14.4,57.6,
+BL-10487,2025-08-31,Giza,Store,Pour-over Kit,Equipment,4,34.0,136.0,
+BL-11123,2025-08-31,Cairo,Store,Decaf 500g,Beans,9,12.15,109.35,
+BL-11151,2025-08-31,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-11367,2025-08-31,Giza,Online,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-12082,2025-08-31,Alexandria,Online,House Blend 500g,Beans,9,12.5,112.5,4.0
+BL-10477,2025-09-01,Cairo,Store,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-10706,2025-09-01,Giza,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10901,2025-09-01,Giza,Online,Pour-over Kit,Equipment,2,30.6,61.2,4.0
+BL-11016,2025-09-01,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-10761,2025-09-02,Cairo,Wholesale,Decaf 500g,Beans,12,11.07,132.84,
+BL-11152,2025-09-02,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-11709,2025-09-02,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-11949,2025-09-02,Alexandria,Store,Pour-over Kit,Equipment,7,34.0,238.0,5.0
+BL-10059,2025-09-03,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.42,13.68,
+BL-10106,2025-09-03,Mansoura,Wholesale,Travel Mug,Merch,24,13.12,314.88,5.0
+BL-10193,2025-09-03,Giza,Online,Oat Latte Can,Drinks,3,2.61,7.83,5.0
+BL-10702,2025-09-03,Cairo,Online,Burr Grinder,Equipment,5,89.0,445.0,
+BL-10846,2025-09-03,Alexandria,Store,Decaf 500g,Beans,2,13.5,27.0,
+BL-11741,2025-09-03,Cairo,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,
+BL-10440,2025-09-04,Giza,Online,Travel Mug,Merch,5,14.4,72.0,5.0
+BL-11044,2025-09-04,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-11117,2025-09-04,Cairo,Wholesale,Oat Latte Can,Drinks,30,2.38,71.4,5.0
+BL-11132,2025-09-04,Giza,Online,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-11800,2025-09-04,Giza,Online,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-10166,2025-09-05,Mansoura,Store,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10677,2025-09-05,Cairo,Online,Travel Mug,Merch,4,14.4,57.6,
+BL-11513,2025-09-05,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-11745,2025-09-05,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,3.0
+BL-11890,2025-09-05,Giza,Store,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-12018,2025-09-05,Mansoura,Online,Decaf 500g,Beans,4,13.5,54.0,4.0
+BL-12240,2025-09-05,Cairo,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,
+BL-10051,2025-09-06,Giza,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-10399,2025-09-06,Giza,Online,Burr Grinder,Equipment,3,89.0,267.0,
+BL-11147,2025-09-06,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-11237,2025-09-06,Giza,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-11980,2025-09-06,Giza,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-10382,2025-09-07,Giza,Store,Espresso Beans 1kg,Beans,7,21.0,147.0,3.0
+BL-10577,2025-09-07,Mansoura,Wholesale,House Blend 500g,Beans,30,10.25,307.5,3.0
+BL-10861,2025-09-07,Alexandria,Online,House Blend 500g,Beans,1,11.25,11.25,
+BL-11091,2025-09-07,Cairo,Online,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-10060,2025-09-08,Alexandria,Store,Travel Mug,Merch,4,14.4,57.6,
+BL-10164,2025-09-08,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10777,2025-09-08,Cairo,Store,Oat Latte Can,Drinks,5,2.61,13.05,3.0
+BL-10981,2025-09-08,Mansoura,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,5.0
+BL-11083,2025-09-08,Giza,Online,Decaf 500g,Beans,5,13.5,67.5,
+BL-11910,2025-09-08,Giza,Wholesale,Espresso Beans 1kg,Beans,12,17.22,206.64,4.0
+BL-12024,2025-09-08,Cairo,Wholesale,Burr Grinder,Equipment,12,72.98,875.76,
+BL-12208,2025-09-08,Mansoura,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-10593,2025-09-09,Alexandria,Store,Cold Brew Bottle,Drinks,1,3.8,3.8,4.0
+BL-10856,2025-09-09,Giza,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-11341,2025-09-09,Giza,Store,Pour-over Kit,Equipment,3,34.0,102.0,
+BL-11855,2025-09-09,Alexandria,Wholesale,Espresso Beans 1kg,Beans,12,17.22,206.64,
+BL-12068,2025-09-09,Alexandria,Online,Pour-over Kit,Equipment,5,34.0,170.0,
+BL-10202,2025-09-10,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10224,2025-09-10,Alexandria,Online,Burr Grinder,Equipment,4,89.0,356.0,4.0
+BL-10635,2025-09-10,Cairo,Wholesale,House Blend 500g,Beans,12,10.25,123.0,4.0
+BL-10845,2025-09-10,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11168,2025-09-10,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10022,2025-09-11,Alexandria,Store,Decaf 500g,Beans,5,13.5,67.5,3.0
+BL-10588,2025-09-11,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-10793,2025-09-11,Giza,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,5.0
+BL-11156,2025-09-11,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-11376,2025-09-11,Mansoura,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-12279,2025-09-11,Alexandria,Store,House Blend 500g,Beans,1,12.5,12.5,
+BL-11270,2025-09-12,Alexandria,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-12347,2025-09-12,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,
+BL-10567,2025-09-13,Alexandria,Online,Cold Brew Bottle,Drinks,6,3.42,20.52,3.0
+BL-10709,2025-09-13,Alexandria,Store,Pour-over Kit,Equipment,5,30.6,153.0,
+BL-10898,2025-09-13,Giza,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-11247,2025-09-13,Alexandria,Store,Oat Latte Can,Drinks,1,2.61,2.61,5.0
+BL-11287,2025-09-13,Mansoura,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,5.0
+BL-11315,2025-09-13,Cairo,Online,Travel Mug,Merch,4,14.4,57.6,3.0
+BL-11613,2025-09-13,Giza,Online,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-12339,2025-09-13,Cairo,Store,House Blend 500g,Beans,4,11.25,45.0,4.0
+BL-10270,2025-09-14,Alexandria,Online,Espresso Beans 1kg,Beans,1,21.0,21.0,
+BL-10451,2025-09-14,Alexandria,Online,Espresso Beans 1kg,Beans,1,21.0,21.0,
+BL-10542,2025-09-14,Cairo,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-11002,2025-09-14,Mansoura,Store,Oat Latte Can,Drinks,5,2.9,14.5,3.0
+BL-11353,2025-09-14,Mansoura,Store,Espresso Beans 1kg,Beans,5,18.9,94.5,5.0
+BL-11773,2025-09-14,Alexandria,Online,Oat Latte Can,Drinks,2,2.61,5.22,5.0
+BL-10018,2025-09-15,Mansoura,Store,Pour-over Kit,Equipment,3,34.0,102.0,4.0
+BL-10948,2025-09-15,Mansoura,Wholesale,Travel Mug,Merch,18,13.12,236.16,5.0
+BL-10990,2025-09-15,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-11324,2025-09-15,Alexandria,Store,Travel Mug,Merch,6,16.0,96.0,
+BL-11383,2025-09-15,Mansoura,Wholesale,Oat Latte Can,Drinks,30,2.38,71.4,5.0
+BL-11523,2025-09-15,Cairo,Online,Burr Grinder,Equipment,1,89.0,89.0,3.0
+BL-12092,2025-09-15,Cairo,Online,Burr Grinder,Equipment,6,89.0,534.0,
+BL-10000,2025-09-16,Cairo,Wholesale,Travel Mug,Merch,18,13.12,236.16,4.0
+BL-10213,2025-09-16,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-11133,2025-09-16,Cairo,Online,Burr Grinder,Equipment,7,89.0,623.0,4.0
+BL-12007,2025-09-16,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.42,13.68,5.0
+BL-12021,2025-09-16,Alexandria,Store,Pour-over Kit,Equipment,6,34.0,204.0,3.0
+BL-12138,2025-09-16,Cairo,Wholesale,House Blend 500g,Beans,18,10.25,184.5,
+BL-12325,2025-09-16,Mansoura,Online,Decaf 500g,Beans,5,13.5,67.5,
+BL-10028,2025-09-17,Cairo,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,4.0
+BL-10121,2025-09-17,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-10154,2025-09-17,Mansoura,Online,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-10171,2025-09-17,Mansoura,Wholesale,Travel Mug,Merch,48,13.12,629.76,5.0
+BL-10364,2025-09-17,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10637,2025-09-17,Alexandria,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,4.0
+BL-11052,2025-09-17,Alexandria,Online,Oat Latte Can,Drinks,5,2.61,13.05,
+BL-11596,2025-09-17,Alexandria,Online,Espresso Beans 1kg,Beans,4,18.9,75.6,
+BL-11903,2025-09-17,Alexandria,Store,House Blend 500g,Beans,4,11.25,45.0,4.0
+BL-12177,2025-09-17,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,3.0
+BL-10227,2025-09-18,Cairo,Wholesale,Travel Mug,Merch,48,13.12,629.76,
+BL-10437,2025-09-18,Alexandria,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-10525,2025-09-18,Giza,Online,House Blend 500g,Beans,5,11.25,56.25,5.0
+BL-10888,2025-09-18,Alexandria,Online,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-11516,2025-09-18,Cairo,Store,Espresso Beans 1kg,Beans,5,18.9,94.5,4.0
+BL-12135,2025-09-18,Giza,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10172,2025-09-19,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10642,2025-09-19,Alexandria,Online,Pour-over Kit,Equipment,4,30.6,122.4,
+BL-10833,2025-09-19,Cairo,Store,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-10839,2025-09-19,Giza,Online,Travel Mug,Merch,5,16.0,80.0,
+BL-10881,2025-09-19,Alexandria,Online,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-11298,2025-09-19,Cairo,Store,Travel Mug,Merch,8,16.0,128.0,5.0
+BL-11939,2025-09-19,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,
+BL-11973,2025-09-19,Alexandria,Store,Espresso Beans 1kg,Beans,6,18.9,113.4,
+BL-12012,2025-09-19,Alexandria,Online,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-12108,2025-09-19,Cairo,Store,Travel Mug,Merch,6,14.4,86.4,5.0
+BL-12305,2025-09-19,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10061,2025-09-20,Cairo,Store,House Blend 500g,Beans,6,11.25,67.5,5.0
+BL-10223,2025-09-20,Cairo,Store,Cold Brew Bottle,Drinks,8,3.8,30.4,5.0
+BL-10521,2025-09-20,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-11336,2025-09-20,Giza,Wholesale,Cold Brew Bottle,Drinks,12,3.12,37.44,5.0
+BL-11531,2025-09-20,Alexandria,Store,House Blend 500g,Beans,6,12.5,75.0,3.0
+BL-10044,2025-09-21,Giza,Online,Cold Brew Bottle,Drinks,7,3.8,26.6,4.0
+BL-10085,2025-09-21,Giza,Wholesale,Decaf 500g,Beans,30,11.07,332.1,5.0
+BL-10300,2025-09-21,Giza,Online,Oat Latte Can,Drinks,6,2.61,15.66,5.0
+BL-10454,2025-09-21,Giza,Store,Travel Mug,Merch,1,14.4,14.4,3.0
+BL-10551,2025-09-21,Cairo,Online,Decaf 500g,Beans,7,13.5,94.5,5.0
+BL-10904,2025-09-21,Alexandria,Store,Travel Mug,Merch,5,16.0,80.0,
+BL-11068,2025-09-21,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11183,2025-09-21,Mansoura,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,4.0
+BL-11636,2025-09-21,Giza,Store,Decaf 500g,Beans,4,12.15,48.6,5.0
+BL-11852,2025-09-21,Cairo,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,5.0
+BL-11909,2025-09-21,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10293,2025-09-22,Cairo,Online,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-10411,2025-09-22,Cairo,Online,Pour-over Kit,Equipment,4,30.6,122.4,5.0
+BL-10519,2025-09-22,Alexandria,Store,Pour-over Kit,Equipment,8,34.0,272.0,
+BL-11380,2025-09-22,Mansoura,Online,Travel Mug,Merch,6,14.4,86.4,4.0
+BL-12252,2025-09-22,Alexandria,Wholesale,House Blend 500g,Beans,36,10.25,369.0,4.0
+BL-10698,2025-09-23,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-11406,2025-09-23,Cairo,Store,Cold Brew Bottle,Drinks,9,3.8,34.2,
+BL-11449,2025-09-23,Mansoura,Online,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-11500,2025-09-23,Giza,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-12061,2025-09-23,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10236,2025-09-24,Cairo,Store,Pour-over Kit,Equipment,5,34.0,170.0,3.0
+BL-11292,2025-09-24,Alexandria,Online,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-11697,2025-09-24,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-12316,2025-09-24,Alexandria,Online,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-11101,2025-09-25,Mansoura,Wholesale,Decaf 500g,Beans,6,11.07,66.42,
+BL-11468,2025-09-25,Alexandria,Store,House Blend 500g,Beans,6,12.5,75.0,
+BL-11970,2025-09-25,Cairo,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-12076,2025-09-25,Cairo,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,4.0
+BL-12090,2025-09-25,Cairo,Online,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-12337,2025-09-25,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10541,2025-09-26,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-11142,2025-09-26,Cairo,Online,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-11645,2025-09-26,Giza,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,4.0
+BL-11934,2025-09-26,Giza,Online,Decaf 500g,Beans,10,13.5,135.0,
+BL-12391,2025-09-26,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10101,2025-09-27,Giza,Store,House Blend 500g,Beans,4,11.25,45.0,3.0
+BL-10167,2025-09-27,Giza,Online,Oat Latte Can,Drinks,8,2.9,23.2,4.0
+BL-10201,2025-09-27,Cairo,Wholesale,Travel Mug,Merch,24,13.12,314.88,4.0
+BL-10243,2025-09-27,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-10969,2025-09-27,Giza,Online,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-11246,2025-09-27,Mansoura,Store,Oat Latte Can,Drinks,2,2.9,5.8,3.0
+BL-11311,2025-09-27,Alexandria,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-11349,2025-09-27,Alexandria,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-11562,2025-09-27,Cairo,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,5.0
+BL-11632,2025-09-27,Cairo,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,4.0
+BL-12157,2025-09-27,Alexandria,Wholesale,Cold Brew Bottle,Drinks,12,3.12,37.44,5.0
+BL-12349,2025-09-27,Cairo,Wholesale,Pour-over Kit,Equipment,12,27.88,334.56,4.0
+BL-10073,2025-09-28,Alexandria,Online,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-10226,2025-09-28,Mansoura,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-10247,2025-09-28,Alexandria,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,5.0
+BL-10751,2025-09-28,Giza,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-10961,2025-09-28,Mansoura,Store,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-11313,2025-09-28,Giza,Store,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-11392,2025-09-28,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-11528,2025-09-28,Cairo,Online,Decaf 500g,Beans,4,13.5,54.0,4.0
+BL-11679,2025-09-28,Alexandria,Wholesale,Travel Mug,Merch,18,13.12,236.16,4.0
+BL-11740,2025-09-28,Giza,Online,House Blend 500g,Beans,6,12.5,75.0,
+BL-12066,2025-09-28,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-12122,2025-09-28,Giza,Online,House Blend 500g,Beans,4,12.5,50.0,3.0
+BL-10475,2025-09-29,Giza,Online,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-10576,2025-09-29,Cairo,Store,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-11020,2025-09-29,Giza,Store,Decaf 500g,Beans,4,13.5,54.0,
+BL-11780,2025-09-29,Giza,Store,House Blend 500g,Beans,8,12.5,100.0,5.0
+BL-12272,2025-09-29,Cairo,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,5.0
+BL-10574,2025-09-30,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10589,2025-09-30,Cairo,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,
+BL-11296,2025-09-30,Mansoura,Wholesale,House Blend 500g,Beans,24,10.25,246.0,5.0
+BL-11309,2025-09-30,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-12051,2025-09-30,Giza,Store,Decaf 500g,Beans,4,13.5,54.0,3.0
+BL-12242,2025-09-30,Giza,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10359,2025-10-01,Alexandria,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10418,2025-10-01,Giza,Store,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-10992,2025-10-01,Mansoura,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-11623,2025-10-01,Cairo,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,5.0
+BL-10070,2025-10-02,Cairo,Online,Decaf 500g,Beans,6,13.5,81.0,
+BL-10824,2025-10-02,Giza,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11032,2025-10-02,Alexandria,Store,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-11238,2025-10-02,Mansoura,Store,House Blend 500g,Beans,5,11.25,56.25,
+BL-11393,2025-10-02,Giza,Wholesale,House Blend 500g,Beans,30,10.25,307.5,3.0
+BL-11414,2025-10-02,Cairo,Online,House Blend 500g,Beans,7,12.5,87.5,3.0
+BL-12055,2025-10-02,Cairo,Online,Cold Brew Bottle,Drinks,6,3.42,20.52,5.0
+BL-10062,2025-10-03,Giza,Wholesale,Travel Mug,Merch,30,13.12,393.6,4.0
+BL-10152,2025-10-03,Mansoura,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10280,2025-10-03,Cairo,Online,Burr Grinder,Equipment,2,89.0,178.0,4.0
+BL-10896,2025-10-03,Cairo,Online,Pour-over Kit,Equipment,4,30.6,122.4,
+BL-11477,2025-10-03,Alexandria,Store,House Blend 500g,Beans,5,11.25,56.25,5.0
+BL-11499,2025-10-03,Alexandria,Online,Burr Grinder,Equipment,1,89.0,89.0,3.0
+BL-11682,2025-10-03,Cairo,Store,House Blend 500g,Beans,4,11.25,45.0,5.0
+BL-11730,2025-10-03,Cairo,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-12022,2025-10-03,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,
+BL-10195,2025-10-04,Alexandria,Online,Pour-over Kit,Equipment,3,34.0,102.0,3.0
+BL-10453,2025-10-04,Cairo,Store,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-10476,2025-10-04,Cairo,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-10590,2025-10-04,Alexandria,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-10799,2025-10-04,Alexandria,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-11337,2025-10-04,Cairo,Online,Cold Brew Bottle,Drinks,7,3.8,26.6,5.0
+BL-11339,2025-10-04,Cairo,Online,Decaf 500g,Beans,4,12.15,48.6,4.0
+BL-11582,2025-10-04,Alexandria,Online,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-10392,2025-10-05,Giza,Online,Oat Latte Can,Drinks,2,2.61,5.22,3.0
+BL-10517,2025-10-05,Giza,Store,Oat Latte Can,Drinks,4,2.61,10.44,5.0
+BL-10611,2025-10-05,Giza,Wholesale,Burr Grinder,Equipment,36,72.98,2627.28,5.0
+BL-11304,2025-10-05,Alexandria,Wholesale,Espresso Beans 1kg,Beans,48,17.22,826.56,4.0
+BL-11423,2025-10-05,Giza,Store,Pour-over Kit,Equipment,7,34.0,238.0,
+BL-11424,2025-10-05,Alexandria,Online,House Blend 500g,Beans,3,11.25,33.75,3.0
+BL-12249,2025-10-05,Cairo,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,5.0
+BL-12294,2025-10-05,Alexandria,Store,House Blend 500g,Beans,9,12.5,112.5,5.0
+BL-10107,2025-10-06,Cairo,Store,House Blend 500g,Beans,5,11.25,56.25,3.0
+BL-10494,2025-10-06,Alexandria,Store,Pour-over Kit,Equipment,3,34.0,102.0,4.0
+BL-11508,2025-10-06,Alexandria,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-12380,2025-10-06,Giza,Online,Burr Grinder,Equipment,2,89.0,178.0,3.0
+BL-10619,2025-10-07,Giza,Store,Oat Latte Can,Drinks,5,2.61,13.05,5.0
+BL-10718,2025-10-07,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-11272,2025-10-07,Alexandria,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-11532,2025-10-07,Cairo,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-11647,2025-10-07,Giza,Store,House Blend 500g,Beans,10,12.5,125.0,5.0
+BL-11766,2025-10-07,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-11896,2025-10-07,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-12268,2025-10-07,Cairo,Online,Decaf 500g,Beans,6,13.5,81.0,3.0
+BL-12101,2025-10-08,Alexandria,Store,Burr Grinder,Equipment,5,89.0,445.0,
+BL-12104,2025-10-08,Mansoura,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,5.0
+BL-10034,2025-10-09,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10415,2025-10-09,Alexandria,Online,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-10598,2025-10-09,Alexandria,Store,Cold Brew Bottle,Drinks,7,3.42,23.94,5.0
+BL-10910,2025-10-09,Giza,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,5.0
+BL-11335,2025-10-09,Mansoura,Wholesale,Travel Mug,Merch,12,13.12,157.44,4.0
+BL-11802,2025-10-09,Alexandria,Store,Travel Mug,Merch,4,16.0,64.0,
+BL-11811,2025-10-09,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,3.0
+BL-11871,2025-10-09,Cairo,Online,Travel Mug,Merch,1,16.0,16.0,
+BL-12006,2025-10-09,Alexandria,Store,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-10784,2025-10-10,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-10836,2025-10-10,Mansoura,Store,Decaf 500g,Beans,2,12.15,24.3,5.0
+BL-11077,2025-10-10,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-11330,2025-10-10,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-11388,2025-10-10,Giza,Online,Oat Latte Can,Drinks,5,2.61,13.05,5.0
+BL-11411,2025-10-10,Cairo,Online,Oat Latte Can,Drinks,1,2.61,2.61,5.0
+BL-11969,2025-10-10,Giza,Store,Pour-over Kit,Equipment,2,34.0,68.0,5.0
+BL-12142,2025-10-10,Giza,Wholesale,House Blend 500g,Beans,18,10.25,184.5,5.0
+BL-12228,2025-10-10,Alexandria,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-12344,2025-10-10,Mansoura,Online,Travel Mug,Merch,3,16.0,48.0,4.0
+BL-12398,2025-10-10,Alexandria,Store,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-10646,2025-10-11,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10954,2025-10-11,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11489,2025-10-11,Cairo,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-11626,2025-10-11,Giza,Store,Travel Mug,Merch,1,16.0,16.0,
+BL-12070,2025-10-11,Cairo,Store,House Blend 500g,Beans,4,11.25,45.0,5.0
+BL-10410,2025-10-12,Alexandria,Online,Pour-over Kit,Equipment,4,34.0,136.0,
+BL-10624,2025-10-12,Mansoura,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,5.0
+BL-10862,2025-10-12,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11212,2025-10-12,Mansoura,Store,Travel Mug,Merch,3,16.0,48.0,4.0
+BL-11686,2025-10-12,Cairo,Online,Decaf 500g,Beans,6,13.5,81.0,5.0
+BL-11993,2025-10-12,Cairo,Online,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-12188,2025-10-12,Giza,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-12269,2025-10-12,Cairo,Store,Travel Mug,Merch,1,16.0,16.0,3.0
+BL-11158,2025-10-13,Giza,Online,Travel Mug,Merch,3,16.0,48.0,4.0
+BL-11701,2025-10-13,Giza,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,3.0
+BL-12187,2025-10-13,Cairo,Online,Pour-over Kit,Equipment,5,34.0,170.0,4.0
+BL-12317,2025-10-13,Giza,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,5.0
+BL-10390,2025-10-14,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10447,2025-10-14,Mansoura,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,5.0
+BL-10510,2025-10-14,Giza,Store,Decaf 500g,Beans,7,13.5,94.5,5.0
+BL-10848,2025-10-14,Giza,Online,Decaf 500g,Beans,5,13.5,67.5,4.0
+BL-10876,2025-10-14,Cairo,Online,Oat Latte Can,Drinks,5,2.61,13.05,
+BL-11263,2025-10-14,Cairo,Online,House Blend 500g,Beans,4,11.25,45.0,
+BL-11301,2025-10-14,Cairo,Store,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-11649,2025-10-14,Giza,Online,Oat Latte Can,Drinks,2,2.61,5.22,4.0
+BL-12243,2025-10-14,Giza,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-12371,2025-10-14,Giza,Online,Espresso Beans 1kg,Beans,6,18.9,113.4,5.0
+BL-10275,2025-10-15,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-10534,2025-10-15,Cairo,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,5.0
+BL-10780,2025-10-15,Alexandria,Wholesale,House Blend 500g,Beans,36,10.25,369.0,5.0
+BL-11201,2025-10-15,Cairo,Online,Espresso Beans 1kg,Beans,7,18.9,132.3,3.0
+BL-11826,2025-10-15,Mansoura,Store,Travel Mug,Merch,5,16.0,80.0,5.0
+BL-10322,2025-10-16,Giza,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10469,2025-10-16,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,3.0
+BL-10650,2025-10-16,Mansoura,Online,Decaf 500g,Beans,3,12.15,36.45,4.0
+BL-10926,2025-10-16,Mansoura,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-11274,2025-10-16,Cairo,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-11362,2025-10-16,Cairo,Store,Pour-over Kit,Equipment,7,34.0,238.0,5.0
+BL-11471,2025-10-16,Alexandria,Online,Oat Latte Can,Drinks,4,2.61,10.44,4.0
+BL-11619,2025-10-16,Alexandria,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11866,2025-10-16,Alexandria,Wholesale,House Blend 500g,Beans,36,10.25,369.0,4.0
+BL-12275,2025-10-16,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10153,2025-10-17,Mansoura,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-11128,2025-10-17,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-11215,2025-10-17,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-11537,2025-10-17,Mansoura,Online,House Blend 500g,Beans,9,12.5,112.5,5.0
+BL-12128,2025-10-17,Mansoura,Store,Decaf 500g,Beans,3,13.5,40.5,4.0
+BL-12342,2025-10-17,Cairo,Wholesale,House Blend 500g,Beans,24,10.25,246.0,5.0
+BL-10294,2025-10-18,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-10304,2025-10-18,Giza,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-10342,2025-10-18,Cairo,Online,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-10428,2025-10-18,Cairo,Online,Pour-over Kit,Equipment,5,34.0,170.0,3.0
+BL-10979,2025-10-18,Giza,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-11026,2025-10-18,Mansoura,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-11063,2025-10-18,Mansoura,Online,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-11069,2025-10-18,Giza,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,3.0
+BL-11258,2025-10-18,Giza,Store,Travel Mug,Merch,2,16.0,32.0,4.0
+BL-11459,2025-10-18,Giza,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-11624,2025-10-18,Alexandria,Online,Oat Latte Can,Drinks,6,2.61,15.66,4.0
+BL-11833,2025-10-18,Giza,Online,House Blend 500g,Beans,5,11.25,56.25,4.0
+BL-12150,2025-10-18,Alexandria,Store,Pour-over Kit,Equipment,4,34.0,136.0,4.0
+BL-12373,2025-10-18,Cairo,Online,Burr Grinder,Equipment,2,89.0,178.0,
+BL-10231,2025-10-19,Giza,Store,Decaf 500g,Beans,4,13.5,54.0,3.0
+BL-10313,2025-10-19,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-10597,2025-10-19,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11591,2025-10-19,Mansoura,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-11651,2025-10-19,Cairo,Wholesale,Decaf 500g,Beans,24,11.07,265.68,
+BL-10124,2025-10-20,Mansoura,Wholesale,Burr Grinder,Equipment,18,72.98,1313.64,5.0
+BL-10645,2025-10-20,Cairo,Online,Oat Latte Can,Drinks,6,2.61,15.66,3.0
+BL-11318,2025-10-20,Cairo,Wholesale,House Blend 500g,Beans,12,10.25,123.0,5.0
+BL-11501,2025-10-20,Giza,Store,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-12088,2025-10-20,Mansoura,Wholesale,Espresso Beans 1kg,Beans,6,17.22,103.32,4.0
+BL-10178,2025-10-21,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-10277,2025-10-21,Mansoura,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10423,2025-10-21,Giza,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-10949,2025-10-21,Giza,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-11220,2025-10-21,Mansoura,Online,Espresso Beans 1kg,Beans,7,18.9,132.3,
+BL-11409,2025-10-21,Cairo,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,3.0
+BL-11581,2025-10-21,Mansoura,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-12003,2025-10-21,Cairo,Store,Travel Mug,Merch,2,14.4,28.8,
+BL-12237,2025-10-21,Giza,Online,Decaf 500g,Beans,6,13.5,81.0,5.0
+BL-10430,2025-10-22,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-10513,2025-10-22,Alexandria,Online,Burr Grinder,Equipment,3,89.0,267.0,
+BL-10652,2025-10-22,Alexandria,Store,Burr Grinder,Equipment,4,80.1,320.4,3.0
+BL-11060,2025-10-22,Cairo,Store,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-11239,2025-10-22,Cairo,Wholesale,House Blend 500g,Beans,30,10.25,307.5,5.0
+BL-11705,2025-10-22,Cairo,Wholesale,House Blend 500g,Beans,12,10.25,123.0,4.0
+BL-12160,2025-10-22,Mansoura,Store,Travel Mug,Merch,6,16.0,96.0,4.0
+BL-10393,2025-10-23,Giza,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10713,2025-10-23,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,3.0
+BL-10773,2025-10-23,Giza,Online,Decaf 500g,Beans,6,13.5,81.0,
+BL-11650,2025-10-23,Cairo,Store,Espresso Beans 1kg,Beans,8,21.0,168.0,
+BL-11822,2025-10-23,Cairo,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,
+BL-12054,2025-10-23,Alexandria,Online,Travel Mug,Merch,6,16.0,96.0,4.0
+BL-12067,2025-10-23,Mansoura,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-12118,2025-10-23,Cairo,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,5.0
+BL-12244,2025-10-23,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-12302,2025-10-23,Mansoura,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,3.0
+BL-10666,2025-10-24,Cairo,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-10798,2025-10-24,Giza,Store,Oat Latte Can,Drinks,6,2.61,15.66,4.0
+BL-11245,2025-10-24,Cairo,Store,Burr Grinder,Equipment,5,89.0,445.0,4.0
+BL-11260,2025-10-24,Giza,Online,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-11841,2025-10-24,Cairo,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,
+BL-11916,2025-10-24,Cairo,Store,Espresso Beans 1kg,Beans,5,18.9,94.5,3.0
+BL-12151,2025-10-24,Giza,Store,Cold Brew Bottle,Drinks,8,3.8,30.4,
+BL-10045,2025-10-25,Cairo,Online,Travel Mug,Merch,4,14.4,57.6,5.0
+BL-10643,2025-10-25,Giza,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,
+BL-11379,2025-10-25,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11953,2025-10-25,Giza,Store,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-12077,2025-10-25,Cairo,Online,House Blend 500g,Beans,6,11.25,67.5,5.0
+BL-12309,2025-10-25,Mansoura,Store,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10140,2025-10-26,Giza,Store,Pour-over Kit,Equipment,3,34.0,102.0,4.0
+BL-10458,2025-10-26,Cairo,Store,Travel Mug,Merch,5,16.0,80.0,3.0
+BL-11114,2025-10-26,Mansoura,Wholesale,House Blend 500g,Beans,42,10.25,430.5,3.0
+BL-11397,2025-10-26,Giza,Store,House Blend 500g,Beans,3,11.25,33.75,3.0
+BL-11487,2025-10-26,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-11907,2025-10-26,Giza,Online,Pour-over Kit,Equipment,3,30.6,91.8,5.0
+BL-12113,2025-10-26,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-12273,2025-10-26,Cairo,Wholesale,Pour-over Kit,Equipment,18,27.88,501.84,
+BL-10737,2025-10-27,Cairo,Store,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-11320,2025-10-27,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-11371,2025-10-27,Giza,Online,Burr Grinder,Equipment,1,89.0,89.0,3.0
+BL-11410,2025-10-27,Alexandria,Online,Travel Mug,Merch,4,14.4,57.6,5.0
+BL-11633,2025-10-27,Cairo,Store,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-11938,2025-10-27,Cairo,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-12100,2025-10-27,Giza,Online,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-12274,2025-10-27,Alexandria,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-12381,2025-10-27,Mansoura,Store,Espresso Beans 1kg,Beans,4,18.9,75.6,4.0
+BL-10288,2025-10-28,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10332,2025-10-28,Giza,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,5.0
+BL-10446,2025-10-28,Mansoura,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-10544,2025-10-28,Alexandria,Online,Cold Brew Bottle,Drinks,1,3.8,3.8,4.0
+BL-10742,2025-10-28,Giza,Wholesale,House Blend 500g,Beans,48,10.25,492.0,4.0
+BL-11108,2025-10-28,Mansoura,Wholesale,House Blend 500g,Beans,36,10.25,369.0,5.0
+BL-11851,2025-10-28,Alexandria,Online,Decaf 500g,Beans,2,13.5,27.0,5.0
+BL-12129,2025-10-28,Mansoura,Online,Travel Mug,Merch,6,14.4,86.4,5.0
+BL-12284,2025-10-28,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-10095,2025-10-29,Cairo,Online,Oat Latte Can,Drinks,5,2.61,13.05,5.0
+BL-10115,2025-10-29,Cairo,Online,Travel Mug,Merch,6,16.0,96.0,
+BL-10257,2025-10-29,Alexandria,Wholesale,House Blend 500g,Beans,24,10.25,246.0,
+BL-10701,2025-10-29,Cairo,Store,Burr Grinder,Equipment,5,80.1,400.5,5.0
+BL-10822,2025-10-29,Alexandria,Store,House Blend 500g,Beans,8,12.5,100.0,4.0
+BL-11620,2025-10-29,Cairo,Online,Decaf 500g,Beans,4,13.5,54.0,
+BL-11888,2025-10-29,Mansoura,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,4.0
+BL-11921,2025-10-29,Cairo,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,3.0
+BL-11952,2025-10-29,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-12146,2025-10-29,Cairo,Store,Travel Mug,Merch,6,16.0,96.0,5.0
+BL-12172,2025-10-29,Giza,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-10396,2025-10-30,Giza,Online,House Blend 500g,Beans,1,12.5,12.5,5.0
+BL-10461,2025-10-30,Mansoura,Store,Cold Brew Bottle,Drinks,7,3.8,26.6,
+BL-10601,2025-10-30,Giza,Store,Pour-over Kit,Equipment,2,30.6,61.2,4.0
+BL-10765,2025-10-30,Cairo,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10768,2025-10-30,Mansoura,Online,House Blend 500g,Beans,6,11.25,67.5,
+BL-10815,2025-10-30,Cairo,Store,Travel Mug,Merch,5,14.4,72.0,4.0
+BL-10837,2025-10-30,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-11506,2025-10-30,Mansoura,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10284,2025-10-31,Mansoura,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-10302,2025-10-31,Giza,Online,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10303,2025-10-31,Alexandria,Store,Travel Mug,Merch,5,16.0,80.0,5.0
+BL-10641,2025-10-31,Giza,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-10683,2025-10-31,Alexandria,Online,House Blend 500g,Beans,3,12.5,37.5,
+BL-11141,2025-10-31,Alexandria,Wholesale,Oat Latte Can,Drinks,60,2.38,142.8,
+BL-11432,2025-10-31,Cairo,Online,Cold Brew Bottle,Drinks,1,3.42,3.42,4.0
+BL-11681,2025-10-31,Giza,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-12360,2025-10-31,Giza,Store,Decaf 500g,Beans,3,12.15,36.45,
+BL-10261,2025-11-01,Cairo,Store,House Blend 500g,Beans,2,12.5,25.0,
+BL-10319,2025-11-01,Mansoura,Store,Espresso Beans 1kg,Beans,4,18.9,75.6,
+BL-10387,2025-11-01,Mansoura,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-10389,2025-11-01,Cairo,Store,Pour-over Kit,Equipment,4,34.0,136.0,4.0
+BL-10830,2025-11-01,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-11600,2025-11-01,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11901,2025-11-01,Cairo,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,3.0
+BL-12167,2025-11-01,Alexandria,Online,Burr Grinder,Equipment,2,89.0,178.0,
+BL-12328,2025-11-01,Alexandria,Online,Travel Mug,Merch,9,14.4,129.6,4.0
+BL-12364,2025-11-01,Cairo,Online,Decaf 500g,Beans,6,13.5,81.0,4.0
+BL-10110,2025-11-02,Mansoura,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10176,2025-11-02,Cairo,Online,Travel Mug,Merch,2,14.4,28.8,4.0
+BL-10634,2025-11-02,Alexandria,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,3.0
+BL-11210,2025-11-02,Giza,Wholesale,House Blend 500g,Beans,42,10.25,430.5,
+BL-11883,2025-11-02,Cairo,Store,Cold Brew Bottle,Drinks,2,3.42,6.84,5.0
+BL-11947,2025-11-02,Giza,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,5.0
+BL-12030,2025-11-02,Mansoura,Store,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-12215,2025-11-02,Giza,Online,House Blend 500g,Beans,2,12.5,25.0,3.0
+BL-12260,2025-11-02,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10219,2025-11-03,Cairo,Online,Espresso Beans 1kg,Beans,1,21.0,21.0,5.0
+BL-10336,2025-11-03,Mansoura,Online,Burr Grinder,Equipment,3,80.1,240.3,4.0
+BL-10421,2025-11-03,Mansoura,Online,Travel Mug,Merch,5,16.0,80.0,5.0
+BL-10504,2025-11-03,Alexandria,Online,House Blend 500g,Beans,5,11.25,56.25,
+BL-10538,2025-11-03,Giza,Online,Oat Latte Can,Drinks,2,2.9,5.8,
+BL-10543,2025-11-03,Cairo,Online,Travel Mug,Merch,5,16.0,80.0,4.0
+BL-11059,2025-11-03,Alexandria,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,
+BL-11572,2025-11-03,Alexandria,Store,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-12064,2025-11-03,Cairo,Store,House Blend 500g,Beans,2,11.25,22.5,4.0
+BL-12397,2025-11-03,Cairo,Online,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-10511,2025-11-04,Alexandria,Online,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-10533,2025-11-04,Alexandria,Online,Travel Mug,Merch,7,14.4,100.8,4.0
+BL-10578,2025-11-04,Cairo,Store,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-11120,2025-11-04,Mansoura,Online,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-11328,2025-11-04,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11495,2025-11-04,Cairo,Online,Cold Brew Bottle,Drinks,1,3.8,3.8,4.0
+BL-11919,2025-11-04,Cairo,Online,Travel Mug,Merch,5,16.0,80.0,
+BL-12196,2025-11-04,Mansoura,Store,Cold Brew Bottle,Drinks,7,3.8,26.6,4.0
+BL-11266,2025-11-05,Giza,Online,Oat Latte Can,Drinks,7,2.9,20.3,5.0
+BL-11994,2025-11-05,Giza,Online,Oat Latte Can,Drinks,4,2.9,11.6,3.0
+BL-12178,2025-11-05,Giza,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,
+BL-12205,2025-11-05,Giza,Store,Burr Grinder,Equipment,3,89.0,267.0,
+BL-12278,2025-11-05,Mansoura,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,
+BL-10002,2025-11-06,Giza,Online,Burr Grinder,Equipment,5,89.0,445.0,5.0
+BL-10278,2025-11-06,Giza,Store,Travel Mug,Merch,2,16.0,32.0,
+BL-10298,2025-11-06,Giza,Store,Travel Mug,Merch,3,16.0,48.0,4.0
+BL-11103,2025-11-06,Mansoura,Online,Oat Latte Can,Drinks,2,2.9,5.8,5.0
+BL-11634,2025-11-06,Cairo,Store,House Blend 500g,Beans,3,12.5,37.5,3.0
+BL-11834,2025-11-06,Cairo,Online,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-11941,2025-11-06,Mansoura,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-12387,2025-11-06,Cairo,Online,Decaf 500g,Beans,5,13.5,67.5,
+BL-10746,2025-11-07,Alexandria,Store,Pour-over Kit,Equipment,4,34.0,136.0,
+BL-11066,2025-11-07,Cairo,Wholesale,Travel Mug,Merch,24,13.12,314.88,
+BL-11473,2025-11-07,Giza,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,
+BL-11662,2025-11-07,Alexandria,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,4.0
+BL-11712,2025-11-07,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-12098,2025-11-07,Cairo,Wholesale,Travel Mug,Merch,24,13.12,314.88,
+BL-12290,2025-11-07,Cairo,Online,House Blend 500g,Beans,7,12.5,87.5,5.0
+BL-12345,2025-11-07,Cairo,Online,Travel Mug,Merch,4,16.0,64.0,
+BL-10804,2025-11-08,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11680,2025-11-08,Cairo,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-11722,2025-11-08,Cairo,Store,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-11847,2025-11-08,Alexandria,Store,House Blend 500g,Beans,8,11.25,90.0,
+BL-12011,2025-11-08,Alexandria,Wholesale,Travel Mug,Merch,24,13.12,314.88,
+BL-10467,2025-11-09,Cairo,Store,Travel Mug,Merch,5,14.4,72.0,
+BL-10615,2025-11-09,Alexandria,Online,House Blend 500g,Beans,3,11.25,33.75,3.0
+BL-10912,2025-11-09,Alexandria,Store,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-11125,2025-11-09,Giza,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-11171,2025-11-09,Giza,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,5.0
+BL-11874,2025-11-09,Cairo,Wholesale,Decaf 500g,Beans,12,11.07,132.84,4.0
+BL-11982,2025-11-09,Giza,Wholesale,Espresso Beans 1kg,Beans,12,17.22,206.64,5.0
+BL-12050,2025-11-09,Cairo,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-12039,2025-11-10,Cairo,Online,Espresso Beans 1kg,Beans,4,18.9,75.6,4.0
+BL-12238,2025-11-10,Giza,Store,Oat Latte Can,Drinks,4,2.61,10.44,
+BL-10017,2025-11-11,Cairo,Store,Travel Mug,Merch,5,16.0,80.0,5.0
+BL-10122,2025-11-11,Giza,Store,Decaf 500g,Beans,2,12.15,24.3,5.0
+BL-10367,2025-11-11,Mansoura,Store,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-10565,2025-11-11,Cairo,Online,House Blend 500g,Beans,5,11.25,56.25,4.0
+BL-11307,2025-11-11,Cairo,Store,House Blend 500g,Beans,5,11.25,56.25,4.0
+BL-11365,2025-11-11,Giza,Online,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-12369,2025-11-11,Mansoura,Online,House Blend 500g,Beans,4,12.5,50.0,3.0
+BL-10895,2025-11-12,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,3.0
+BL-11297,2025-11-12,Cairo,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-11527,2025-11-12,Alexandria,Online,Pour-over Kit,Equipment,2,34.0,68.0,4.0
+BL-11616,2025-11-12,Cairo,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,
+BL-10008,2025-11-13,Mansoura,Store,Decaf 500g,Beans,4,13.5,54.0,5.0
+BL-10214,2025-11-13,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10217,2025-11-13,Alexandria,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10292,2025-11-13,Cairo,Online,House Blend 500g,Beans,2,12.5,25.0,5.0
+BL-10618,2025-11-13,Giza,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,
+BL-11390,2025-11-13,Cairo,Online,Pour-over Kit,Equipment,3,34.0,102.0,3.0
+BL-11435,2025-11-13,Mansoura,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-11479,2025-11-13,Giza,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,5.0
+BL-11564,2025-11-13,Giza,Wholesale,House Blend 500g,Beans,18,10.25,184.5,5.0
+BL-11769,2025-11-13,Giza,Wholesale,Travel Mug,Merch,18,13.12,236.16,
+BL-11976,2025-11-13,Alexandria,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,
+BL-12013,2025-11-13,Cairo,Online,Travel Mug,Merch,5,16.0,80.0,
+BL-10181,2025-11-14,Alexandria,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10206,2025-11-14,Giza,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,
+BL-10409,2025-11-14,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-10703,2025-11-14,Mansoura,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,
+BL-10825,2025-11-14,Mansoura,Online,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-11009,2025-11-14,Mansoura,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11185,2025-11-14,Cairo,Online,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-11402,2025-11-14,Giza,Store,Oat Latte Can,Drinks,1,2.61,2.61,5.0
+BL-11956,2025-11-14,Mansoura,Online,Pour-over Kit,Equipment,5,30.6,153.0,5.0
+BL-12163,2025-11-14,Mansoura,Store,Oat Latte Can,Drinks,2,2.61,5.22,4.0
+BL-10229,2025-11-15,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-10407,2025-11-15,Cairo,Store,Espresso Beans 1kg,Beans,5,18.9,94.5,4.0
+BL-10675,2025-11-15,Giza,Online,Cold Brew Bottle,Drinks,2,3.42,6.84,
+BL-10977,2025-11-15,Mansoura,Online,House Blend 500g,Beans,3,12.5,37.5,
+BL-11048,2025-11-15,Mansoura,Wholesale,Oat Latte Can,Drinks,54,2.38,128.52,4.0
+BL-11511,2025-11-15,Cairo,Online,Oat Latte Can,Drinks,3,2.61,7.83,4.0
+BL-11846,2025-11-15,Cairo,Store,House Blend 500g,Beans,3,11.25,33.75,
+BL-10151,2025-11-16,Giza,Store,Burr Grinder,Equipment,3,89.0,267.0,5.0
+BL-10449,2025-11-16,Mansoura,Store,Travel Mug,Merch,2,14.4,28.8,4.0
+BL-10744,2025-11-16,Cairo,Online,Cold Brew Bottle,Drinks,6,3.8,22.8,3.0
+BL-10984,2025-11-16,Alexandria,Store,House Blend 500g,Beans,4,11.25,45.0,4.0
+BL-10996,2025-11-16,Cairo,Store,Espresso Beans 1kg,Beans,1,18.9,18.9,5.0
+BL-11308,2025-11-16,Mansoura,Store,Burr Grinder,Equipment,4,89.0,356.0,
+BL-11550,2025-11-16,Cairo,Store,Travel Mug,Merch,3,16.0,48.0,
+BL-11820,2025-11-16,Mansoura,Store,Decaf 500g,Beans,3,13.5,40.5,
+BL-11823,2025-11-16,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-12286,2025-11-16,Alexandria,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,3.0
+BL-10116,2025-11-17,Alexandria,Online,Espresso Beans 1kg,Beans,9,21.0,189.0,3.0
+BL-10200,2025-11-17,Giza,Online,Cold Brew Bottle,Drinks,9,3.42,30.78,5.0
+BL-11047,2025-11-17,Mansoura,Online,House Blend 500g,Beans,2,12.5,25.0,
+BL-11622,2025-11-17,Giza,Online,House Blend 500g,Beans,7,12.5,87.5,3.0
+BL-10626,2025-11-18,Alexandria,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10686,2025-11-18,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-10802,2025-11-18,Giza,Wholesale,Oat Latte Can,Drinks,42,2.38,99.96,5.0
+BL-10911,2025-11-18,Cairo,Wholesale,Espresso Beans 1kg,Beans,6,17.22,103.32,5.0
+BL-11160,2025-11-18,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10056,2025-11-19,Mansoura,Online,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-10119,2025-11-19,Giza,Online,Travel Mug,Merch,3,16.0,48.0,3.0
+BL-10177,2025-11-19,Giza,Wholesale,Travel Mug,Merch,24,13.12,314.88,5.0
+BL-10514,2025-11-19,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10570,2025-11-19,Mansoura,Online,Pour-over Kit,Equipment,3,34.0,102.0,5.0
+BL-10710,2025-11-19,Alexandria,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-10721,2025-11-19,Cairo,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,3.0
+BL-10903,2025-11-19,Alexandria,Online,Oat Latte Can,Drinks,6,2.61,15.66,3.0
+BL-10952,2025-11-19,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-11138,2025-11-19,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-11403,2025-11-19,Alexandria,Online,Espresso Beans 1kg,Beans,6,18.9,113.4,5.0
+BL-11547,2025-11-19,Alexandria,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-11902,2025-11-19,Cairo,Store,Cold Brew Bottle,Drinks,1,3.8,3.8,5.0
+BL-12020,2025-11-19,Cairo,Store,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-10007,2025-11-20,Mansoura,Online,Oat Latte Can,Drinks,2,2.61,5.22,5.0
+BL-10452,2025-11-20,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,
+BL-11374,2025-11-20,Alexandria,Online,Oat Latte Can,Drinks,1,2.9,2.9,5.0
+BL-11795,2025-11-20,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11864,2025-11-20,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-12318,2025-11-20,Cairo,Online,Oat Latte Can,Drinks,6,2.9,17.4,4.0
+BL-10228,2025-11-21,Cairo,Online,Pour-over Kit,Equipment,6,34.0,204.0,4.0
+BL-11092,2025-11-21,Mansoura,Store,Travel Mug,Merch,5,16.0,80.0,
+BL-11370,2025-11-21,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-11408,2025-11-21,Alexandria,Online,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-11557,2025-11-21,Giza,Store,House Blend 500g,Beans,1,12.5,12.5,3.0
+BL-11870,2025-11-21,Cairo,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,4.0
+BL-11930,2025-11-21,Cairo,Online,Oat Latte Can,Drinks,5,2.61,13.05,5.0
+BL-10279,2025-11-22,Cairo,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,
+BL-10323,2025-11-22,Mansoura,Store,House Blend 500g,Beans,7,12.5,87.5,5.0
+BL-10464,2025-11-22,Giza,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,5.0
+BL-11867,2025-11-22,Cairo,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,
+BL-11915,2025-11-22,Mansoura,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,
+BL-11924,2025-11-22,Giza,Wholesale,House Blend 500g,Beans,48,10.25,492.0,
+BL-12089,2025-11-22,Mansoura,Store,House Blend 500g,Beans,4,12.5,50.0,
+BL-12334,2025-11-22,Cairo,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-10038,2025-11-23,Alexandria,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10248,2025-11-23,Alexandria,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10315,2025-11-23,Cairo,Online,Decaf 500g,Beans,2,12.15,24.3,
+BL-10388,2025-11-23,Alexandria,Online,Travel Mug,Merch,4,16.0,64.0,3.0
+BL-10501,2025-11-23,Mansoura,Online,Decaf 500g,Beans,3,13.5,40.5,
+BL-10502,2025-11-23,Giza,Wholesale,Travel Mug,Merch,18,13.12,236.16,4.0
+BL-11165,2025-11-23,Cairo,Online,Cold Brew Bottle,Drinks,8,3.8,30.4,4.0
+BL-11412,2025-11-23,Mansoura,Online,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-11753,2025-11-23,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-10269,2025-11-24,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-10585,2025-11-24,Cairo,Store,Travel Mug,Merch,4,16.0,64.0,
+BL-11573,2025-11-24,Cairo,Online,Cold Brew Bottle,Drinks,5,3.42,17.1,3.0
+BL-11586,2025-11-24,Cairo,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,3.0
+BL-11839,2025-11-24,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-11984,2025-11-24,Giza,Online,Oat Latte Can,Drinks,3,2.61,7.83,5.0
+BL-12158,2025-11-24,Alexandria,Store,Travel Mug,Merch,7,16.0,112.0,
+BL-10416,2025-11-25,Alexandria,Store,Oat Latte Can,Drinks,5,2.9,14.5,
+BL-10947,2025-11-25,Giza,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,5.0
+BL-11798,2025-11-25,Giza,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,5.0
+BL-11844,2025-11-25,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-12114,2025-11-25,Alexandria,Store,House Blend 500g,Beans,3,11.25,33.75,4.0
+BL-12346,2025-11-25,Giza,Online,Oat Latte Can,Drinks,4,2.61,10.44,4.0
+BL-11284,2025-11-26,Giza,Online,House Blend 500g,Beans,2,12.5,25.0,4.0
+BL-11405,2025-11-26,Cairo,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,4.0
+BL-11637,2025-11-26,Alexandria,Store,Cold Brew Bottle,Drinks,5,3.42,17.1,5.0
+BL-11699,2025-11-26,Mansoura,Online,Decaf 500g,Beans,4,13.5,54.0,4.0
+BL-11706,2025-11-26,Cairo,Online,House Blend 500g,Beans,6,12.5,75.0,4.0
+BL-11824,2025-11-26,Cairo,Online,Pour-over Kit,Equipment,2,34.0,68.0,4.0
+BL-12041,2025-11-26,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10162,2025-11-27,Giza,Store,Pour-over Kit,Equipment,4,34.0,136.0,
+BL-10297,2025-11-27,Cairo,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,
+BL-11217,2025-11-27,Giza,Online,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-11567,2025-11-27,Cairo,Online,Pour-over Kit,Equipment,2,34.0,68.0,
+BL-11689,2025-11-27,Cairo,Online,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-11768,2025-11-27,Giza,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-12153,2025-11-27,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-12189,2025-11-27,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-12399,2025-11-27,Cairo,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,4.0
+BL-10075,2025-11-28,Cairo,Wholesale,House Blend 500g,Beans,12,10.25,123.0,4.0
+BL-10309,2025-11-28,Alexandria,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,
+BL-10466,2025-11-28,Cairo,Wholesale,Burr Grinder,Equipment,18,72.98,1313.64,
+BL-12097,2025-11-28,Alexandria,Store,Cold Brew Bottle,Drinks,1,3.8,3.8,5.0
+BL-10043,2025-11-29,Alexandria,Online,Pour-over Kit,Equipment,4,30.6,122.4,5.0
+BL-10631,2025-11-29,Giza,Online,Oat Latte Can,Drinks,4,2.9,11.6,
+BL-10726,2025-11-29,Giza,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-11167,2025-11-29,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11285,2025-11-29,Alexandria,Store,Travel Mug,Merch,4,16.0,64.0,
+BL-11621,2025-11-29,Cairo,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-11771,2025-11-29,Giza,Store,Travel Mug,Merch,3,16.0,48.0,
+BL-12348,2025-11-29,Alexandria,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10391,2025-11-30,Cairo,Online,House Blend 500g,Beans,7,11.25,78.75,
+BL-10600,2025-11-30,Cairo,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,5.0
+BL-10916,2025-11-30,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11422,2025-11-30,Alexandria,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-11522,2025-11-30,Mansoura,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-11928,2025-11-30,Giza,Wholesale,Travel Mug,Merch,42,13.12,551.04,5.0
+BL-11997,2025-11-30,Alexandria,Store,House Blend 500g,Beans,1,12.5,12.5,5.0
+BL-12048,2025-11-30,Giza,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-12112,2025-11-30,Mansoura,Wholesale,House Blend 500g,Beans,30,10.25,307.5,5.0
+BL-12213,2025-11-30,Mansoura,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-12264,2025-11-30,Giza,Online,Oat Latte Can,Drinks,2,2.9,5.8,3.0
+BL-10208,2025-12-01,Cairo,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10612,2025-12-01,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-11115,2025-12-01,Cairo,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,5.0
+BL-11448,2025-12-01,Alexandria,Store,House Blend 500g,Beans,3,11.25,33.75,
+BL-11488,2025-12-01,Giza,Online,Cold Brew Bottle,Drinks,4,3.42,13.68,
+BL-11595,2025-12-01,Cairo,Store,Decaf 500g,Beans,4,12.15,48.6,5.0
+BL-11732,2025-12-01,Alexandria,Online,Espresso Beans 1kg,Beans,1,18.9,18.9,5.0
+BL-12267,2025-12-01,Cairo,Online,House Blend 500g,Beans,7,12.5,87.5,3.0
+BL-12296,2025-12-01,Giza,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,4.0
+BL-10356,2025-12-02,Giza,Store,House Blend 500g,Beans,1,12.5,12.5,5.0
+BL-10472,2025-12-02,Alexandria,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-10655,2025-12-02,Cairo,Wholesale,Burr Grinder,Equipment,6,72.98,437.88,3.0
+BL-10975,2025-12-02,Mansoura,Store,Oat Latte Can,Drinks,5,2.61,13.05,4.0
+BL-11556,2025-12-02,Cairo,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-11563,2025-12-02,Mansoura,Wholesale,Oat Latte Can,Drinks,18,2.38,42.84,
+BL-12057,2025-12-02,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-12127,2025-12-02,Giza,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-12186,2025-12-02,Cairo,Wholesale,Cold Brew Bottle,Drinks,12,3.12,37.44,
+BL-12378,2025-12-02,Mansoura,Online,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-10216,2025-12-03,Alexandria,Store,Oat Latte Can,Drinks,3,2.61,7.83,4.0
+BL-10639,2025-12-03,Cairo,Wholesale,Espresso Beans 1kg,Beans,30,17.22,516.6,4.0
+BL-10678,2025-12-03,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10919,2025-12-03,Cairo,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-11054,2025-12-03,Alexandria,Wholesale,House Blend 500g,Beans,24,10.25,246.0,4.0
+BL-11216,2025-12-03,Giza,Store,Travel Mug,Merch,8,16.0,128.0,5.0
+BL-11433,2025-12-03,Alexandria,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,5.0
+BL-11517,2025-12-03,Giza,Wholesale,Burr Grinder,Equipment,12,72.98,875.76,5.0
+BL-11565,2025-12-03,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-12133,2025-12-03,Giza,Online,Oat Latte Can,Drinks,8,2.9,23.2,4.0
+BL-12193,2025-12-03,Cairo,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,
+BL-12247,2025-12-03,Cairo,Store,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-10232,2025-12-04,Alexandria,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,5.0
+BL-10496,2025-12-04,Giza,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-10679,2025-12-04,Cairo,Wholesale,Cold Brew Bottle,Drinks,12,3.12,37.44,
+BL-10928,2025-12-04,Giza,Online,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-11000,2025-12-04,Mansoura,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,5.0
+BL-11100,2025-12-04,Alexandria,Online,Espresso Beans 1kg,Beans,8,21.0,168.0,5.0
+BL-11126,2025-12-04,Cairo,Store,House Blend 500g,Beans,7,12.5,87.5,
+BL-11299,2025-12-04,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11779,2025-12-04,Cairo,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,4.0
+BL-11958,2025-12-04,Giza,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-10005,2025-12-05,Cairo,Online,Oat Latte Can,Drinks,1,2.9,2.9,5.0
+BL-10049,2025-12-05,Giza,Wholesale,Decaf 500g,Beans,24,11.07,265.68,4.0
+BL-10072,2025-12-05,Giza,Store,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-10104,2025-12-05,Alexandria,Store,House Blend 500g,Beans,8,11.25,90.0,4.0
+BL-10368,2025-12-05,Alexandria,Store,Travel Mug,Merch,3,16.0,48.0,
+BL-10748,2025-12-05,Giza,Store,Espresso Beans 1kg,Beans,5,18.9,94.5,
+BL-11071,2025-12-05,Giza,Store,House Blend 500g,Beans,1,12.5,12.5,
+BL-11122,2025-12-05,Mansoura,Store,Oat Latte Can,Drinks,8,2.61,20.88,4.0
+BL-11377,2025-12-05,Mansoura,Store,Cold Brew Bottle,Drinks,6,3.8,22.8,4.0
+BL-11599,2025-12-05,Cairo,Store,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-11875,2025-12-05,Mansoura,Wholesale,Oat Latte Can,Drinks,36,2.38,85.68,5.0
+BL-12357,2025-12-05,Cairo,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-10041,2025-12-06,Cairo,Store,Travel Mug,Merch,7,16.0,112.0,
+BL-10091,2025-12-06,Alexandria,Store,House Blend 500g,Beans,6,11.25,67.5,5.0
+BL-10143,2025-12-06,Cairo,Online,House Blend 500g,Beans,2,11.25,22.5,4.0
+BL-10182,2025-12-06,Mansoura,Store,Pour-over Kit,Equipment,4,34.0,136.0,5.0
+BL-10443,2025-12-06,Giza,Online,Pour-over Kit,Equipment,5,30.6,153.0,3.0
+BL-11001,2025-12-06,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,3.0
+BL-11031,2025-12-06,Mansoura,Store,Decaf 500g,Beans,4,13.5,54.0,4.0
+BL-11146,2025-12-06,Cairo,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-11174,2025-12-06,Giza,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-11935,2025-12-06,Cairo,Store,House Blend 500g,Beans,6,12.5,75.0,3.0
+BL-11936,2025-12-06,Giza,Online,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-12093,2025-12-06,Mansoura,Online,Travel Mug,Merch,3,14.4,43.2,4.0
+BL-12220,2025-12-06,Mansoura,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10084,2025-12-07,Mansoura,Store,Oat Latte Can,Drinks,7,2.9,20.3,
+BL-10220,2025-12-07,Mansoura,Store,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-10273,2025-12-07,Mansoura,Wholesale,Espresso Beans 1kg,Beans,12,17.22,206.64,5.0
+BL-10386,2025-12-07,Cairo,Online,House Blend 500g,Beans,6,12.5,75.0,
+BL-10492,2025-12-07,Cairo,Wholesale,Espresso Beans 1kg,Beans,6,17.22,103.32,
+BL-10673,2025-12-07,Cairo,Online,House Blend 500g,Beans,5,11.25,56.25,
+BL-11703,2025-12-07,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10346,2025-12-08,Mansoura,Online,Oat Latte Can,Drinks,5,2.61,13.05,4.0
+BL-10489,2025-12-08,Mansoura,Store,House Blend 500g,Beans,3,11.25,33.75,
+BL-10581,2025-12-08,Cairo,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-10770,2025-12-08,Mansoura,Store,Decaf 500g,Beans,3,13.5,40.5,
+BL-10995,2025-12-08,Alexandria,Store,House Blend 500g,Beans,6,11.25,67.5,4.0
+BL-11124,2025-12-08,Mansoura,Store,House Blend 500g,Beans,3,12.5,37.5,3.0
+BL-11157,2025-12-08,Alexandria,Store,Decaf 500g,Beans,2,13.5,27.0,
+BL-11177,2025-12-08,Giza,Wholesale,Pour-over Kit,Equipment,6,27.88,167.28,5.0
+BL-11326,2025-12-08,Cairo,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-11560,2025-12-08,Giza,Store,House Blend 500g,Beans,3,11.25,33.75,
+BL-11750,2025-12-08,Alexandria,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,4.0
+BL-11809,2025-12-08,Cairo,Wholesale,Burr Grinder,Equipment,18,72.98,1313.64,5.0
+BL-11972,2025-12-08,Cairo,Online,Burr Grinder,Equipment,9,89.0,801.0,
+BL-10233,2025-12-09,Giza,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-10573,2025-12-09,Alexandria,Store,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-10805,2025-12-09,Cairo,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10907,2025-12-09,Alexandria,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-11028,2025-12-09,Giza,Wholesale,House Blend 500g,Beans,24,10.25,246.0,5.0
+BL-11204,2025-12-09,Mansoura,Store,House Blend 500g,Beans,3,12.5,37.5,
+BL-11236,2025-12-09,Giza,Online,Travel Mug,Merch,3,16.0,48.0,4.0
+BL-11350,2025-12-09,Alexandria,Store,Espresso Beans 1kg,Beans,8,21.0,168.0,5.0
+BL-11355,2025-12-09,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-11747,2025-12-09,Giza,Online,Travel Mug,Merch,4,16.0,64.0,
+BL-11840,2025-12-09,Alexandria,Wholesale,Pour-over Kit,Equipment,36,27.88,1003.68,5.0
+BL-12379,2025-12-09,Cairo,Store,Espresso Beans 1kg,Beans,4,18.9,75.6,5.0
+BL-10001,2025-12-10,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10139,2025-12-10,Cairo,Online,Oat Latte Can,Drinks,7,2.9,20.3,5.0
+BL-10289,2025-12-10,Alexandria,Store,Pour-over Kit,Equipment,4,34.0,136.0,4.0
+BL-10610,2025-12-10,Giza,Online,Travel Mug,Merch,3,16.0,48.0,
+BL-10880,2025-12-10,Alexandria,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-10929,2025-12-10,Alexandria,Online,Oat Latte Can,Drinks,7,2.9,20.3,
+BL-11105,2025-12-10,Giza,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,4.0
+BL-11250,2025-12-10,Cairo,Online,Oat Latte Can,Drinks,9,2.9,26.1,
+BL-11594,2025-12-10,Giza,Store,Espresso Beans 1kg,Beans,6,18.9,113.4,3.0
+BL-11849,2025-12-10,Cairo,Online,Travel Mug,Merch,5,16.0,80.0,4.0
+BL-11893,2025-12-10,Cairo,Online,Burr Grinder,Equipment,2,80.1,160.2,5.0
+BL-11942,2025-12-10,Mansoura,Wholesale,Decaf 500g,Beans,30,11.07,332.1,
+BL-11974,2025-12-10,Giza,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-12156,2025-12-10,Giza,Store,Pour-over Kit,Equipment,4,34.0,136.0,
+BL-12253,2025-12-10,Cairo,Store,Cold Brew Bottle,Drinks,2,3.42,6.84,
+BL-12351,2025-12-10,Mansoura,Online,Travel Mug,Merch,4,16.0,64.0,5.0
+BL-12384,2025-12-10,Giza,Store,Oat Latte Can,Drinks,4,2.61,10.44,5.0
+BL-10077,2025-12-11,Alexandria,Store,House Blend 500g,Beans,6,12.5,75.0,4.0
+BL-10891,2025-12-11,Giza,Wholesale,Cold Brew Bottle,Drinks,6,3.12,18.72,5.0
+BL-11203,2025-12-11,Mansoura,Wholesale,Decaf 500g,Beans,42,11.07,464.94,5.0
+BL-11288,2025-12-11,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-11673,2025-12-11,Mansoura,Online,Oat Latte Can,Drinks,2,2.61,5.22,5.0
+BL-11752,2025-12-11,Mansoura,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-11765,2025-12-11,Giza,Online,Pour-over Kit,Equipment,6,30.6,183.6,
+BL-11775,2025-12-11,Cairo,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-12015,2025-12-11,Alexandria,Wholesale,House Blend 500g,Beans,24,10.25,246.0,
+BL-12194,2025-12-11,Giza,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-12223,2025-12-11,Giza,Online,Travel Mug,Merch,2,16.0,32.0,5.0
+BL-10266,2025-12-12,Giza,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,
+BL-10786,2025-12-12,Cairo,Store,House Blend 500g,Beans,5,11.25,56.25,
+BL-10971,2025-12-12,Giza,Online,House Blend 500g,Beans,1,12.5,12.5,5.0
+BL-11024,2025-12-12,Cairo,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-11808,2025-12-12,Giza,Store,Oat Latte Can,Drinks,2,2.61,5.22,4.0
+BL-11914,2025-12-12,Cairo,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,3.0
+BL-12085,2025-12-12,Cairo,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,4.0
+BL-12179,2025-12-12,Alexandria,Online,Espresso Beans 1kg,Beans,2,18.9,37.8,
+BL-12211,2025-12-12,Cairo,Wholesale,Travel Mug,Merch,30,13.12,393.6,4.0
+BL-10111,2025-12-13,Giza,Online,Burr Grinder,Equipment,5,80.1,400.5,5.0
+BL-10180,2025-12-13,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.42,13.68,5.0
+BL-10727,2025-12-13,Alexandria,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-11229,2025-12-13,Mansoura,Online,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-11872,2025-12-13,Alexandria,Wholesale,Cold Brew Bottle,Drinks,18,3.12,56.16,5.0
+BL-11957,2025-12-13,Mansoura,Online,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10027,2025-12-14,Cairo,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,5.0
+BL-10161,2025-12-14,Cairo,Online,House Blend 500g,Beans,2,11.25,22.5,4.0
+BL-10184,2025-12-14,Alexandria,Store,House Blend 500g,Beans,4,12.5,50.0,3.0
+BL-10334,2025-12-14,Alexandria,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10347,2025-12-14,Cairo,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10379,2025-12-14,Alexandria,Store,Decaf 500g,Beans,4,13.5,54.0,
+BL-10586,2025-12-14,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-10771,2025-12-14,Cairo,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10792,2025-12-14,Giza,Online,Travel Mug,Merch,2,16.0,32.0,
+BL-11184,2025-12-14,Giza,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-11192,2025-12-14,Giza,Online,Cold Brew Bottle,Drinks,6,3.42,20.52,4.0
+BL-11213,2025-12-14,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-11233,2025-12-14,Giza,Store,Cold Brew Bottle,Drinks,7,3.42,23.94,5.0
+BL-11904,2025-12-14,Alexandria,Store,Pour-over Kit,Equipment,6,34.0,204.0,4.0
+BL-11908,2025-12-14,Alexandria,Store,Oat Latte Can,Drinks,5,2.9,14.5,4.0
+BL-11944,2025-12-14,Alexandria,Online,Burr Grinder,Equipment,5,89.0,445.0,5.0
+BL-10145,2025-12-15,Cairo,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,4.0
+BL-10316,2025-12-15,Giza,Online,Espresso Beans 1kg,Beans,5,18.9,94.5,5.0
+BL-10324,2025-12-15,Alexandria,Online,House Blend 500g,Beans,6,11.25,67.5,5.0
+BL-10398,2025-12-15,Alexandria,Store,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-10540,2025-12-15,Alexandria,Online,Pour-over Kit,Equipment,3,34.0,102.0,4.0
+BL-10667,2025-12-15,Giza,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,4.0
+BL-10732,2025-12-15,Alexandria,Wholesale,Travel Mug,Merch,18,13.12,236.16,3.0
+BL-11010,2025-12-15,Cairo,Store,Oat Latte Can,Drinks,4,2.61,10.44,4.0
+BL-11075,2025-12-15,Giza,Store,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-11325,2025-12-15,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,3.0
+BL-11784,2025-12-15,Cairo,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-12184,2025-12-15,Giza,Wholesale,Pour-over Kit,Equipment,24,27.88,669.12,5.0
+BL-12219,2025-12-15,Giza,Store,House Blend 500g,Beans,5,12.5,62.5,
+BL-12324,2025-12-15,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-10081,2025-12-16,Cairo,Online,House Blend 500g,Beans,2,11.25,22.5,4.0
+BL-10572,2025-12-16,Cairo,Online,Oat Latte Can,Drinks,2,2.9,5.8,
+BL-10722,2025-12-16,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-10873,2025-12-16,Cairo,Online,Decaf 500g,Beans,5,13.5,67.5,5.0
+BL-10982,2025-12-16,Mansoura,Wholesale,House Blend 500g,Beans,36,10.25,369.0,5.0
+BL-11197,2025-12-16,Giza,Online,Oat Latte Can,Drinks,7,2.9,20.3,
+BL-11384,2025-12-16,Cairo,Online,House Blend 500g,Beans,3,12.5,37.5,5.0
+BL-11456,2025-12-16,Cairo,Online,House Blend 500g,Beans,9,12.5,112.5,5.0
+BL-11512,2025-12-16,Giza,Online,Oat Latte Can,Drinks,6,2.9,17.4,
+BL-11917,2025-12-16,Alexandria,Online,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-12017,2025-12-16,Cairo,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-12149,2025-12-16,Giza,Online,Decaf 500g,Beans,3,13.5,40.5,5.0
+BL-12333,2025-12-16,Mansoura,Wholesale,Oat Latte Can,Drinks,42,2.38,99.96,4.0
+BL-12350,2025-12-16,Alexandria,Online,Burr Grinder,Equipment,6,89.0,534.0,
+BL-10434,2025-12-17,Mansoura,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-10608,2025-12-17,Giza,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,5.0
+BL-11134,2025-12-17,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-11772,2025-12-17,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11797,2025-12-17,Alexandria,Store,Travel Mug,Merch,2,16.0,32.0,4.0
+BL-10113,2025-12-18,Giza,Online,House Blend 500g,Beans,2,12.5,25.0,
+BL-10401,2025-12-18,Mansoura,Online,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10778,2025-12-18,Cairo,Store,Oat Latte Can,Drinks,8,2.61,20.88,5.0
+BL-11079,2025-12-18,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-11093,2025-12-18,Cairo,Online,Pour-over Kit,Equipment,6,34.0,204.0,5.0
+BL-11205,2025-12-18,Cairo,Wholesale,House Blend 500g,Beans,24,10.25,246.0,4.0
+BL-11259,2025-12-18,Mansoura,Store,Oat Latte Can,Drinks,6,2.9,17.4,5.0
+BL-11674,2025-12-18,Cairo,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,
+BL-11743,2025-12-18,Cairo,Store,Oat Latte Can,Drinks,3,2.61,7.83,
+BL-12083,2025-12-18,Mansoura,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,4.0
+BL-12314,2025-12-18,Alexandria,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-12388,2025-12-18,Cairo,Store,Travel Mug,Merch,3,16.0,48.0,5.0
+BL-10198,2025-12-19,Cairo,Store,House Blend 500g,Beans,6,12.5,75.0,5.0
+BL-10296,2025-12-19,Cairo,Wholesale,House Blend 500g,Beans,24,10.25,246.0,
+BL-10373,2025-12-19,Giza,Store,Oat Latte Can,Drinks,3,2.9,8.7,5.0
+BL-10622,2025-12-19,Mansoura,Store,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-10790,2025-12-19,Giza,Online,Pour-over Kit,Equipment,2,34.0,68.0,4.0
+BL-10812,2025-12-19,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,5.0
+BL-10932,2025-12-19,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-11254,2025-12-19,Cairo,Store,House Blend 500g,Beans,2,12.5,25.0,
+BL-11445,2025-12-19,Giza,Store,Espresso Beans 1kg,Beans,3,18.9,56.7,
+BL-11579,2025-12-19,Alexandria,Online,Burr Grinder,Equipment,3,89.0,267.0,5.0
+BL-11836,2025-12-19,Alexandria,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-12002,2025-12-19,Cairo,Wholesale,Travel Mug,Merch,24,13.12,314.88,
+BL-12181,2025-12-19,Giza,Online,Burr Grinder,Equipment,10,80.1,801.0,5.0
+BL-12183,2025-12-19,Mansoura,Online,Espresso Beans 1kg,Beans,8,18.9,151.2,4.0
+BL-10076,2025-12-20,Giza,Store,House Blend 500g,Beans,2,12.5,25.0,
+BL-10239,2025-12-20,Mansoura,Wholesale,Burr Grinder,Equipment,12,72.98,875.76,5.0
+BL-10809,2025-12-20,Giza,Store,Decaf 500g,Beans,3,13.5,40.5,
+BL-10810,2025-12-20,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,4.0
+BL-11404,2025-12-20,Alexandria,Online,Cold Brew Bottle,Drinks,4,3.8,15.2,4.0
+BL-11464,2025-12-20,Cairo,Online,Decaf 500g,Beans,1,13.5,13.5,
+BL-11653,2025-12-20,Giza,Wholesale,Decaf 500g,Beans,36,11.07,398.52,4.0
+BL-11751,2025-12-20,Cairo,Online,House Blend 500g,Beans,3,11.25,33.75,5.0
+BL-11776,2025-12-20,Cairo,Online,Decaf 500g,Beans,2,13.5,27.0,3.0
+BL-11818,2025-12-20,Mansoura,Store,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-11861,2025-12-20,Cairo,Online,Decaf 500g,Beans,2,13.5,27.0,5.0
+BL-11989,2025-12-20,Cairo,Store,Decaf 500g,Beans,4,13.5,54.0,5.0
+BL-12251,2025-12-20,Cairo,Wholesale,House Blend 500g,Beans,24,10.25,246.0,
+BL-12298,2025-12-20,Mansoura,Store,Travel Mug,Merch,3,16.0,48.0,3.0
+BL-10130,2025-12-21,Mansoura,Online,Oat Latte Can,Drinks,4,2.61,10.44,4.0
+BL-10149,2025-12-21,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,3.0
+BL-10412,2025-12-21,Cairo,Store,Oat Latte Can,Drinks,4,2.9,11.6,5.0
+BL-10488,2025-12-21,Cairo,Online,Cold Brew Bottle,Drinks,6,3.42,20.52,5.0
+BL-10858,2025-12-21,Alexandria,Wholesale,Decaf 500g,Beans,18,11.07,199.26,
+BL-10942,2025-12-21,Cairo,Online,Travel Mug,Merch,4,16.0,64.0,3.0
+BL-10943,2025-12-21,Alexandria,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-11080,2025-12-21,Cairo,Wholesale,Espresso Beans 1kg,Beans,24,17.22,413.28,
+BL-11153,2025-12-21,Cairo,Online,Burr Grinder,Equipment,1,80.1,80.1,
+BL-11226,2025-12-21,Alexandria,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,3.0
+BL-11430,2025-12-21,Giza,Store,Cold Brew Bottle,Drinks,3,3.42,10.26,4.0
+BL-11737,2025-12-21,Mansoura,Store,Decaf 500g,Beans,4,13.5,54.0,5.0
+BL-12332,2025-12-21,Cairo,Online,Espresso Beans 1kg,Beans,7,21.0,147.0,3.0
+BL-10134,2025-12-22,Mansoura,Store,Cold Brew Bottle,Drinks,2,3.42,6.84,4.0
+BL-10580,2025-12-22,Giza,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,
+BL-10592,2025-12-22,Giza,Online,House Blend 500g,Beans,6,11.25,67.5,5.0
+BL-10696,2025-12-22,Cairo,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,4.0
+BL-10902,2025-12-22,Cairo,Online,Travel Mug,Merch,4,16.0,64.0,4.0
+BL-11578,2025-12-22,Cairo,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,4.0
+BL-12235,2025-12-22,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,
+BL-10169,2025-12-23,Cairo,Online,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-10207,2025-12-23,Mansoura,Online,Espresso Beans 1kg,Beans,6,21.0,126.0,4.0
+BL-10425,2025-12-23,Alexandria,Store,Travel Mug,Merch,6,14.4,86.4,4.0
+BL-10879,2025-12-23,Alexandria,Wholesale,Oat Latte Can,Drinks,30,2.38,71.4,5.0
+BL-10972,2025-12-23,Giza,Wholesale,Espresso Beans 1kg,Beans,36,17.22,619.92,5.0
+BL-11038,2025-12-23,Alexandria,Store,Cold Brew Bottle,Drinks,2,3.8,7.6,5.0
+BL-11098,2025-12-23,Mansoura,Online,Pour-over Kit,Equipment,5,34.0,170.0,5.0
+BL-11293,2025-12-23,Giza,Online,House Blend 500g,Beans,7,12.5,87.5,
+BL-11486,2025-12-23,Giza,Store,Cold Brew Bottle,Drinks,4,3.8,15.2,5.0
+BL-11758,2025-12-23,Alexandria,Wholesale,Cold Brew Bottle,Drinks,36,3.12,112.32,3.0
+BL-12169,2025-12-23,Alexandria,Store,House Blend 500g,Beans,3,12.5,37.5,
+BL-10405,2025-12-24,Giza,Online,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-10527,2025-12-24,Alexandria,Online,House Blend 500g,Beans,2,12.5,25.0,
+BL-10556,2025-12-24,Mansoura,Store,Pour-over Kit,Equipment,5,34.0,170.0,
+BL-10649,2025-12-24,Giza,Online,House Blend 500g,Beans,4,12.5,50.0,
+BL-10993,2025-12-24,Alexandria,Store,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-11162,2025-12-24,Cairo,Store,Travel Mug,Merch,2,14.4,28.8,5.0
+BL-11173,2025-12-24,Mansoura,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,
+BL-11209,2025-12-24,Giza,Online,House Blend 500g,Beans,5,12.5,62.5,4.0
+BL-11295,2025-12-24,Alexandria,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,5.0
+BL-11447,2025-12-24,Alexandria,Wholesale,House Blend 500g,Beans,18,10.25,184.5,4.0
+BL-11535,2025-12-24,Mansoura,Store,Travel Mug,Merch,2,16.0,32.0,
+BL-11815,2025-12-24,Cairo,Wholesale,Oat Latte Can,Drinks,36,2.38,85.68,5.0
+BL-11898,2025-12-24,Giza,Store,Oat Latte Can,Drinks,5,2.9,14.5,3.0
+BL-12293,2025-12-24,Cairo,Store,Travel Mug,Merch,6,16.0,96.0,5.0
+BL-10068,2025-12-25,Mansoura,Store,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-10100,2025-12-25,Giza,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,5.0
+BL-10375,2025-12-25,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,5.0
+BL-10689,2025-12-25,Giza,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,
+BL-10850,2025-12-25,Mansoura,Online,House Blend 500g,Beans,3,12.5,37.5,3.0
+BL-10998,2025-12-25,Alexandria,Wholesale,House Blend 500g,Beans,12,10.25,123.0,4.0
+BL-11214,2025-12-25,Alexandria,Store,Burr Grinder,Equipment,4,80.1,320.4,4.0
+BL-11580,2025-12-25,Giza,Store,Cold Brew Bottle,Drinks,7,3.8,26.6,4.0
+BL-11859,2025-12-25,Cairo,Store,Decaf 500g,Beans,7,12.15,85.05,5.0
+BL-12246,2025-12-25,Cairo,Online,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-12363,2025-12-25,Cairo,Online,Espresso Beans 1kg,Beans,6,18.9,113.4,5.0
+BL-10155,2025-12-26,Mansoura,Online,Cold Brew Bottle,Drinks,7,3.8,26.6,5.0
+BL-10783,2025-12-26,Cairo,Online,Pour-over Kit,Equipment,8,30.6,244.8,5.0
+BL-10957,2025-12-26,Giza,Store,House Blend 500g,Beans,9,12.5,112.5,4.0
+BL-11264,2025-12-26,Alexandria,Online,Espresso Beans 1kg,Beans,9,18.9,170.1,4.0
+BL-11731,2025-12-26,Alexandria,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,4.0
+BL-11792,2025-12-26,Alexandria,Online,Oat Latte Can,Drinks,4,2.9,11.6,4.0
+BL-11825,2025-12-26,Mansoura,Wholesale,Espresso Beans 1kg,Beans,42,17.22,723.24,4.0
+BL-11971,2025-12-26,Cairo,Store,Decaf 500g,Beans,6,13.5,81.0,4.0
+BL-10058,2025-12-27,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,5.0
+BL-10136,2025-12-27,Giza,Store,Espresso Beans 1kg,Beans,8,21.0,168.0,4.0
+BL-10372,2025-12-27,Alexandria,Wholesale,House Blend 500g,Beans,18,10.25,184.5,5.0
+BL-10917,2025-12-27,Cairo,Store,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-11668,2025-12-27,Cairo,Store,Espresso Beans 1kg,Beans,2,18.9,37.8,4.0
+BL-11827,2025-12-27,Mansoura,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-11979,2025-12-27,Cairo,Online,Oat Latte Can,Drinks,3,2.9,8.7,
+BL-12107,2025-12-27,Cairo,Online,Cold Brew Bottle,Drinks,5,3.8,19.0,3.0
+BL-10741,2025-12-28,Cairo,Online,House Blend 500g,Beans,3,12.5,37.5,4.0
+BL-10994,2025-12-28,Alexandria,Store,Espresso Beans 1kg,Beans,2,21.0,42.0,
+BL-11118,2025-12-28,Cairo,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,5.0
+BL-11378,2025-12-28,Giza,Store,Oat Latte Can,Drinks,2,2.61,5.22,4.0
+BL-11425,2025-12-28,Alexandria,Store,Travel Mug,Merch,3,14.4,43.2,5.0
+BL-12255,2025-12-28,Alexandria,Online,House Blend 500g,Beans,4,12.5,50.0,5.0
+BL-12300,2025-12-28,Cairo,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-12331,2025-12-28,Cairo,Store,Pour-over Kit,Equipment,5,30.6,153.0,
+BL-12368,2025-12-28,Giza,Wholesale,Oat Latte Can,Drinks,12,2.38,28.56,4.0
+BL-10019,2025-12-29,Mansoura,Wholesale,Cold Brew Bottle,Drinks,24,3.12,74.88,
+BL-10327,2025-12-29,Cairo,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,5.0
+BL-10587,2025-12-29,Giza,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-11189,2025-12-29,Cairo,Wholesale,Oat Latte Can,Drinks,24,2.38,57.12,
+BL-11271,2025-12-29,Cairo,Online,Cold Brew Bottle,Drinks,2,3.8,7.6,3.0
+BL-11363,2025-12-29,Cairo,Online,Cold Brew Bottle,Drinks,1,3.8,3.8,
+BL-11442,2025-12-29,Giza,Online,Cold Brew Bottle,Drinks,3,3.8,11.4,3.0
+BL-11478,2025-12-29,Cairo,Wholesale,Burr Grinder,Equipment,18,72.98,1313.64,5.0
+BL-11789,2025-12-29,Alexandria,Wholesale,Travel Mug,Merch,30,13.12,393.6,
+BL-12042,2025-12-29,Cairo,Online,Cold Brew Bottle,Drinks,3,3.42,10.26,4.0
+BL-12155,2025-12-29,Giza,Online,Oat Latte Can,Drinks,3,2.9,8.7,4.0
+BL-12162,2025-12-29,Cairo,Wholesale,Travel Mug,Merch,24,13.12,314.88,4.0
+BL-12224,2025-12-29,Cairo,Store,Oat Latte Can,Drinks,5,2.9,14.5,5.0
+BL-12385,2025-12-29,Giza,Store,Oat Latte Can,Drinks,7,2.9,20.3,
+BL-10320,2025-12-30,Giza,Store,Burr Grinder,Equipment,4,89.0,356.0,3.0
+BL-10806,2025-12-30,Mansoura,Store,House Blend 500g,Beans,3,11.25,33.75,
+BL-10854,2025-12-30,Cairo,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,3.0
+BL-10857,2025-12-30,Alexandria,Online,Travel Mug,Merch,7,16.0,112.0,5.0
+BL-10936,2025-12-30,Giza,Store,Cold Brew Bottle,Drinks,6,3.42,20.52,4.0
+BL-11035,2025-12-30,Giza,Store,Oat Latte Can,Drinks,2,2.61,5.22,5.0
+BL-11062,2025-12-30,Alexandria,Wholesale,House Blend 500g,Beans,6,10.25,61.5,
+BL-11082,2025-12-30,Cairo,Wholesale,Decaf 500g,Beans,30,11.07,332.1,4.0
+BL-11375,2025-12-30,Giza,Online,Espresso Beans 1kg,Beans,5,21.0,105.0,4.0
+BL-11458,2025-12-30,Cairo,Wholesale,House Blend 500g,Beans,12,10.25,123.0,4.0
+BL-11507,2025-12-30,Alexandria,Wholesale,Pour-over Kit,Equipment,18,27.88,501.84,5.0
+BL-11524,2025-12-30,Alexandria,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,3.0
+BL-11693,2025-12-30,Cairo,Store,Cold Brew Bottle,Drinks,1,3.42,3.42,
+BL-11858,2025-12-30,Cairo,Store,Decaf 500g,Beans,6,13.5,81.0,4.0
+BL-12086,2025-12-30,Alexandria,Wholesale,Espresso Beans 1kg,Beans,18,17.22,309.96,
+BL-12171,2025-12-30,Mansoura,Store,Travel Mug,Merch,3,16.0,48.0,4.0
+BL-12212,2025-12-30,Mansoura,Online,Espresso Beans 1kg,Beans,2,18.9,37.8,5.0
+BL-12270,2025-12-30,Alexandria,Online,Espresso Beans 1kg,Beans,4,21.0,84.0,4.0
+BL-10016,2025-12-31,Cairo,Wholesale,Travel Mug,Merch,36,13.12,472.32,
+BL-10295,2025-12-31,Giza,Store,Cold Brew Bottle,Drinks,5,3.8,19.0,5.0
+BL-10345,2025-12-31,Giza,Wholesale,Cold Brew Bottle,Drinks,12,3.12,37.44,5.0
+BL-10483,2025-12-31,Giza,Store,Espresso Beans 1kg,Beans,3,21.0,63.0,4.0
+BL-10800,2025-12-31,Mansoura,Store,Espresso Beans 1kg,Beans,5,21.0,105.0,5.0
+BL-11223,2025-12-31,Cairo,Online,House Blend 500g,Beans,4,12.5,50.0,4.0
+BL-11228,2025-12-31,Giza,Wholesale,Cold Brew Bottle,Drinks,30,3.12,93.6,
+BL-12033,2025-12-31,Giza,Online,House Blend 500g,Beans,3,12.5,37.5,
+BL-12389,2025-12-31,Alexandria,Online,House Blend 500g,Beans,3,12.5,37.5,
