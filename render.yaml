@@ -1,7 +1,7 @@
 # Render Blueprint: New > Blueprint, pick this repo, then paste the API key when asked.
 services:
   - type: web
-    name: ai-document-assistant
+    name: lumen-assistant
     runtime: python
     plan: free
     buildCommand: pip install -r backend/requirements.txt

@@ -1,5 +1,5 @@
 [project]
-name = "ai-document-assistant"
+name = "lumen-assistant"
 version = "1.0.0"
 description = "Ask questions about a PDF or CSV and get cited answers and charts, powered by Claude."
 requires-python = ">=3.12"

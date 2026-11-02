@@ -103,7 +103,7 @@ def make_report(df: pd.DataFrame, path: Path) -> None:
 
     story = [
         Paragraph("Brightline Coffee Co. Annual Report 2025", h1),
-        Paragraph("A fictional company, made up for the AI Document Assistant demo.", body),
+        Paragraph("A fictional company, made up for the Lumen demo.", body),
         Spacer(1, 12),
         Paragraph("Letter from the founder", h2),
         Paragraph(
