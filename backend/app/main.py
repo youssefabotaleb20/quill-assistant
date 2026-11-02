@@ -33,7 +33,7 @@ class Question(BaseModel):
 
 
 def create_app(settings: Settings = default_settings, client: anthropic.Anthropic | None = None) -> FastAPI:
-    app = FastAPI(title="Lumen: AI Document Assistant", version="1.0.0")
+    app = FastAPI(title="Quill: AI Document Assistant", version="1.0.0")
     app.add_middleware(
         CORSMiddleware,
         allow_origins=list(settings.cors_origins),

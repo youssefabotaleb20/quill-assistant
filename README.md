@@ -1,4 +1,4 @@
-# Lumen: AI Document Assistant
+# Quill: AI Document Assistant
 
 Upload a PDF or a CSV, ask questions in plain words, and get answers with page citations, data tables and charts. Built with Python, FastAPI, Pandas, NumPy and the Claude API.
 
