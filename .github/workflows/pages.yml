@@ -17,6 +17,8 @@ concurrency:
 
 jobs:
   deploy:
+    # Skipped until the API is deployed and its URL is saved as a repo variable.
+    if: vars.API_BASE_URL != ''
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -27,10 +29,6 @@ jobs:
         env:
           API_BASE_URL: ${{ vars.API_BASE_URL }}
         run: |
-          if [ -z "$API_BASE_URL" ]; then
-            echo "::error::Set the API_BASE_URL repository variable to the Render URL (Settings > Secrets and variables > Actions > Variables)."
-            exit 1
-          fi
           printf 'window.APP_CONFIG = { apiBase: "%s" };\n' "$API_BASE_URL" > frontend/config.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
