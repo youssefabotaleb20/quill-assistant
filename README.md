@@ -10,10 +10,10 @@ Try it with the built-in samples: a year of sales for a fictional coffee company
 ## How it works
 
 ```
-Browser (static HTML/JS, GitHub Pages)
+Browser (static HTML/JS, served by the same app)
    │  upload file / ask question
    ▼
-FastAPI (Render)
+FastAPI (Docker container on a free Hugging Face Space)
    ├─ documents.py   parse the upload (pypdf for PDFs, Pandas for CSVs), profile the columns
    ├─ assistant.py   the Claude loop: stream the answer, run tool calls, send results back
    ├─ data_tools.py  validated query spec → Pandas/NumPy → result table or Chart.js spec
@@ -30,7 +30,7 @@ Browser renders Markdown, citations and interactive charts as they arrive
 - **Citations.** PDFs are sent as document blocks with citations enabled, so answers point to page numbers and quoted passages.
 - **Prompt caching.** The document (or the CSV profile) sits at the start of a stable prompt prefix, and the conversation is append-only, so follow-up questions read the document from cache at a fraction of the cost.
 - **Failure handling.** API errors, refusals, length limits and runaway tool loops each produce a clear message, and the conversation rolls back to its last good state. Server-side fallbacks retry a declined request on another model.
-- **Bring your own key.** The public demo has no server-side API key. Visitors paste their own Anthropic key, which the browser keeps for that tab only and sends with each question; the server uses it for that request and never stores or logs it. Hosting on Render's free plan and GitHub Pages costs nothing. Set `ANTHROPIC_API_KEY` on the server if you'd rather pay for visitors' questions.
+- **Bring your own key.** The public demo has no server-side API key. Visitors paste their own Anthropic key, which the browser keeps for that tab only and sends with each question; the server uses it for that request and never stores or logs it. Hosting on a free Hugging Face Space costs nothing and needs no card. Set `ANTHROPIC_API_KEY` on the server if you'd rather pay for visitors' questions.
 - **Demo safety.** Uploads are size-, page- and row-limited, kept in memory for an hour and never written to disk. When the server's own key is used, questions are rate-limited per client so a public demo can't run up the bill.
 
 ## Run it locally
@@ -72,11 +72,15 @@ All settings are environment variables; see [`.env.example`](.env.example) and [
 
 ## Deploy
 
-**API on Render.** In Render, choose New › Blueprint and pick this repo. [`render.yaml`](render.yaml) sets everything up, with no API key on the server. The free plan sleeps when idle, so the first request after a while takes about a minute.
+The app runs as one Docker container that serves both the API and the front end. The [`Dockerfile`](Dockerfile) works on any container host; this repo deploys it to a free [Hugging Face Space](https://huggingface.co/docs/hub/spaces-sdks-docker), which needs no card.
 
-**Front end on GitHub Pages.** In the repo settings, set Pages › Source to "GitHub Actions", and add a repository variable `API_BASE_URL` with the Render URL (Settings › Secrets and variables › Actions › Variables). Every push to `main` that touches `frontend/` deploys the site via [`pages.yml`](.github/workflows/pages.yml).
+1. On Hugging Face, create a Space with the **Docker** SDK (blank template) and free CPU hardware.
+2. Create a Hugging Face access token with **write** permission.
+3. In this repo's settings, add a secret `HF_TOKEN` with the token, and a variable `HF_SPACE` with the Space's id, for example `your-hf-username/quill-assistant`.
 
-**CI.** [`ci.yml`](.github/workflows/ci.yml) runs lint and the test suite on every push and pull request.
+From then on, every push to `main` runs [`space.yml`](.github/workflows/space.yml), which pushes a snapshot to the Space; the Space builds the image and serves the app. A free Space sleeps after a couple of days without visitors and wakes on the next visit.
+
+**CI.** [`ci.yml`](.github/workflows/ci.yml) runs lint and tests, and builds the Docker image and smoke-tests it, on every push and pull request.
 
 ## Project layout
 
@@ -86,7 +90,7 @@ backend/
   tests/          pytest suite with a scripted stand-in for the Claude API
 frontend/         static site: index.html, app.js, styles.css (Chart.js, marked, DOMPurify)
 samples/          demo CSV and PDF, plus the script that generates them
-render.yaml       Render Blueprint for the API
+Dockerfile        the deploy image (API + front end)
 ```
 
 ## License

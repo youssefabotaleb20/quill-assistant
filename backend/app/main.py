@@ -191,7 +191,7 @@ def create_app(
 
 
 def _client_key(request: Request) -> str:
-    # Render and most hosts put the real client IP first in X-Forwarded-For.
+    # Hosting proxies (Hugging Face, Vercel, Render...) put the real client IP first in X-Forwarded-For.
     forwarded = request.headers.get("x-forwarded-for", "")
     if forwarded:
         return forwarded.split(",")[0].strip()

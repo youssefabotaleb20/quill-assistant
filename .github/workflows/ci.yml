@@ -23,3 +23,18 @@ jobs:
         run: ruff check . && ruff format --check .
       - name: Test
         run: pytest -q
+
+  docker:
+    # Build the deploy image and check it starts and serves the app.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t quill .
+      - name: Smoke test
+        run: |
+          docker run -d --name quill -p 7860:7860 quill
+          for i in $(seq 1 30); do curl -fs localhost:7860/api/health && break; sleep 1; done
+          curl -fs localhost:7860/api/health | grep -q '"key_required":true'
+          curl -fs localhost:7860/ | grep -q '<title>Quill'
+          curl -fs -X POST localhost:7860/api/samples/report | grep -q '"pages":2'
+          docker logs quill

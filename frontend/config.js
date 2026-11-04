@@ -1,4 +1,4 @@
-// Where the API lives. Empty means the same origin (local development, where
-// FastAPI serves this folder). The GitHub Pages workflow overwrites this file
-// with the deployed API's URL.
+// Where the API lives. Empty means the same origin, which is how the app is
+// deployed (one container serves the API and this folder). Set a full URL
+// only if you host the front end separately.
 window.APP_CONFIG = { apiBase: "" };
