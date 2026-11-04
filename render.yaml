@@ -1,4 +1,7 @@
-# Render Blueprint: New > Blueprint, pick this repo, then paste the API key when asked.
+# Render Blueprint: New > Blueprint, pick this repo, Apply.
+# No API key is set on the server, so visitors use their own (bring your own key)
+# and hosting costs nothing. Add ANTHROPIC_API_KEY here only if you want to pay
+# for visitors' questions yourself.
 services:
   - type: web
     name: quill-assistant
@@ -11,8 +14,6 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.13.1
-      - key: ANTHROPIC_API_KEY
-        sync: false
       - key: CLAUDE_MODEL
         value: claude-opus-5-5
       - key: CLAUDE_EFFORT

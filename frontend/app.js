@@ -18,7 +18,26 @@ const SUGGESTIONS = {
 };
 
 const $ = (id) => document.getElementById(id);
-const state = { doc: null, busy: false };
+const state = { doc: null, busy: false, keyRequired: false };
+const KEY_STORE = "quill.apiKey";
+
+function getKey() {
+  try { return sessionStorage.getItem(KEY_STORE) || ""; } catch { return state.memoryKey || ""; }
+}
+
+function setKey(value) {
+  state.memoryKey = value;
+  try { value ? sessionStorage.setItem(KEY_STORE, value) : sessionStorage.removeItem(KEY_STORE); } catch { /* private mode */ }
+}
+
+function refreshKeyPanel() {
+  const panel = $("key-panel");
+  panel.hidden = !state.keyRequired;
+  const key = getKey();
+  panel.classList.toggle("missing", state.keyRequired && !key);
+  $("key-status").textContent = key ? `Saved for this tab (…${key.slice(-4)}).` : "";
+  if (key) $("api-key").value = "";
+}
 
 // ---------------------------------------------------------------- helpers
 
@@ -130,7 +149,8 @@ function openDocument(doc) {
   }));
 
   resetMessages();
-  $("question").focus();
+  refreshKeyPanel();
+  (state.keyRequired && !getKey() ? $("api-key") : $("question")).focus();
 }
 
 function resetMessages() {
@@ -158,6 +178,12 @@ function setBusy(busy) {
 async function ask(question) {
   question = question.trim();
   if (!question || state.busy || !state.doc) return;
+  if (state.keyRequired && !getKey()) {
+    refreshKeyPanel();
+    $("key-status").textContent = "Add your API key first.";
+    $("api-key").focus();
+    return;
+  }
   $("question").value = "";
   autosize();
   $("messages").querySelector(".empty-chat")?.remove();
@@ -171,13 +197,14 @@ async function ask(question) {
   try {
     const res = await fetch(`${API}/api/documents/${state.doc.id}/ask`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...(getKey() ? { "X-Anthropic-Key": getKey() } : {}) },
       body: JSON.stringify({ question }),
     });
     if (!res.ok) {
       let detail = `Request failed (${res.status})`;
       try { detail = (await res.json()).detail || detail; } catch { /* ignore */ }
       if (res.status === 404) detail += " Upload the file again to keep going.";
+      if (res.status === 401) { setKey(""); refreshKeyPanel(); $("api-key").focus(); }
       view.error(detail);
       return;
     }
@@ -377,6 +404,15 @@ function init() {
 
   $("ask-form").addEventListener("submit", (e) => { e.preventDefault(); ask($("question").value); });
   $("question").addEventListener("input", autosize);
+  $("key-panel").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const value = $("api-key").value.trim();
+    if (!value) { setKey(""); refreshKeyPanel(); return; }
+    if (!value.startsWith("sk-ant-")) { $("key-status").textContent = "Anthropic keys start with sk-ant-."; return; }
+    setKey(value);
+    refreshKeyPanel();
+    $("question").focus();
+  });
   $("question").addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); ask($("question").value); }
   });
@@ -393,6 +429,9 @@ function init() {
   api("/api/health").then((h) => {
     $("model-badge").textContent = h.model;
     $("model-badge").hidden = false;
+    state.keyRequired = !!h.key_required;
+    $("byok-note").hidden = !state.keyRequired;
+    if (state.doc) refreshKeyPanel();
   }).catch(() => setUploadStatus("The API isn't reachable right now. If it's on a free host, it may be waking up; try again in a minute.", true));
   api("/api/limits").then((l) => {
     $("limits-hint").textContent = `PDF up to ${l.max_pdf_pages} pages or CSV, up to ${l.max_upload_mb} MB`;

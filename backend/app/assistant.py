@@ -203,12 +203,15 @@ def _error_message(exc: Exception) -> str:
     if isinstance(exc, _UserFacing):
         return str(exc)
     if isinstance(exc, anthropic.AuthenticationError):
-        log.error("Anthropic API key is missing or invalid")
-        return "The server's Claude API key isn't set up correctly."
+        return "The Claude API key was rejected. Check that it's correct and still active."
+    if isinstance(exc, anthropic.PermissionDeniedError):
+        return "This Claude API key isn't allowed to use this model."
     if isinstance(exc, anthropic.RateLimitError):
         return "Claude is busy right now. Wait a moment and try again."
     if isinstance(exc, anthropic.BadRequestError):
         log.warning("Bad request to Claude: %s", exc.message)
+        if "credit balance" in exc.message.lower():
+            return "This Claude API key has no credit left. Add credit at console.anthropic.com or use another key."
         return "Claude couldn't process this request. Try a shorter question or a smaller file."
     if isinstance(exc, anthropic.APIStatusError):
         log.warning("Claude API error %s: %s", exc.status_code, exc.message)

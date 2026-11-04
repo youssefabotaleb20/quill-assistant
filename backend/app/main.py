@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
-from collections.abc import Iterator
+from collections.abc import Callable, Iterator
 from pathlib import Path
 from typing import Any
 
@@ -32,20 +32,38 @@ class Question(BaseModel):
     question: str = Field(min_length=1)
 
 
-def create_app(settings: Settings = default_settings, client: anthropic.Anthropic | None = None) -> FastAPI:
+USER_KEY_HEADER = "X-Anthropic-Key"
+
+
+def _user_client(api_key: str) -> anthropic.Anthropic:
+    return anthropic.Anthropic(api_key=api_key, max_retries=1)
+
+
+def create_app(
+    settings: Settings = default_settings,
+    client: anthropic.Anthropic | None = None,
+    client_factory: Callable[[str], anthropic.Anthropic] = _user_client,
+) -> FastAPI:
+    """Build the app.
+
+    `client` is the server's own Claude client (tests pass a fake). Visitors
+    can also send their own key in the X-Anthropic-Key header; it's used for
+    that request only and never stored or logged.
+    """
     app = FastAPI(title="Quill: AI Document Assistant", version="1.0.0")
     app.add_middleware(
         CORSMiddleware,
         allow_origins=list(settings.cors_origins),
         allow_methods=["GET", "POST", "DELETE"],
-        allow_headers=["Content-Type"],
+        allow_headers=["Content-Type", USER_KEY_HEADER],
     )
 
     store = DocumentStore(settings.document_ttl_minutes * 60, settings.max_documents)
     limiter = RateLimiter(settings.questions_per_hour)
+    has_server_key = client is not None or settings.server_key
     state: dict[str, Any] = {"assistant": Assistant(client, settings) if client else None}
 
-    def assistant() -> Assistant:
+    def server_assistant() -> Assistant:
         if state["assistant"] is None:
             try:
                 state["assistant"] = Assistant(anthropic.Anthropic(), settings)
@@ -61,7 +79,7 @@ def create_app(settings: Settings = default_settings, client: anthropic.Anthropi
 
     @app.get("/api/health")
     def health() -> dict[str, Any]:
-        return {"status": "ok", "model": settings.model}
+        return {"status": "ok", "model": settings.model, "key_required": not has_server_key}
 
     @app.get("/api/limits")
     def limits() -> dict[str, Any]:
@@ -135,10 +153,18 @@ def create_app(settings: Settings = default_settings, client: anthropic.Anthropi
             raise HTTPException(422, f"Keep questions under {settings.max_question_chars} characters.")
         if doc.turns >= settings.max_turns_per_document:
             raise HTTPException(429, "This conversation is long. Start a new chat to keep going.")
-        if not limiter.allow(_client_key(request)):
-            raise HTTPException(429, "You've hit the hourly question limit for this demo. Try again later.")
+        user_key = request.headers.get(USER_KEY_HEADER, "").strip()
+        if user_key:
+            if not user_key.startswith("sk-ant-") or len(user_key) > 300:
+                raise HTTPException(401, "That doesn't look like an Anthropic API key. It should start with sk-ant-.")
+            bot = Assistant(client_factory(user_key), settings)
+        elif has_server_key:
+            if not limiter.allow(_client_key(request)):
+                raise HTTPException(429, "You've hit the hourly question limit for this demo. Try again later.")
+            bot = server_assistant()
+        else:
+            raise HTTPException(401, "Add your Anthropic API key to ask questions.")
 
-        bot = assistant()
         lock = store.lock(doc_id)
         if lock is None or not lock.acquire(blocking=False):
             raise HTTPException(409, "Wait for the current answer to finish.")

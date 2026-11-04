@@ -291,3 +291,47 @@ def test_api_error_and_disconnect_roll_back(report_pdf):
     assert next(gen)["type"] == "chart"
     gen.close()
     assert doc.messages == []
+
+
+# --------------------------------------------------------------------------- #
+# Bring your own key
+# --------------------------------------------------------------------------- #
+
+
+def make_byok(script, **overrides):
+    fake = FakeClient(script)
+    keys: list[str] = []
+
+    def factory(key):
+        keys.append(key)
+        return fake
+
+    settings = replace(Settings(), server_key=False, **overrides)
+    return TestClient(create_app(settings, client_factory=factory)), fake, keys
+
+
+def test_without_server_key_a_visitor_key_is_required(sales_csv):
+    client, _, keys = make_byok([])
+    assert client.get("/api/health").json()["key_required"] is True
+    doc = upload(client, "sales.csv", sales_csv)  # uploads and samples don't need a key
+    r = client.post(f"/api/documents/{doc['id']}/ask", json={"question": "q"})
+    assert r.status_code == 401 and "API key" in r.json()["detail"]
+    r = client.post(f"/api/documents/{doc['id']}/ask", json={"question": "q"}, headers={"X-Anthropic-Key": "nope"})
+    assert r.status_code == 401 and "sk-ant-" in r.json()["detail"]
+    assert keys == []
+
+
+def test_visitor_key_is_used_for_their_request_and_not_rate_limited(sales_csv):
+    client, fake, keys = make_byok([([text("one")], "end_turn"), ([text("two")], "end_turn")], questions_per_hour=1)
+    doc = upload(client, "sales.csv", sales_csv)
+    headers = {"X-Anthropic-Key": "sk-ant-test-123"}
+    for q in ("first", "second"):
+        out = events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": q}, headers=headers))
+        assert out[-1]["type"] == "done"
+    assert keys == ["sk-ant-test-123", "sk-ant-test-123"]
+    assert len(fake.messages.requests) == 2
+
+
+def test_server_key_reports_no_key_needed():
+    client, _ = make([])
+    assert client.get("/api/health").json()["key_required"] is False

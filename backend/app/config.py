@@ -37,7 +37,12 @@ class Settings:
     max_question_chars: int = field(default_factory=lambda: _int("MAX_QUESTION_CHARS", 2000))
     max_turns_per_document: int = field(default_factory=lambda: _int("MAX_TURNS_PER_DOCUMENT", 30))
 
+    # True when the server has its own Claude key. Without one, every visitor
+    # must send their own key (bring your own key), so hosting costs nothing.
+    server_key: bool = field(default_factory=lambda: bool(os.environ.get("ANTHROPIC_API_KEY", "").strip()))
+
     # Simple per-IP limit so a public demo can't run up the API bill.
+    # Only applies to questions answered with the server's own key.
     questions_per_hour: int = field(default_factory=lambda: _int("QUESTIONS_PER_HOUR", 30))
 
     # Comma-separated list of front-end origins allowed to call the API.

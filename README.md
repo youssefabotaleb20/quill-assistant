@@ -30,11 +30,12 @@ Browser renders Markdown, citations and interactive charts as they arrive
 - **Citations.** PDFs are sent as document blocks with citations enabled, so answers point to page numbers and quoted passages.
 - **Prompt caching.** The document (or the CSV profile) sits at the start of a stable prompt prefix, and the conversation is append-only, so follow-up questions read the document from cache at a fraction of the cost.
 - **Failure handling.** API errors, refusals, length limits and runaway tool loops each produce a clear message, and the conversation rolls back to its last good state. Server-side fallbacks retry a declined request on another model.
-- **Demo safety.** Uploads are size-, page- and row-limited, kept in memory for an hour and never written to disk. Questions are rate-limited per client so a public demo can't run up the API bill.
+- **Bring your own key.** The public demo has no server-side API key. Visitors paste their own Anthropic key, which the browser keeps for that tab only and sends with each question; the server uses it for that request and never stores or logs it. Hosting on Render's free plan and GitHub Pages costs nothing. Set `ANTHROPIC_API_KEY` on the server if you'd rather pay for visitors' questions.
+- **Demo safety.** Uploads are size-, page- and row-limited, kept in memory for an hour and never written to disk. When the server's own key is used, questions are rate-limited per client so a public demo can't run up the bill.
 
 ## Run it locally
 
-Needs Python 3.12+ and an [Anthropic API key](https://console.anthropic.com/).
+Needs Python 3.12+ and an [Anthropic API key](https://console.anthropic.com/settings/keys). Either export it as below, or leave it unset and paste it into the page.
 
 ```bash
 cd backend
@@ -60,18 +61,18 @@ All settings are environment variables; see [`.env.example`](.env.example) and [
 
 | Variable | Default | What it does |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | (required) | Claude API key |
+| `ANTHROPIC_API_KEY` | (unset) | Server-side Claude key. Unset means visitors must bring their own |
 | `CLAUDE_MODEL` | `claude-opus-5-5` | Model used for answers |
 | `CLAUDE_EFFORT` | `medium` | How hard the model thinks: `low`, `medium`, `high` |
 | `CLAUDE_FALLBACKS` | `true` | Retry a declined request on another model server-side |
 | `CORS_ORIGINS` | localhost | Front-end origins allowed to call the API |
-| `QUESTIONS_PER_HOUR` | `30` | Per-client question limit |
+| `QUESTIONS_PER_HOUR` | `30` | Per-client limit on questions answered with the server's key |
 | `MAX_UPLOAD_MB` / `MAX_PDF_PAGES` / `MAX_CSV_ROWS` | `10` / `100` / `200000` | Upload limits |
 | `DOCUMENT_TTL_MINUTES` | `60` | How long an upload is kept in memory |
 
 ## Deploy
 
-**API on Render.** In Render, choose New › Blueprint and pick this repo. [`render.yaml`](render.yaml) sets everything up; paste your `ANTHROPIC_API_KEY` when asked. The free plan sleeps when idle, so the first request after a while takes about a minute.
+**API on Render.** In Render, choose New › Blueprint and pick this repo. [`render.yaml`](render.yaml) sets everything up, with no API key on the server. The free plan sleeps when idle, so the first request after a while takes about a minute.
 
 **Front end on GitHub Pages.** In the repo settings, set Pages › Source to "GitHub Actions", and add a repository variable `API_BASE_URL` with the Render URL (Settings › Secrets and variables › Actions › Variables). Every push to `main` that touches `frontend/` deploys the site via [`pages.yml`](.github/workflows/pages.yml).
 

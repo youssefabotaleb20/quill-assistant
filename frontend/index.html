@@ -51,7 +51,7 @@
       <div><h2>Real numbers</h2><p>For CSVs, Claude writes structured queries that run on the full dataset with Pandas, so figures are computed, not guessed.</p></div>
       <div><h2>Charts on request</h2><p>Ask for a trend or a comparison and get an interactive chart in the chat.</p></div>
     </section>
-    <p class="privacy">Files stay in server memory for an hour and are never written to disk.</p>
+    <p class="privacy">Files stay in server memory for an hour and are never written to disk.<span id="byok-note" hidden> Asking questions uses your own Anthropic API key.</span></p>
   </main>
 
   <!-- Workspace -->
@@ -67,6 +67,15 @@
         <button class="btn ghost" id="new-chat" type="button">New chat</button>
         <button class="btn ghost" id="new-file" type="button">Another file</button>
       </div>
+      <form class="key-panel" id="key-panel" hidden>
+        <label for="api-key">Your Anthropic API key</label>
+        <p class="key-help">Quill answers with your own key, so you only pay for your questions. It's kept in this tab only and passed to Claude with each question; the server never stores it. <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">Get a key</a></p>
+        <div class="key-row">
+          <input id="api-key" type="password" placeholder="sk-ant-..." autocomplete="off" spellcheck="false">
+          <button class="btn ghost" id="key-save" type="submit">Save</button>
+        </div>
+        <p class="key-status" id="key-status" role="status" aria-live="polite"></p>
+      </form>
       <div class="suggestions">
         <h3>Try asking</h3>
         <div id="suggestions"></div>
