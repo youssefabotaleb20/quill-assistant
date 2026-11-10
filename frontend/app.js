@@ -18,7 +18,9 @@ const SUGGESTIONS = {
 };
 
 const $ = (id) => document.getElementById(id);
-const state = { doc: null, busy: false, keyRequired: false };
+// The server keeps nothing between requests: the browser holds the file and
+// the conversation, and sends both with each question.
+const state = { doc: null, file: null, history: [], busy: false, keyRequired: false };
 const KEY_STORE = "quill.apiKey";
 
 function getKey() {
@@ -89,11 +91,15 @@ function setUploadStatus(text, isError = false) {
 
 async function uploadFile(file) {
   if (!file) return;
+  if (state.maxBytes && file.size > state.maxBytes) {
+    setUploadStatus(`That file is larger than ${state.maxBytes / 1024 / 1024} MB.`, true);
+    return;
+  }
   setUploadStatus(`Reading ${file.name}…`);
   const form = new FormData();
   form.append("file", file);
   try {
-    openDocument(await api("/api/documents", { method: "POST", body: form }));
+    openDocument(await api("/api/documents", { method: "POST", body: form }), file);
     setUploadStatus("");
   } catch (err) {
     setUploadStatus(err.message, true);
@@ -104,8 +110,11 @@ async function loadSample(name, button) {
   document.querySelectorAll("[data-sample]").forEach((b) => (b.disabled = true));
   setUploadStatus("Loading the sample…");
   try {
-    openDocument(await api(`/api/samples/${name}`, { method: "POST" }));
-    setUploadStatus("");
+    const res = await fetch(`${API}/api/samples/${name}`);
+    if (!res.ok) throw new Error("Couldn't load the sample.");
+    const fileName = decodeURIComponent((res.headers.get("content-disposition") || "").split("filename=")[1] || name).replace(/"/g, "");
+    const file = new File([await res.blob()], fileName, { type: res.headers.get("content-type") || "" });
+    await uploadFile(file);
   } catch (err) {
     setUploadStatus(err.message, true);
   } finally {
@@ -115,6 +124,8 @@ async function loadSample(name, button) {
 
 function showStart() {
   state.doc = null;
+  state.file = null;
+  state.history = [];
   $("workspace").hidden = true;
   $("start").hidden = false;
   $("file-input").value = "";
@@ -122,8 +133,10 @@ function showStart() {
 
 // ---------------------------------------------------------------- workspace
 
-function openDocument(doc) {
+function openDocument(doc, file) {
   state.doc = doc;
+  state.file = file;
+  state.history = [];
   $("start").hidden = true;
   $("workspace").hidden = false;
 
@@ -195,15 +208,18 @@ async function ask(question) {
   setBusy(true);
 
   try {
-    const res = await fetch(`${API}/api/documents/${state.doc.id}/ask`, {
+    const form = new FormData();
+    form.append("file", state.file);
+    form.append("question", question);
+    form.append("history", JSON.stringify(state.history));
+    const res = await fetch(`${API}/api/ask`, {
       method: "POST",
-      headers: { "Content-Type": "application/json", ...(getKey() ? { "X-Anthropic-Key": getKey() } : {}) },
-      body: JSON.stringify({ question }),
+      headers: getKey() ? { "X-Anthropic-Key": getKey() } : {},
+      body: form,
     });
     if (!res.ok) {
       let detail = `Request failed (${res.status})`;
       try { detail = (await res.json()).detail || detail; } catch { /* ignore */ }
-      if (res.status === 404) detail += " Upload the file again to keep going.";
       if (res.status === 401) { setKey(""); refreshKeyPanel(); $("api-key").focus(); }
       view.error(detail);
       return;
@@ -271,6 +287,9 @@ class AnswerView {
         break;
       case "error":
         this.error(e.message);
+        break;
+      case "history":
+        state.history = e.messages;
         break;
       case "done":
         if (e.usage) {
@@ -416,14 +435,11 @@ function init() {
   $("question").addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); ask($("question").value); }
   });
-  $("new-file").addEventListener("click", () => {
-    if (state.doc) api(`/api/documents/${state.doc.id}`, { method: "DELETE" }).catch(() => {});
-    showStart();
-  });
-  $("new-chat").addEventListener("click", async () => {
+  $("new-file").addEventListener("click", () => { if (!state.busy) showStart(); });
+  $("new-chat").addEventListener("click", () => {
     if (!state.doc || state.busy) return;
-    try { await api(`/api/documents/${state.doc.id}/reset`, { method: "POST" }); resetMessages(); }
-    catch (err) { $("messages").append(el("div", { class: "error-note", role: "alert", text: err.message })); }
+    state.history = [];
+    resetMessages();
   });
 
   api("/api/health").then((h) => {
@@ -434,6 +450,7 @@ function init() {
     if (state.doc) refreshKeyPanel();
   }).catch(() => setUploadStatus("The API isn't reachable right now. If it's on a free host, it may be waking up; try again in a minute.", true));
   api("/api/limits").then((l) => {
+    state.maxBytes = l.max_upload_mb * 1024 * 1024;
     $("limits-hint").textContent = `PDF up to ${l.max_pdf_pages} pages or CSV, up to ${l.max_upload_mb} MB`;
   }).catch(() => {});
 }

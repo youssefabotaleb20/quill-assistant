@@ -29,13 +29,14 @@ class Settings:
     use_fallbacks: bool = field(default_factory=lambda: _bool("CLAUDE_FALLBACKS", True))
     max_tool_rounds: int = field(default_factory=lambda: _int("MAX_TOOL_ROUNDS", 8))
 
-    max_upload_mb: int = field(default_factory=lambda: _int("MAX_UPLOAD_MB", 10))
+    # Vercel caps a request body at 4.5 MB, and each question sends the file.
+    max_upload_mb: int = field(default_factory=lambda: _int("MAX_UPLOAD_MB", 4))
     max_pdf_pages: int = field(default_factory=lambda: _int("MAX_PDF_PAGES", 100))
     max_csv_rows: int = field(default_factory=lambda: _int("MAX_CSV_ROWS", 200_000))
-    document_ttl_minutes: int = field(default_factory=lambda: _int("DOCUMENT_TTL_MINUTES", 60))
-    max_documents: int = field(default_factory=lambda: _int("MAX_DOCUMENTS", 200))
     max_question_chars: int = field(default_factory=lambda: _int("MAX_QUESTION_CHARS", 2000))
     max_turns_per_document: int = field(default_factory=lambda: _int("MAX_TURNS_PER_DOCUMENT", 30))
+    # Cap on the conversation history the browser sends back with a question.
+    max_history_kb: int = field(default_factory=lambda: _int("MAX_HISTORY_KB", 200))
 
     # True when the server has its own Claude key. Without one, every visitor
     # must send their own key (bring your own key), so hosting costs nothing.

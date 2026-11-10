@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 import io
-import secrets
-import time
 from dataclasses import dataclass, field
 from typing import Any, Literal
 
@@ -21,24 +19,20 @@ class UploadError(ValueError):
 
 @dataclass
 class Document:
-    id: str
     kind: Literal["pdf", "csv"]
     filename: str
     size_bytes: int
-    created_at: float
     pdf_bytes: bytes | None = None
     page_count: int | None = None
     preview: str = ""
     df: pd.DataFrame | None = None
     profile: dict[str, Any] | None = None
-    # Full Claude conversation, appended to and never edited, so the cached
-    # prefix (document + earlier turns) stays valid across questions.
+    # The conversation so far, as the browser sent it back. Only appended to,
+    # never edited, so the cached prefix (document + earlier turns) stays valid.
     messages: list[dict[str, Any]] = field(default_factory=list)
-    turns: int = 0
 
     def summary(self) -> dict[str, Any]:
         out: dict[str, Any] = {
-            "id": self.id,
             "kind": self.kind,
             "filename": self.filename,
             "size_bytes": self.size_bytes,
@@ -63,16 +57,15 @@ def load(filename: str, data: bytes, *, max_bytes: int, max_pages: int, max_rows
 
     name = filename.rsplit("/", 1)[-1][:200] or "upload"
     lowered = name.lower()
-    doc_id = secrets.token_urlsafe(12)
 
     if lowered.endswith(".pdf") or data[:5] == b"%PDF-":
-        return _load_pdf(doc_id, name, data, max_pages)
+        return _load_pdf(name, data, max_pages)
     if lowered.endswith((".csv", ".tsv", ".txt")):
-        return _load_csv(doc_id, name, data, max_rows)
+        return _load_csv(name, data, max_rows)
     raise UploadError("Upload a PDF or a CSV file.")
 
 
-def _load_pdf(doc_id: str, name: str, data: bytes, max_pages: int) -> Document:
+def _load_pdf(name: str, data: bytes, max_pages: int) -> Document:
     if data[:5] != b"%PDF-":
         raise UploadError("That file doesn't look like a PDF.")
     try:
@@ -88,18 +81,16 @@ def _load_pdf(doc_id: str, name: str, data: bytes, max_pages: int) -> Document:
     if pages > max_pages:
         raise UploadError(f"The PDF has {pages} pages; the limit is {max_pages}.")
     return Document(
-        id=doc_id,
         kind="pdf",
         filename=name,
         size_bytes=len(data),
-        created_at=time.time(),
         pdf_bytes=data,
         page_count=pages,
         preview=preview,
     )
 
 
-def _load_csv(doc_id: str, name: str, data: bytes, max_rows: int) -> Document:
+def _load_csv(name: str, data: bytes, max_rows: int) -> Document:
     text = _decode(data)
     try:
         df = pd.read_csv(io.StringIO(text), sep=None, engine="python", nrows=max_rows + 1)
@@ -113,11 +104,9 @@ def _load_csv(doc_id: str, name: str, data: bytes, max_rows: int) -> Document:
     df.columns = _unique_names(df.columns)
     df = data_tools.coerce_dates(df)
     return Document(
-        id=doc_id,
         kind="csv",
         filename=name,
         size_bytes=len(data),
-        created_at=time.time(),
         df=df,
         profile=data_tools.profile(df),
     )

@@ -9,7 +9,12 @@ browser as server-sent events:
     {"type": "table",    "title": "...", "columns": [...], "rows": [[...]]}
     {"type": "chart",    "spec": {...}}
     {"type": "error",    "message": "..."}
+    {"type": "history",  "messages": [...]}   # the conversation so far, for the next question
     {"type": "done",     "usage": {...}}
+
+The server keeps no state between requests. The browser holds the file and
+the conversation and sends both with each question; that's what lets the app
+run on serverless hosting.
 """
 
 from __future__ import annotations
@@ -51,7 +56,7 @@ class Assistant:
         starts from a valid conversation.
         """
         checkpoint = len(doc.messages)
-        doc.messages.append({"role": "user", "content": self._user_content(doc, question)})
+        doc.messages.append({"role": "user", "content": question})
         usage = {"input_tokens": 0, "output_tokens": 0, "cache_read_input_tokens": 0, "cache_creation_input_tokens": 0}
         completed = False
 
@@ -70,9 +75,9 @@ class Assistant:
 
                 if not tool_uses:
                     completed = True
-                    doc.turns += 1
                     if response.stop_reason == "max_tokens":
                         yield {"type": "text", "text": "\n\n_The answer was cut off because it hit the length limit._"}
+                    yield {"type": "history", "messages": to_json(doc.messages)}
                     yield {"type": "done", "usage": usage}
                     return
 
@@ -93,26 +98,32 @@ class Assistant:
 
     # ------------------------------------------------------------------ #
 
-    def _user_content(self, doc: Document, question: str) -> Any:
-        if doc.kind == "pdf" and not doc.messages:
-            # The PDF goes once, at the start of the conversation, and is
-            # cached so later questions don't pay to re-read it.
-            assert doc.pdf_bytes is not None
-            return [
-                {
-                    "type": "document",
-                    "source": {
-                        "type": "base64",
-                        "media_type": "application/pdf",
-                        "data": base64.standard_b64encode(doc.pdf_bytes).decode("ascii"),
-                    },
-                    "title": doc.filename,
-                    "citations": {"enabled": True},
-                    "cache_control": {"type": "ephemeral"},
-                },
-                {"type": "text", "text": question},
-            ]
-        return question
+    def _wire_messages(self, doc: Document) -> list[dict[str, Any]]:
+        """The conversation as sent to Claude.
+
+        For a PDF, the document goes at the start of the first message on
+        every request (the browser's copy of the history leaves it out). The
+        bytes are identical each time, so after the first question it's read
+        from the prompt cache.
+        """
+        if doc.kind != "pdf" or not doc.messages:
+            return doc.messages
+        assert doc.pdf_bytes is not None
+        first = doc.messages[0]
+        text = first["content"]
+        blocks = [{"type": "text", "text": text}] if isinstance(text, str) else list(text)
+        document = {
+            "type": "document",
+            "source": {
+                "type": "base64",
+                "media_type": "application/pdf",
+                "data": base64.standard_b64encode(doc.pdf_bytes).decode("ascii"),
+            },
+            "title": doc.filename,
+            "citations": {"enabled": True},
+            "cache_control": {"type": "ephemeral"},
+        }
+        return [{"role": "user", "content": [document, *blocks]}, *doc.messages[1:]]
 
     def _request(self, doc: Document) -> dict[str, Any]:
         if doc.kind == "pdf":
@@ -126,7 +137,7 @@ class Assistant:
             "max_tokens": self.settings.max_tokens,
             "system": system,
             "tools": tools,
-            "messages": doc.messages,
+            "messages": self._wire_messages(doc),
             "output_config": {"effort": self.settings.effort},
             # Cache the whole prefix up to the latest message, so each new
             # question only pays full price for what's new.
@@ -220,6 +231,17 @@ def _error_message(exc: Exception) -> str:
         return "Couldn't reach Claude. Please try again."
     log.exception("Unexpected error while answering", exc_info=exc)
     return "Something went wrong. Please try again."
+
+
+def to_json(messages: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Make a conversation JSON-safe, turning SDK content blocks into plain dicts."""
+    out = []
+    for m in messages:
+        content = m["content"]
+        if not isinstance(content, str):
+            content = [b if isinstance(b, dict) else b.to_dict(mode="json", exclude_none=True) for b in content]
+        out.append({"role": m["role"], "content": content})
+    return out
 
 
 def _tool_error(message: Any) -> dict[str, Any]:

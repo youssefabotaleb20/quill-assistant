@@ -11,9 +11,9 @@ Try it with the built-in samples: a year of sales for a fictional coffee company
 
 ```
 Browser (static HTML/JS, served by the same app)
-   │  upload file / ask question
+   │  keeps the file and the conversation; sends both with each question
    ▼
-FastAPI (Docker container on a free Hugging Face Space)
+FastAPI (stateless; one serverless function on Vercel)
    ├─ documents.py   parse the upload (pypdf for PDFs, Pandas for CSVs), profile the columns
    ├─ assistant.py   the Claude loop: stream the answer, run tool calls, send results back
    ├─ data_tools.py  validated query spec → Pandas/NumPy → result table or Chart.js spec
@@ -30,8 +30,9 @@ Browser renders Markdown, citations and interactive charts as they arrive
 - **Citations.** PDFs are sent as document blocks with citations enabled, so answers point to page numbers and quoted passages.
 - **Prompt caching.** The document (or the CSV profile) sits at the start of a stable prompt prefix, and the conversation is append-only, so follow-up questions read the document from cache at a fraction of the cost.
 - **Failure handling.** API errors, refusals, length limits and runaway tool loops each produce a clear message, and the conversation rolls back to its last good state. Server-side fallbacks retry a declined request on another model.
-- **Bring your own key.** The public demo has no server-side API key. Visitors paste their own Anthropic key, which the browser keeps for that tab only and sends with each question; the server uses it for that request and never stores or logs it. Hosting on a free Hugging Face Space costs nothing and needs no card. Set `ANTHROPIC_API_KEY` on the server if you'd rather pay for visitors' questions.
-- **Demo safety.** Uploads are size-, page- and row-limited, kept in memory for an hour and never written to disk. When the server's own key is used, questions are rate-limited per client so a public demo can't run up the bill.
+- **Bring your own key.** The public demo has no server-side API key. Visitors paste their own Anthropic key, which the browser keeps for that tab only and sends with each question; the server uses it for that request and never stores or logs it. Hosting on Vercel's free Hobby plan costs nothing and needs no card. Set `ANTHROPIC_API_KEY` on the server if you'd rather pay for visitors' questions.
+- **Stateless server.** Nothing is stored between requests. The browser holds the file and the conversation and sends both to `POST /api/ask`; the server re-reads the file, checks the history's shape and size, answers, and returns the updated history. For PDFs the server re-attaches the document block itself, so the history the browser keeps stays small. That is what lets it run as a serverless function.
+- **Demo safety.** Uploads are size-, page- and row-limited and never written to disk. When the server's own key is used, questions are rate-limited per client so a public demo can't run up the bill.
 
 ## Run it locally
 
@@ -67,20 +68,20 @@ All settings are environment variables; see [`.env.example`](.env.example) and [
 | `CLAUDE_FALLBACKS` | `true` | Retry a declined request on another model server-side |
 | `CORS_ORIGINS` | localhost | Front-end origins allowed to call the API |
 | `QUESTIONS_PER_HOUR` | `30` | Per-client limit on questions answered with the server's key |
-| `MAX_UPLOAD_MB` / `MAX_PDF_PAGES` / `MAX_CSV_ROWS` | `10` / `100` / `200000` | Upload limits |
-| `DOCUMENT_TTL_MINUTES` | `60` | How long an upload is kept in memory |
+| `MAX_UPLOAD_MB` / `MAX_PDF_PAGES` / `MAX_CSV_ROWS` | `4` / `100` / `200000` | Upload limits (Vercel caps a request body at 4.5 MB) |
+| `MAX_TURNS_PER_DOCUMENT` / `MAX_HISTORY_KB` | `30` / `200` | Limits on the conversation the browser sends back |
 
 ## Deploy
 
-The app runs as one Docker container that serves both the API and the front end. The [`Dockerfile`](Dockerfile) works on any container host; this repo deploys it to a free [Hugging Face Space](https://huggingface.co/docs/hub/spaces-sdks-docker), which needs no card.
+The public demo runs on [Vercel](https://vercel.com/docs/frameworks/backend/fastapi)'s free Hobby plan, which needs no card. [`index.py`](index.py) at the repo root exposes the FastAPI app, [`vercel.json`](vercel.json) gives the function up to 300 seconds for long answers, and the root [`requirements.txt`](requirements.txt) lists its packages.
 
-1. On Hugging Face, create a Space with the **Docker** SDK (blank template) and free CPU hardware.
-2. Create a Hugging Face access token with **write** permission.
-3. In this repo's settings, add a secret `HF_TOKEN` with the token, and a variable `HF_SPACE` with the Space's id, for example `your-hf-username/quill-assistant`.
+1. On vercel.com, choose **Add New → Project** and import this GitHub repo.
+2. Keep the detected FastAPI preset and the repo root as the root directory. No environment variables are needed, since visitors bring their own key.
+3. Deploy. Every push to `main` redeploys.
 
-From then on, every push to `main` runs [`space.yml`](.github/workflows/space.yml), which pushes a snapshot to the Space; the Space builds the image and serves the app. A free Space sleeps after a couple of days without visitors and wakes on the next visit.
+The [`Dockerfile`](Dockerfile) runs the same app in one container, for any container host or local use.
 
-**CI.** [`ci.yml`](.github/workflows/ci.yml) runs lint and tests, and builds the Docker image and smoke-tests it, on every push and pull request.
+**CI.** [`ci.yml`](.github/workflows/ci.yml) runs lint and tests, checks the Vercel entrypoint imports, and builds the Docker image and smoke-tests it, on every push and pull request.
 
 ## Project layout
 
@@ -90,7 +91,9 @@ backend/
   tests/          pytest suite with a scripted stand-in for the Claude API
 frontend/         static site: index.html, app.js, styles.css (Chart.js, marked, DOMPurify)
 samples/          demo CSV and PDF, plus the script that generates them
-Dockerfile        the deploy image (API + front end)
+index.py          Vercel entrypoint (exposes the FastAPI app)
+vercel.json       Vercel function settings
+Dockerfile        container image (API + front end), for other hosts
 ```
 
 ## License

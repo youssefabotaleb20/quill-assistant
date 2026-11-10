@@ -29,12 +29,26 @@ def report_pdf() -> bytes:
 # --------------------------------------------------------------------------- #
 
 
-def text(t: str, citations: list[dict[str, Any]] | None = None) -> NS:
-    return NS(type="text", text=t, citations=[NS(**c) for c in citations or []])
+class Block(NS):
+    """A content block that serialises like the SDK's models do."""
+
+    def to_dict(self, mode: str = "python", exclude_none: bool = False) -> dict[str, Any]:
+        out = {}
+        for k, v in vars(self).items():
+            if k == "citations":
+                v = [vars(c) for c in v] or None
+            if v is None and exclude_none:
+                continue
+            out[k] = v
+        return out
 
 
-def tool_use(name: str, input: Any, id: str = "toolu_1") -> NS:
-    return NS(type="tool_use", name=name, input=input, id=id)
+def text(t: str, citations: list[dict[str, Any]] | None = None) -> Block:
+    return Block(type="text", text=t, citations=[NS(type="page_location", **c) for c in citations or []])
+
+
+def tool_use(name: str, input: Any, id: str = "toolu_1") -> Block:
+    return Block(type="tool_use", name=name, input=input, id=id)
 
 
 class FakeStream:

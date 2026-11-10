@@ -1,4 +1,9 @@
-"""HTTP API: upload a document, ask questions, stream answers."""
+"""HTTP API: check an upload, ask questions, stream answers.
+
+The server is stateless. The browser keeps the file and the conversation and
+sends both with each question, so any instance (or a fresh serverless
+function) can answer it. Nothing a visitor uploads is ever stored.
+"""
 
 from __future__ import annotations
 
@@ -9,30 +14,28 @@ from pathlib import Path
 from typing import Any
 
 import anthropic
-from fastapi import FastAPI, File, HTTPException, Request, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, Field
 
 from . import documents
 from .assistant import Assistant
 from .config import Settings
 from .config import settings as default_settings
-from .store import DocumentStore, RateLimiter
+from .store import RateLimiter
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 
-FRONTEND_DIR = Path(__file__).resolve().parents[2] / "frontend"
-SAMPLES_DIR = Path(__file__).resolve().parents[2] / "samples"
+ROOT = Path(__file__).resolve().parents[2]
+FRONTEND_DIR = ROOT / "frontend"
+SAMPLES_DIR = ROOT / "samples"
 SAMPLES = {"sales": "brightline-sales-2025.csv", "report": "brightline-annual-report-2025.pdf"}
-
-
-class Question(BaseModel):
-    question: str = Field(min_length=1)
-
-
 USER_KEY_HEADER = "X-Anthropic-Key"
+
+# Content blocks the browser may send back in its copy of the conversation.
+# Documents are added by the server; anything else is refused.
+HISTORY_BLOCKS = {"text", "tool_use", "tool_result", "thinking", "redacted_thinking", "fallback"}
 
 
 def _user_client(api_key: str) -> anthropic.Anthropic:
@@ -50,18 +53,18 @@ def create_app(
     can also send their own key in the X-Anthropic-Key header; it's used for
     that request only and never stored or logged.
     """
-    app = FastAPI(title="Quill: AI Document Assistant", version="1.0.0")
+    app = FastAPI(title="Quill: AI Document Assistant", version="1.1.0")
     app.add_middleware(
         CORSMiddleware,
         allow_origins=list(settings.cors_origins),
-        allow_methods=["GET", "POST", "DELETE"],
+        allow_methods=["GET", "POST"],
         allow_headers=["Content-Type", USER_KEY_HEADER],
     )
 
-    store = DocumentStore(settings.document_ttl_minutes * 60, settings.max_documents)
     limiter = RateLimiter(settings.questions_per_hour)
     has_server_key = client is not None or settings.server_key
     state: dict[str, Any] = {"assistant": Assistant(client, settings) if client else None}
+    max_bytes = settings.max_upload_mb * 1024 * 1024
 
     def server_assistant() -> Assistant:
         if state["assistant"] is None:
@@ -71,11 +74,18 @@ def create_app(
                 raise HTTPException(503, "The server has no Claude API key configured.") from exc
         return state["assistant"]
 
-    def get_doc(doc_id: str) -> documents.Document:
-        doc = store.get(doc_id)
-        if doc is None:
-            raise HTTPException(404, "Document not found. It may have expired; upload it again.")
-        return doc
+    async def read_upload(file: UploadFile) -> documents.Document:
+        data = await file.read(max_bytes + 1)
+        try:
+            return documents.load(
+                file.filename or "upload",
+                data,
+                max_bytes=max_bytes,
+                max_pages=settings.max_pdf_pages,
+                max_rows=settings.max_csv_rows,
+            )
+        except documents.UploadError as exc:
+            raise HTTPException(400, str(exc)) from exc
 
     @app.get("/api/health")
     def health() -> dict[str, Any]:
@@ -87,72 +97,38 @@ def create_app(
             "max_upload_mb": settings.max_upload_mb,
             "max_pdf_pages": settings.max_pdf_pages,
             "max_csv_rows": settings.max_csv_rows,
-            "document_ttl_minutes": settings.document_ttl_minutes,
             "max_question_chars": settings.max_question_chars,
         }
 
-    @app.post("/api/documents", status_code=201)
-    async def upload(file: UploadFile = File(...)) -> dict[str, Any]:
-        max_bytes = settings.max_upload_mb * 1024 * 1024
-        data = await file.read(max_bytes + 1)
-        try:
-            doc = documents.load(
-                file.filename or "upload",
-                data,
-                max_bytes=max_bytes,
-                max_pages=settings.max_pdf_pages,
-                max_rows=settings.max_csv_rows,
-            )
-        except documents.UploadError as exc:
-            raise HTTPException(400, str(exc)) from exc
-        store.add(doc)
-        return doc.summary()
+    @app.post("/api/documents")
+    async def inspect(file: UploadFile = File(...)) -> dict[str, Any]:
+        """Check an upload and describe it. Nothing is kept."""
+        return (await read_upload(file)).summary()
 
-    @app.post("/api/samples/{name}", status_code=201)
-    def load_sample(name: str) -> dict[str, Any]:
+    @app.get("/api/samples/{name}")
+    def sample(name: str) -> FileResponse:
         if name not in SAMPLES or not (SAMPLES_DIR / SAMPLES[name]).is_file():
             raise HTTPException(404, "Sample not found.")
-        path = SAMPLES_DIR / SAMPLES[name]
-        doc = documents.load(
-            path.name,
-            path.read_bytes(),
-            max_bytes=settings.max_upload_mb * 1024 * 1024,
-            max_pages=settings.max_pdf_pages,
-            max_rows=settings.max_csv_rows,
-        )
-        store.add(doc)
-        return doc.summary()
+        return FileResponse(SAMPLES_DIR / SAMPLES[name], filename=SAMPLES[name])
 
-    @app.get("/api/documents/{doc_id}")
-    def get_document(doc_id: str) -> dict[str, Any]:
-        return get_doc(doc_id).summary()
-
-    @app.delete("/api/documents/{doc_id}", status_code=204)
-    def delete_document(doc_id: str) -> None:
-        store.remove(doc_id)
-
-    @app.post("/api/documents/{doc_id}/reset", status_code=204)
-    def reset_conversation(doc_id: str) -> None:
-        doc = get_doc(doc_id)
-        lock = store.lock(doc_id)
-        if lock is None or not lock.acquire(blocking=False):
-            raise HTTPException(409, "Wait for the current answer to finish.")
-        try:
-            doc.messages.clear()
-            doc.turns = 0
-        finally:
-            lock.release()
-
-    @app.post("/api/documents/{doc_id}/ask")
-    def ask(doc_id: str, body: Question, request: Request) -> StreamingResponse:
-        doc = get_doc(doc_id)
-        question = body.question.strip()
+    @app.post("/api/ask")
+    async def ask(
+        request: Request,
+        file: UploadFile = File(...),
+        question: str = Form(...),
+        history: str = Form("[]"),
+    ) -> StreamingResponse:
+        question = question.strip()
         if not question:
             raise HTTPException(422, "Ask a question.")
         if len(question) > settings.max_question_chars:
             raise HTTPException(422, f"Keep questions under {settings.max_question_chars} characters.")
-        if doc.turns >= settings.max_turns_per_document:
+        messages = _parse_history(history, settings.max_history_kb * 1024)
+        if sum(1 for m in messages if m["role"] == "user" and isinstance(m["content"], str)) >= (
+            settings.max_turns_per_document
+        ):
             raise HTTPException(429, "This conversation is long. Start a new chat to keep going.")
+
         user_key = request.headers.get(USER_KEY_HEADER, "").strip()
         if user_key:
             if not user_key.startswith("sk-ant-") or len(user_key) > 300:
@@ -165,16 +141,12 @@ def create_app(
         else:
             raise HTTPException(401, "Add your Anthropic API key to ask questions.")
 
-        lock = store.lock(doc_id)
-        if lock is None or not lock.acquire(blocking=False):
-            raise HTTPException(409, "Wait for the current answer to finish.")
+        doc = await read_upload(file)
+        doc.messages = messages
 
         def events() -> Iterator[str]:
-            try:
-                for event in bot.answer(doc, question):
-                    yield f"data: {json.dumps(event, default=str)}\n\n"
-            finally:
-                lock.release()
+            for event in bot.answer(doc, question):
+                yield f"data: {json.dumps(event, default=str)}\n\n"
 
         return StreamingResponse(
             events(),
@@ -183,15 +155,44 @@ def create_app(
         )
 
     if FRONTEND_DIR.is_dir():
-        # Serve the front end too, so one process runs the whole app locally.
+        # Serve the front end too, so one process runs the whole app.
         # API routes are registered first, so they take precedence.
         app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
 
     return app
 
 
+def _parse_history(raw: str, max_bytes: int) -> list[dict[str, Any]]:
+    """Validate the conversation the browser sent back."""
+    if len(raw.encode()) > max_bytes:
+        raise HTTPException(413, "This conversation is too long to continue. Start a new chat.")
+    try:
+        messages = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise HTTPException(422, "The conversation history is malformed. Start a new chat.") from exc
+
+    bad = HTTPException(422, "The conversation history is malformed. Start a new chat.")
+    if not isinstance(messages, list) or len(messages) % 2:
+        raise bad
+    for i, m in enumerate(messages):
+        if not isinstance(m, dict) or set(m) != {"role", "content"}:
+            raise bad
+        if m["role"] != ("user" if i % 2 == 0 else "assistant"):
+            raise bad
+        content = m["content"]
+        if isinstance(content, str):
+            continue
+        if not isinstance(content, list) or not content:
+            raise bad
+        if not all(isinstance(b, dict) and b.get("type") in HISTORY_BLOCKS for b in content):
+            raise bad
+    if messages and not isinstance(messages[0]["content"], str):
+        raise bad
+    return messages
+
+
 def _client_key(request: Request) -> str:
-    # Hosting proxies (Hugging Face, Vercel, Render...) put the real client IP first in X-Forwarded-For.
+    # Hosting proxies (Vercel and most others) put the real client IP first in X-Forwarded-For.
     forwarded = request.headers.get("x-forwarded-for", "")
     if forwarded:
         return forwarded.split(",")[0].strip()

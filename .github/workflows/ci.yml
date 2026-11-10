@@ -17,15 +17,28 @@ jobs:
         with:
           python-version: "3.13"
           cache: pip
-          cache-dependency-path: backend/requirements*.txt
+          cache-dependency-path: |
+            requirements.txt
+            backend/requirements*.txt
       - run: pip install -r requirements-dev.txt
       - name: Lint
         run: ruff check . && ruff format --check .
       - name: Test
         run: pytest -q
 
+  vercel-entrypoint:
+    # Check the Vercel entrypoint imports the app from the repo root.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -r requirements.txt
+      - run: python -c "import index; assert index.app.title.startswith('Quill')"
+
   docker:
-    # Build the deploy image and check it starts and serves the app.
+    # Build the container image and check it starts and serves the app.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,5 +49,5 @@ jobs:
           for i in $(seq 1 30); do curl -fs localhost:7860/api/health && break; sleep 1; done
           curl -fs localhost:7860/api/health | grep -q '"key_required":true'
           curl -fs localhost:7860/ | grep -q '<title>Quill'
-          curl -fs -X POST localhost:7860/api/samples/report | grep -q '"pages":2'
+          curl -fs localhost:7860/api/samples/report | head -c 5 | grep -q '%PDF'
           docker logs quill

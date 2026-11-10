@@ -19,13 +19,30 @@ def make(script, **overrides):
 
 
 def events(response) -> list[dict]:
+    assert response.status_code == 200, response.text
     return [json.loads(line[6:]) for line in response.text.splitlines() if line.startswith("data: ")]
 
 
 def upload(client, name, data):
     r = client.post("/api/documents", files={"file": (name, data)})
-    assert r.status_code == 201, r.text
+    assert r.status_code == 200, r.text
     return r.json()
+
+
+def post_ask(client, name, data, question, history=None, headers=None):
+    return client.post(
+        "/api/ask",
+        files={"file": (name, data)},
+        data={"question": question, "history": json.dumps(history or [])},
+        headers=headers or {},
+    )
+
+
+def ask(client, name, data, question, history=None, headers=None) -> tuple[list[dict], list | None]:
+    """Ask a question; returns the events and the history to send next time."""
+    out = events(post_ask(client, name, data, question, history, headers))
+    new_history = next((e["messages"] for e in out if e["type"] == "history"), None)
+    return out, new_history
 
 
 # --------------------------------------------------------------------------- #
@@ -73,12 +90,13 @@ def test_upload_size_limit():
     assert "larger than 1 MB" in r.json()["detail"]
 
 
-def test_samples_are_an_allowlist():
+def test_samples_are_an_allowlist(sales_csv):
     client, _ = make([])
-    assert client.post("/api/samples/sales").json()["rows"] == 2400
-    assert client.post("/api/samples/report").json()["pages"] == 2
-    assert client.post("/api/samples/brightline-sales-2025.csv").status_code == 404
-    assert client.post("/api/samples/..%2Fbackend%2Fapp%2Fmain.py").status_code >= 400
+    r = client.get("/api/samples/sales")
+    assert r.status_code == 200 and r.content == sales_csv
+    assert client.get("/api/samples/report").content[:5] == b"%PDF-"
+    assert client.get("/api/samples/brightline-sales-2025.csv").status_code == 404
+    assert client.get("/api/samples/..%2Fbackend%2Fapp%2Fmain.py").status_code >= 400
 
 
 def test_frontend_is_served():
@@ -113,8 +131,7 @@ def test_csv_question_runs_query_and_chart(sales_csv):
             ([text("Cairo leads revenue.")], "end_turn"),
         ]
     )
-    doc = upload(client, "sales.csv", sales_csv)
-    out = events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "Which region sells most?"}))
+    out, history = ask(client, "sales.csv", sales_csv, "Which region sells most?")
 
     kinds = [e["type"] for e in out]
     assert kinds[0] == "status" and "table" in kinds and "chart" in kinds and kinds[-1] == "done"
@@ -124,6 +141,10 @@ def test_csv_question_runs_query_and_chart(sales_csv):
     assert chart["labels"][0] == "Cairo"
     assert "".join(e["text"] for e in out if e["type"] == "text").strip() == "Cairo leads revenue."
     assert out[-1]["usage"]["input_tokens"] == 200
+    # The browser gets the whole conversation back, JSON-safe, for its next question.
+    assert [m["role"] for m in history] == ["user", "assistant", "user", "assistant"]
+    assert history[0]["content"] == "Which region sells most?"
+    assert history[1]["content"][0] == {"type": "tool_use", "name": "query_data", "input": query, "id": "t1"}
 
     # Second request carries both tool results, matched to their ids.
     second = fake.messages.requests[1]
@@ -146,8 +167,7 @@ def test_bad_tool_input_goes_back_to_claude_as_error(sales_csv):
             ([text("Fixed it.")], "end_turn"),
         ]
     )
-    doc = upload(client, "sales.csv", sales_csv)
-    out = events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "q"}))
+    out, _ = ask(client, "sales.csv", sales_csv, "q")
     assert out[-1]["type"] == "done"
     result = fake.messages.requests[1]["messages"][-1]["content"][0]
     assert result["is_error"] is True and "unknown column" in result["content"]
@@ -161,12 +181,14 @@ def test_pdf_question_sends_document_once_with_citations(report_pdf):
             ([text("Cairo.")], "end_turn"),
         ]
     )
-    doc = upload(client, "report.pdf", report_pdf)
-    out = events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "Total revenue?"}))
+    out, history = ask(client, "report.pdf", report_pdf, "Total revenue?")
     cite = next(e for e in out if e["type"] == "citation")
     assert cite == {"type": "citation", "quote": "Total revenue reached $241,820", "pages": [1, 1]}
+    # The browser's copy of the conversation leaves the PDF out; the server adds it back.
+    assert history[0] == {"role": "user", "content": "Total revenue?"}
+    assert history[1]["content"][0]["citations"][0]["cited_text"] == "Total revenue reached $241,820"
 
-    events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "Top region?"}))
+    ask(client, "report.pdf", report_pdf, "Top region?", history)
     first, second = fake.messages.requests
     block = first["messages"][0]["content"][0]
     assert block["type"] == "document" and block["citations"] == {"enabled": True}
@@ -198,58 +220,81 @@ def test_pdf_chart_from_values(report_pdf):
             ([text("Here it is.")], "end_turn"),
         ]
     )
-    doc = upload(client, "report.pdf", report_pdf)
-    out = events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "Chart revenue by quarter"}))
+    out, _ = ask(client, "report.pdf", report_pdf, "Chart revenue by quarter")
     chart = next(e for e in out if e["type"] == "chart")["spec"]
     assert chart["labels"] == ["Q1", "Q2"] and chart["datasets"][0]["data"] == [47982, 54803]
 
 
 def test_refusal_rolls_back_history(sales_csv):
     client, fake = make([([], "refusal"), ([text("ok")], "end_turn")])
-    doc = upload(client, "sales.csv", sales_csv)
-    out = events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "bad"}))
+    out, history = ask(client, "sales.csv", sales_csv, "bad")
     assert out[-1]["type"] == "error" and "declined" in out[-1]["message"]
-    events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "good"}))
+    assert history is None  # nothing to keep; the browser asks again from its old history
+    ask(client, "sales.csv", sales_csv, "good")
     assert fake.messages.requests[1]["messages"] == [{"role": "user", "content": "good"}]
 
 
 def test_tool_round_limit(sales_csv):
     loop = ([tool_use("query_data", {"metrics": [{"agg": "count"}]})], "tool_use")
     client, _ = make([loop, loop, loop], max_tool_rounds=2)
-    doc = upload(client, "sales.csv", sales_csv)
-    out = events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "q"}))
+    out, _ = ask(client, "sales.csv", sales_csv, "q")
     assert out[-1]["type"] == "error" and "too many steps" in out[-1]["message"]
 
 
 def test_fallbacks_can_be_turned_off(sales_csv):
     client, fake = make([([text("hi")], "end_turn")], use_fallbacks=False)
-    doc = upload(client, "sales.csv", sales_csv)
-    events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "q"}))
+    ask(client, "sales.csv", sales_csv, "q")
     assert "fallbacks" not in fake.messages.requests[0] and "betas" not in fake.messages.requests[0]
 
 
 def test_question_validation_and_rate_limit(sales_csv):
     client, _ = make([([text("a")], "end_turn")], questions_per_hour=1, max_question_chars=10)
-    doc = upload(client, "sales.csv", sales_csv)
-    url = f"/api/documents/{doc['id']}/ask"
-    assert client.post(url, json={"question": "   "}).status_code == 422
-    assert client.post(url, json={"question": "x" * 11}).status_code == 422
-    assert client.post(url, json={"question": "hi"}).status_code == 200
-    assert client.post(url, json={"question": "again"}).status_code == 429
+    assert post_ask(client, "s.csv", sales_csv, "   ").status_code == 422
+    assert post_ask(client, "s.csv", sales_csv, "x" * 11).status_code == 422
+    assert post_ask(client, "s.csv", sales_csv, "hi").status_code == 200
+    assert post_ask(client, "s.csv", sales_csv, "again").status_code == 429
 
 
-def test_unknown_document():
+def test_bad_file_on_ask(sales_csv):
     client, _ = make([])
-    assert client.post("/api/documents/nope/ask", json={"question": "q"}).status_code == 404
+    r = post_ask(client, "notes.docx", b"PK", "q")
+    assert r.status_code == 400 and "PDF or a CSV" in r.json()["detail"]
 
 
-def test_reset_clears_conversation(sales_csv):
+def test_conversation_continues_from_browser_history(sales_csv):
     client, fake = make([([text("a")], "end_turn"), ([text("b")], "end_turn")])
-    doc = upload(client, "sales.csv", sales_csv)
-    events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "one"}))
-    assert client.post(f"/api/documents/{doc['id']}/reset").status_code == 204
-    events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": "two"}))
-    assert fake.messages.requests[1]["messages"] == [{"role": "user", "content": "two"}]
+    _, history = ask(client, "s.csv", sales_csv, "one")
+    _, history = ask(client, "s.csv", sales_csv, "two", history)
+    assert [m["content"] for m in fake.messages.requests[1]["messages"] if m["role"] == "user"] == ["one", "two"]
+    assert len(history) == 4
+
+
+@pytest.mark.parametrize(
+    "history",
+    [
+        "not json",
+        {"role": "user"},
+        [{"role": "assistant", "content": "hi"}, {"role": "user", "content": "x"}],
+        [{"role": "user", "content": "q"}],  # odd length: no answer yet
+        [{"role": "user", "content": "q"}, {"role": "assistant", "content": [{"type": "document", "source": {}}]}],
+        [{"role": "user", "content": [{"type": "text", "text": "q"}]}, {"role": "assistant", "content": "a"}],
+        [{"role": "user", "content": "q", "extra": 1}, {"role": "assistant", "content": "a"}],
+    ],
+)
+def test_malformed_history_is_refused(sales_csv, history):
+    client, fake = make([])
+    raw = history if isinstance(history, str) else json.dumps(history)
+    r = client.post("/api/ask", files={"file": ("s.csv", sales_csv)}, data={"question": "q", "history": raw})
+    assert r.status_code == 422 and "malformed" in r.json()["detail"]
+    assert fake.messages.requests == []
+
+
+def test_history_size_and_turn_limits(sales_csv):
+    client, _ = make([], max_history_kb=1, max_turns_per_document=1)
+    big = [{"role": "user", "content": "q" * 2000}, {"role": "assistant", "content": "a"}]
+    assert post_ask(client, "s.csv", sales_csv, "q", big).status_code == 413
+    one = [{"role": "user", "content": "q"}, {"role": "assistant", "content": "a"}]
+    assert post_ask(client, "s.csv", sales_csv, "q", one).status_code == 429
 
 
 def test_api_error_and_disconnect_roll_back(report_pdf):
@@ -313,20 +358,20 @@ def make_byok(script, **overrides):
 def test_without_server_key_a_visitor_key_is_required(sales_csv):
     client, _, keys = make_byok([])
     assert client.get("/api/health").json()["key_required"] is True
-    doc = upload(client, "sales.csv", sales_csv)  # uploads and samples don't need a key
-    r = client.post(f"/api/documents/{doc['id']}/ask", json={"question": "q"})
+    upload(client, "sales.csv", sales_csv)  # checking a file doesn't need a key
+    r = post_ask(client, "s.csv", sales_csv, "q")
     assert r.status_code == 401 and "API key" in r.json()["detail"]
-    r = client.post(f"/api/documents/{doc['id']}/ask", json={"question": "q"}, headers={"X-Anthropic-Key": "nope"})
+    r = post_ask(client, "s.csv", sales_csv, "q", headers={"X-Anthropic-Key": "nope"})
     assert r.status_code == 401 and "sk-ant-" in r.json()["detail"]
     assert keys == []
 
 
 def test_visitor_key_is_used_for_their_request_and_not_rate_limited(sales_csv):
     client, fake, keys = make_byok([([text("one")], "end_turn"), ([text("two")], "end_turn")], questions_per_hour=1)
-    doc = upload(client, "sales.csv", sales_csv)
     headers = {"X-Anthropic-Key": "sk-ant-test-123"}
+    history = None
     for q in ("first", "second"):
-        out = events(client.post(f"/api/documents/{doc['id']}/ask", json={"question": q}, headers=headers))
+        out, history = ask(client, "s.csv", sales_csv, q, history, headers)
         assert out[-1]["type"] == "done"
     assert keys == ["sk-ant-test-123", "sk-ant-test-123"]
     assert len(fake.messages.requests) == 2
