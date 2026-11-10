@@ -14,7 +14,7 @@ from .conftest import FakeClient, text, tool_use
 
 def make(script, **overrides):
     fake = FakeClient(script)
-    settings = replace(Settings(), **overrides) if overrides else Settings()
+    settings = replace(Settings(), openai_server_key=False, **overrides)
     return TestClient(create_app(settings, client=fake)), fake
 
 
@@ -301,7 +301,7 @@ def test_api_error_and_disconnect_roll_back(report_pdf):
     import anthropic
     import httpx2
 
-    from app.assistant import Assistant
+    from app.assistant import ClaudeAssistant
     from app.documents import load
 
     class Exploding:
@@ -314,7 +314,7 @@ def test_api_error_and_disconnect_roll_back(report_pdf):
             raise anthropic.RateLimitError("slow down", response=httpx2.Response(429, request=request), body=None)
 
     doc = load("r.pdf", report_pdf, max_bytes=10**7, max_pages=100, max_rows=10)
-    out = list(Assistant(Exploding(), Settings()).answer(doc, "q"))
+    out = list(ClaudeAssistant(Exploding(), Settings()).answer(doc, "q"))
     assert out == [{"type": "error", "message": "Claude is busy right now. Wait a moment and try again."}]
     assert doc.messages == []
 
@@ -332,7 +332,7 @@ def test_api_error_and_disconnect_roll_back(report_pdf):
             )
         ]
     )
-    gen = Assistant(fake, Settings()).answer(doc, "q")
+    gen = ClaudeAssistant(fake, Settings()).answer(doc, "q")
     assert next(gen)["type"] == "chart"
     gen.close()
     assert doc.messages == []
@@ -351,7 +351,7 @@ def make_byok(script, **overrides):
         keys.append(key)
         return fake
 
-    settings = replace(Settings(), server_key=False, **overrides)
+    settings = replace(Settings(), server_key=False, openai_server_key=False, **overrides)
     return TestClient(create_app(settings, client_factory=factory)), fake, keys
 
 

@@ -27,6 +27,12 @@ class Settings:
     max_tokens: int = field(default_factory=lambda: _int("CLAUDE_MAX_TOKENS", 32000))
     # Re-run a request on another model server-side if a safety classifier declines it.
     use_fallbacks: bool = field(default_factory=lambda: _bool("CLAUDE_FALLBACKS", True))
+    # OpenAI, used when a visitor brings an OpenAI key (or the server has one).
+    openai_model: str = field(default_factory=lambda: os.environ.get("OPENAI_MODEL", "gpt-5.4-mini"))
+    # Reasoning effort for OpenAI. Empty leaves it to the model's default.
+    openai_effort: str = field(default_factory=lambda: os.environ.get("OPENAI_EFFORT", "").strip())
+    openai_max_tokens: int = field(default_factory=lambda: _int("OPENAI_MAX_TOKENS", 16000))
+
     max_tool_rounds: int = field(default_factory=lambda: _int("MAX_TOOL_ROUNDS", 8))
 
     # Vercel caps a request body at 4.5 MB, and each question sends the file.
@@ -38,9 +44,11 @@ class Settings:
     # Cap on the conversation history the browser sends back with a question.
     max_history_kb: int = field(default_factory=lambda: _int("MAX_HISTORY_KB", 200))
 
-    # True when the server has its own Claude key. Without one, every visitor
-    # must send their own key (bring your own key), so hosting costs nothing.
+    # True when the server has its own key for that provider. Without one,
+    # every visitor must send their own key (bring your own key), so hosting
+    # costs nothing. If both are set, the server answers with Claude.
     server_key: bool = field(default_factory=lambda: bool(os.environ.get("ANTHROPIC_API_KEY", "").strip()))
+    openai_server_key: bool = field(default_factory=lambda: bool(os.environ.get("OPENAI_API_KEY", "").strip()))
 
     # Simple per-IP limit so a public demo can't run up the API bill.
     # Only applies to questions answered with the server's own key.
