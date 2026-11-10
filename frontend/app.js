@@ -32,13 +32,29 @@ function setKey(value) {
   try { value ? sessionStorage.setItem(KEY_STORE, value) : sessionStorage.removeItem(KEY_STORE); } catch { /* private mode */ }
 }
 
+// The key's prefix says whose it is: Anthropic keys start with sk-ant-, OpenAI keys with sk-.
+function providerOf(key) {
+  return key.startsWith("sk-ant-") ? "anthropic" : "openai";
+}
+const PROVIDER_NAMES = { anthropic: "Claude", openai: "OpenAI" };
+const KEY_HEADERS = { anthropic: "X-Anthropic-Key", openai: "X-OpenAI-Key" };
+
 function refreshKeyPanel() {
   const panel = $("key-panel");
   panel.hidden = !state.keyRequired;
   const key = getKey();
   panel.classList.toggle("missing", state.keyRequired && !key);
-  $("key-status").textContent = key ? `Saved for this tab (…${key.slice(-4)}).` : "";
+  $("key-status").textContent = key ? `${PROVIDER_NAMES[providerOf(key)]} key saved for this tab (…${key.slice(-4)}).` : "";
   if (key) $("api-key").value = "";
+  refreshModelBadge();
+}
+
+// Show the model that will answer: the saved key's provider, or the server's own.
+function refreshModelBadge() {
+  const key = getKey();
+  const model = state.keyRequired && key && state.models ? state.models[providerOf(key)] : state.serverModel;
+  $("model-badge").textContent = model || "";
+  $("model-badge").hidden = !model;
 }
 
 // ---------------------------------------------------------------- helpers
@@ -214,7 +230,7 @@ async function ask(question) {
     form.append("history", JSON.stringify(state.history));
     const res = await fetch(`${API}/api/ask`, {
       method: "POST",
-      headers: getKey() ? { "X-Anthropic-Key": getKey() } : {},
+      headers: getKey() ? { [KEY_HEADERS[providerOf(getKey())]]: getKey() } : {},
       body: form,
     });
     if (!res.ok) {
@@ -427,8 +443,11 @@ function init() {
     e.preventDefault();
     const value = $("api-key").value.trim();
     if (!value) { setKey(""); refreshKeyPanel(); return; }
-    if (!value.startsWith("sk-ant-")) { $("key-status").textContent = "Anthropic keys start with sk-ant-."; return; }
+    if (!value.startsWith("sk-")) { $("key-status").textContent = "Anthropic keys start with sk-ant- and OpenAI keys with sk-."; return; }
+    // Each provider keeps a conversation in its own format, so switching provider starts a new chat.
+    const switched = getKey() && providerOf(getKey()) !== providerOf(value) && state.history.length;
     setKey(value);
+    if (switched && !state.busy) { state.history = []; resetMessages(); }
     refreshKeyPanel();
     $("question").focus();
   });
@@ -443,9 +462,10 @@ function init() {
   });
 
   api("/api/health").then((h) => {
-    $("model-badge").textContent = h.model;
-    $("model-badge").hidden = false;
+    state.serverModel = h.model;
+    state.models = h.models;
     state.keyRequired = !!h.key_required;
+    refreshModelBadge();
     $("byok-note").hidden = !state.keyRequired;
     if (state.doc) refreshKeyPanel();
   }).catch(() => setUploadStatus("The API isn't reachable right now. If it's on a free host, it may be waking up; try again in a minute.", true));

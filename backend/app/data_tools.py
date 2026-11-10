@@ -1,9 +1,9 @@
 """Safe, structured analysis over a pandas DataFrame.
 
-Claude never sends code. It sends a small JSON query spec (filters, grouping,
+The model (Claude or OpenAI) never sends code. It sends a small JSON query spec (filters, grouping,
 aggregations, sorting) that is validated with pydantic and executed here with
 pandas and NumPy. Column names are checked against the DataFrame, so a bad
-spec produces a clear error message that goes back to Claude to correct.
+spec produces a clear error message that goes back to the model to correct.
 """
 
 from __future__ import annotations

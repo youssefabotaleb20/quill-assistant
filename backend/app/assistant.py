@@ -1,4 +1,4 @@
-"""The question-answering loop: Claude, tools, and a stream of UI events.
+"""The question-answering loop: a model, tools, and a stream of UI events.
 
 `answer()` is a generator of small dicts that the API layer sends to the
 browser as server-sent events:
@@ -15,6 +15,11 @@ browser as server-sent events:
 The server keeps no state between requests. The browser holds the file and
 the conversation and sends both with each question; that's what lets the app
 run on serverless hosting.
+
+`Assistant` holds the loop and the tool handling, which are the same for
+every model provider. A provider subclass only has to stream one model
+response and say how its messages are shaped: `ClaudeAssistant` here, and
+`OpenAIAssistant` in openai_assistant.py.
 """
 
 from __future__ import annotations
@@ -23,7 +28,8 @@ import base64
 import json
 import logging
 from collections.abc import Iterator
-from typing import Any
+from dataclasses import dataclass, field
+from typing import Any, Literal
 
 import anthropic
 from pydantic import ValidationError
@@ -34,16 +40,56 @@ from .documents import Document
 
 log = logging.getLogger(__name__)
 
-TOOL_RESULT_ROWS = 100  # rows of a query result that go back to Claude
+TOOL_RESULT_ROWS = 100  # rows of a query result that go back to the model
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
 
 Event = dict[str, Any]
 
 
+@dataclass
+class ToolCall:
+    id: str
+    name: str
+    input: Any  # the parsed arguments; anything but a dict is answered with an error
+
+
+@dataclass
+class Round:
+    """One model response, in a shape every provider can produce."""
+
+    stop: Literal["end", "length", "refusal"]
+    message: dict[str, Any]  # the assistant message to add to the conversation
+    tool_calls: list[ToolCall] = field(default_factory=list)
+    usage: dict[str, int] = field(default_factory=dict)
+
+
 class Assistant:
-    def __init__(self, client: anthropic.Anthropic, settings: Settings) -> None:
+    """The provider-neutral loop. Subclasses talk to one model API."""
+
+    name = "The model"  # how error messages refer to the provider
+    sdk: Any = None  # the provider's SDK module, for its exception classes
+
+    def __init__(self, client: Any, settings: Settings) -> None:
         self.client = client
         self.settings = settings
+
+    # What a provider implements ---------------------------------------- #
+
+    def _stream_round(self, doc: Document) -> Iterator[Event]:
+        """Stream one model response, yielding text and citations. Returns a Round."""
+        raise NotImplementedError
+
+    def _tool_messages(self, results: list[tuple[ToolCall, dict[str, Any]]]) -> list[dict[str, Any]]:
+        """The message(s) that carry tool results back to the model."""
+        raise NotImplementedError
+
+    def _history(self, messages: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        """The conversation as JSON for the browser to keep."""
+        return messages
+
+    def _credit_error(self, exc: Exception) -> str | None:
+        """A message if `exc` means the key has run out of credit."""
+        return None
 
     # ------------------------------------------------------------------ #
 
@@ -62,41 +108,117 @@ class Assistant:
 
         try:
             for _ in range(self.settings.max_tool_rounds + 1):
-                response = yield from self._stream_round(doc)
-                _add_usage(usage, response.usage)
+                rnd = yield from self._stream_round(doc)
+                for key in usage:
+                    usage[key] += rnd.usage.get(key, 0)
 
-                if response.stop_reason == "refusal":
-                    raise _UserFacing("Claude declined to answer that question. Try rephrasing it.")
-
-                tool_uses = [b for b in response.content if b.type == "tool_use"]
-                if tool_uses and response.stop_reason == "max_tokens":
+                if rnd.stop == "refusal":
+                    raise _UserFacing(f"{self.name} declined to answer that question. Try rephrasing it.")
+                if rnd.tool_calls and rnd.stop == "length":
                     raise _UserFacing("The answer ran too long. Try asking a narrower question.")
-                doc.messages.append({"role": "assistant", "content": response.content})
+                doc.messages.append(rnd.message)
 
-                if not tool_uses:
+                if not rnd.tool_calls:
                     completed = True
-                    if response.stop_reason == "max_tokens":
+                    if rnd.stop == "length":
                         yield {"type": "text", "text": "\n\n_The answer was cut off because it hit the length limit._"}
-                    yield {"type": "history", "messages": to_json(doc.messages)}
+                    yield {"type": "history", "messages": self._history(doc.messages)}
                     yield {"type": "done", "usage": usage}
                     return
 
                 results = []
-                for block in tool_uses:
-                    events, result = self._run_tool(doc, block.name, block.input)
+                for call in rnd.tool_calls:
+                    events, result = self._run_tool(doc, call.name, call.input)
                     yield from events
-                    results.append({"type": "tool_result", "tool_use_id": block.id, **result})
-                doc.messages.append({"role": "user", "content": results})
+                    results.append((call, result))
+                doc.messages.extend(self._tool_messages(results))
 
             raise _UserFacing("That question needed too many steps. Try breaking it into smaller questions.")
 
         except Exception as exc:  # noqa: BLE001 - every failure becomes a message for the user
-            yield {"type": "error", "message": _error_message(exc)}
+            yield {"type": "error", "message": self._error_message(exc)}
         finally:
             if not completed:
                 del doc.messages[checkpoint:]
 
     # ------------------------------------------------------------------ #
+
+    def _run_tool(self, doc: Document, name: str, raw_input: Any) -> tuple[list[Event], dict[str, Any]]:
+        """Run a tool call. Returns UI events and the result for the model: `content`, plus `is_error` on failure."""
+        if not isinstance(raw_input, dict):
+            return [], _tool_error({"INVALID_JSON": json.dumps(raw_input, default=str)})
+        try:
+            if name == "query_data" and doc.df is not None:
+                query = data_tools.Query.model_validate(raw_input)
+                result = data_tools.run_query(doc.df, query)
+                table = data_tools.table(result)
+                events = [
+                    {"type": "status", "text": "Queried the data"},
+                    {"type": "table", "title": "Data used", **table},
+                ]
+                return events, {"content": _table_for_model(table)}
+
+            if name == "chart_data" and doc.df is not None:
+                req = data_tools.ChartRequest.model_validate(raw_input)
+                spec = data_tools.build_chart(doc.df, req)
+                points = len(spec.get("labels") or spec["datasets"][0]["data"])
+                summary = {"chart": "shown to the user", "points": points, "data": spec}
+                return [{"type": "chart", "spec": spec}], {"content": json.dumps(summary, default=str)[:20000]}
+
+            if name == "plot_values" and doc.kind == "pdf":
+                spec = data_tools.values_chart(data_tools.ValuesChart.model_validate(raw_input))
+                return [{"type": "chart", "spec": spec}], {"content": "Chart shown to the user."}
+
+            return [], _tool_error(f"Unknown tool '{name}' for a {doc.kind} document.")
+        except ValidationError as exc:
+            problems = "; ".join(f"{'.'.join(map(str, e['loc']))}: {e['msg']}" for e in exc.errors()[:5])
+            return [], _tool_error(f"Invalid tool input: {problems}")
+        except data_tools.QueryError as exc:
+            return [], _tool_error(str(exc))
+
+    def _error_message(self, exc: Exception) -> str:
+        """Turn any failure into a sentence for the user. The SDKs share their exception names."""
+        name, sdk = self.name, self.sdk
+        if isinstance(exc, _UserFacing):
+            return str(exc)
+        credit = self._credit_error(exc)
+        if credit:
+            return credit
+        if isinstance(exc, sdk.AuthenticationError):
+            return f"The {name} API key was rejected. Check that it's correct and still active."
+        if isinstance(exc, sdk.PermissionDeniedError):
+            return f"This {name} API key isn't allowed to use this model."
+        if isinstance(exc, sdk.RateLimitError):
+            return f"{name} is busy right now. Wait a moment and try again."
+        if isinstance(exc, sdk.BadRequestError):
+            log.warning("Bad request to %s: %s", name, exc.message)
+            return f"{name} couldn't process this request. Try a shorter question or a smaller file."
+        if isinstance(exc, sdk.APIStatusError):
+            log.warning("%s API error %s: %s", name, exc.status_code, exc.message)
+            return f"{name} returned an error. Please try again."
+        if isinstance(exc, sdk.APIConnectionError):
+            return f"Couldn't reach {name}. Please try again."
+        log.exception("Unexpected error while answering", exc_info=exc)
+        return "Something went wrong. Please try again."
+
+
+class ClaudeAssistant(Assistant):
+    """Claude through the Anthropic Messages API: native PDF input, citations and prompt caching."""
+
+    name = "Claude"
+    sdk = anthropic
+
+    def _tool_messages(self, results: list[tuple[ToolCall, dict[str, Any]]]) -> list[dict[str, Any]]:
+        blocks = [{"type": "tool_result", "tool_use_id": call.id, **result} for call, result in results]
+        return [{"role": "user", "content": blocks}]
+
+    def _history(self, messages: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        return to_json(messages)
+
+    def _credit_error(self, exc: Exception) -> str | None:
+        if isinstance(exc, anthropic.BadRequestError) and "credit balance" in exc.message.lower():
+            return "This Claude API key has no credit left. Add credit at console.anthropic.com or use another key."
+        return None
 
     def _wire_messages(self, doc: Document) -> list[dict[str, Any]]:
         """The conversation as sent to Claude.
@@ -149,7 +271,7 @@ class Assistant:
         return params
 
     def _stream_round(self, doc: Document) -> Iterator[Event]:
-        """Stream one model response, yielding text and citations. Returns the final message."""
+        """Stream one model response, yielding text and citations. Returns a Round."""
         params = self._request(doc)
         api = self.client.beta.messages if self.settings.use_fallbacks else self.client.messages
 
@@ -164,7 +286,7 @@ class Assistant:
                             yield {"type": "text", "text": delta.text}
                         elif delta.type == "citations_delta":
                             yield _citation_event(delta.citation)
-                    return stream.get_final_message()
+                    return _round(stream.get_final_message())
             except ValueError:
                 # The SDK couldn't parse a streamed tool input at all. No
                 # tool_use block exists to answer, so re-issue the request once.
@@ -172,65 +294,20 @@ class Assistant:
                     raise _UserFacing("Claude's tool call came back malformed. Please try again.") from None
         raise AssertionError("unreachable")
 
-    def _run_tool(self, doc: Document, name: str, raw_input: Any) -> tuple[list[Event], dict[str, Any]]:
-        """Run a tool call. Returns UI events and the tool_result fields for Claude."""
-        if not isinstance(raw_input, dict):
-            return [], _tool_error({"INVALID_JSON": json.dumps(raw_input, default=str)})
-        try:
-            if name == "query_data" and doc.df is not None:
-                query = data_tools.Query.model_validate(raw_input)
-                result = data_tools.run_query(doc.df, query)
-                table = data_tools.table(result)
-                events = [
-                    {"type": "status", "text": "Queried the data"},
-                    {"type": "table", "title": "Data used", **table},
-                ]
-                return events, {"content": _table_for_claude(table)}
-
-            if name == "chart_data" and doc.df is not None:
-                req = data_tools.ChartRequest.model_validate(raw_input)
-                spec = data_tools.build_chart(doc.df, req)
-                points = len(spec.get("labels") or spec["datasets"][0]["data"])
-                summary = {"chart": "shown to the user", "points": points, "data": spec}
-                return [{"type": "chart", "spec": spec}], {"content": json.dumps(summary, default=str)[:20000]}
-
-            if name == "plot_values" and doc.kind == "pdf":
-                spec = data_tools.values_chart(data_tools.ValuesChart.model_validate(raw_input))
-                return [{"type": "chart", "spec": spec}], {"content": "Chart shown to the user."}
-
-            return [], _tool_error(f"Unknown tool '{name}' for a {doc.kind} document.")
-        except ValidationError as exc:
-            problems = "; ".join(f"{'.'.join(map(str, e['loc']))}: {e['msg']}" for e in exc.errors()[:5])
-            return [], _tool_error(f"Invalid tool input: {problems}")
-        except data_tools.QueryError as exc:
-            return [], _tool_error(str(exc))
-
 
 class _UserFacing(Exception):
     """An error whose message can be shown to the user as-is."""
 
 
-def _error_message(exc: Exception) -> str:
-    if isinstance(exc, _UserFacing):
-        return str(exc)
-    if isinstance(exc, anthropic.AuthenticationError):
-        return "The Claude API key was rejected. Check that it's correct and still active."
-    if isinstance(exc, anthropic.PermissionDeniedError):
-        return "This Claude API key isn't allowed to use this model."
-    if isinstance(exc, anthropic.RateLimitError):
-        return "Claude is busy right now. Wait a moment and try again."
-    if isinstance(exc, anthropic.BadRequestError):
-        log.warning("Bad request to Claude: %s", exc.message)
-        if "credit balance" in exc.message.lower():
-            return "This Claude API key has no credit left. Add credit at console.anthropic.com or use another key."
-        return "Claude couldn't process this request. Try a shorter question or a smaller file."
-    if isinstance(exc, anthropic.APIStatusError):
-        log.warning("Claude API error %s: %s", exc.status_code, exc.message)
-        return "Claude returned an error. Please try again."
-    if isinstance(exc, anthropic.APIConnectionError):
-        return "Couldn't reach Claude. Please try again."
-    log.exception("Unexpected error while answering", exc_info=exc)
-    return "Something went wrong. Please try again."
+def _round(message: Any) -> Round:
+    """A finished Claude message as a Round."""
+    stop = {"refusal": "refusal", "max_tokens": "length"}.get(message.stop_reason, "end")
+    calls = [ToolCall(b.id, b.name, b.input) for b in message.content if b.type == "tool_use"]
+    usage = {
+        key: getattr(message.usage, key, None) or 0
+        for key in ("input_tokens", "output_tokens", "cache_read_input_tokens", "cache_creation_input_tokens")
+    }
+    return Round(stop, {"role": "assistant", "content": message.content}, calls, usage)
 
 
 def to_json(messages: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -249,7 +326,7 @@ def _tool_error(message: Any) -> dict[str, Any]:
     return {"content": text, "is_error": True}
 
 
-def _table_for_claude(table: dict[str, Any]) -> str:
+def _table_for_model(table: dict[str, Any]) -> str:
     rows = table["rows"]
     payload = {"columns": table["columns"], "rows": rows[:TOOL_RESULT_ROWS], "row_count": len(rows)}
     if len(rows) > TOOL_RESULT_ROWS:
@@ -263,8 +340,3 @@ def _citation_event(citation: Any) -> Event:
     # end_page_number is exclusive in the API.
     pages = [start, max(start, end - 1)] if isinstance(start, int) and isinstance(end, int) else None
     return {"type": "citation", "quote": getattr(citation, "cited_text", ""), "pages": pages}
-
-
-def _add_usage(total: dict[str, int], usage: Any) -> None:
-    for key in total:
-        total[key] += getattr(usage, key, None) or 0

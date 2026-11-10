@@ -93,3 +93,53 @@ class FakeClient:
     def __init__(self, script: list[tuple[list[NS], str]]) -> None:
         self.messages = FakeMessages(script)
         self.beta = NS(messages=self.messages)
+
+
+# --------------------------------------------------------------------------- #
+# A stand-in for the OpenAI client. Each scripted response is a dict with
+# optional "text", "tool_calls" ([(id, name, arguments-as-JSON-string)]),
+# "finish" and "refusal". The fake streams it as Chat Completions chunks,
+# splitting text and tool arguments into fragments the way the real API does.
+# --------------------------------------------------------------------------- #
+
+
+def _chunk(delta: NS | None = None, finish: str | None = None, usage: NS | None = None) -> NS:
+    choices = [] if delta is None and finish is None else [NS(delta=delta, finish_reason=finish)]
+    return NS(choices=choices, usage=usage)
+
+
+class FakeCompletions:
+    def __init__(self, script: list[dict[str, Any]]) -> None:
+        self.script = list(script)
+        self.requests: list[dict[str, Any]] = []
+
+    def create(self, **params: Any):
+        self.requests.append({**params, "messages": list(params["messages"])})
+        if not self.script:
+            raise AssertionError("no scripted response left")
+        step = self.script.pop(0)
+        calls = step.get("tool_calls", [])
+
+        def stream():
+            for word in step.get("text", "").split(" ") if step.get("text") else []:
+                yield _chunk(NS(content=word + " ", refusal=None, tool_calls=None))
+            if step.get("refusal"):
+                yield _chunk(NS(content=None, refusal=step["refusal"], tool_calls=None))
+            for index, (call_id, name, arguments) in enumerate(calls):
+                half = len(arguments) // 2
+                first = NS(index=index, id=call_id, function=NS(name=name, arguments=arguments[:half]))
+                rest = NS(index=index, id=None, function=NS(name=None, arguments=arguments[half:]))
+                yield _chunk(NS(content=None, refusal=None, tool_calls=[first]))
+                yield _chunk(NS(content=None, refusal=None, tool_calls=[rest]))
+            finish = step.get("finish") or ("tool_calls" if calls else "stop")
+            yield _chunk(NS(content=None, refusal=None, tool_calls=None), finish=finish)
+            details = NS(cached_tokens=40)
+            yield _chunk(usage=NS(prompt_tokens=100, completion_tokens=20, prompt_tokens_details=details))
+
+        return stream()
+
+
+class FakeOpenAI:
+    def __init__(self, script: list[dict[str, Any]]) -> None:
+        self.completions = FakeCompletions(script)
+        self.chat = NS(completions=self.completions)

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quill · AI Document Assistant</title>
-  <meta name="description" content="Upload a PDF or CSV and ask questions about it. Answers with citations and charts, powered by Claude.">
+  <meta name="description" content="Upload a PDF or CSV and ask questions about it. Answers with citations and charts, powered by Claude or OpenAI.">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c2410c'/%3E%3Cpath d='M10 8h9l5 5v11a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z' fill='%23fff'/%3E%3Cpath d='M12 17h8M12 21h6' stroke='%23c2410c' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,10 +48,10 @@
 
     <section class="features" aria-label="What it does">
       <div><h2>Cited answers</h2><p>Answers from a PDF point to the pages and passages they rely on.</p></div>
-      <div><h2>Real numbers</h2><p>For CSVs, Claude writes structured queries that run on the full dataset with Pandas, so figures are computed, not guessed.</p></div>
+      <div><h2>Real numbers</h2><p>For CSVs, the model writes structured queries that run on the full dataset with Pandas, so figures are computed, not guessed.</p></div>
       <div><h2>Charts on request</h2><p>Ask for a trend or a comparison and get an interactive chart in the chat.</p></div>
     </section>
-    <p class="privacy">Your file stays in your browser. It's sent along with each question and never stored on the server.<span id="byok-note" hidden> Asking questions uses your own Anthropic API key.</span></p>
+    <p class="privacy">Your file stays in your browser. It's sent along with each question and never stored on the server.<span id="byok-note" hidden> Asking questions uses your own Anthropic or OpenAI API key.</span></p>
   </main>
 
   <!-- Workspace -->
@@ -68,10 +68,10 @@
         <button class="btn ghost" id="new-file" type="button">Another file</button>
       </div>
       <form class="key-panel" id="key-panel" hidden>
-        <label for="api-key">Your Anthropic API key</label>
-        <p class="key-help">Quill answers with your own key, so you only pay for your questions. It's kept in this tab only and passed to Claude with each question; the server never stores it. <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">Get a key</a></p>
+        <label for="api-key">Your Anthropic or OpenAI API key</label>
+        <p class="key-help">Quill answers with your own key, so you only pay for your questions. It's kept in this tab only and passed to Claude or OpenAI with each question; the server never stores it. Get a key from <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">Anthropic</a> or <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">OpenAI</a>.</p>
         <div class="key-row">
-          <input id="api-key" type="password" placeholder="sk-ant-..." autocomplete="off" spellcheck="false">
+          <input id="api-key" type="password" placeholder="sk-ant-... or sk-..." autocomplete="off" spellcheck="false">
           <button class="btn ghost" id="key-save" type="submit">Save</button>
         </div>
         <p class="key-status" id="key-status" role="status" aria-live="polite"></p>
@@ -95,7 +95,7 @@
   </div>
 
   <footer class="footer">
-    Built by <a href="https://youssefabotaleb20.github.io/Portfolio/">Youssef Abotaleb</a> with FastAPI, Pandas and the Claude API ·
+    Built by <a href="https://youssefabotaleb20.github.io/Portfolio/">Youssef Abotaleb</a> with FastAPI, Pandas and the Claude and OpenAI APIs ·
     <a href="https://github.com/youssefabotaleb20/quill-assistant">Source</a>
   </footer>
 
